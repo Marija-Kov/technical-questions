@@ -1,0 +1,285 @@
+{"general" : [
+        {
+   "q" : "What is a program?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What is a data structure? What are some basic types of data structures?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What is IDE?",
+   "a" : "Integrated developer environment. It is a source-code editor that facilitates writing code with integrated functionalities such as autocomplete, syntax highlighting, debugging, compiling, interpreting, build automation",
+   "ex" :  "VS code, Atom.."
+        }
+    ],
+
+"web" : [
+        {
+   "q" : "What does HTTP(S) stand for?",
+   "a" : "HyperText Transport Protocol (Secure). The latter uses secure socket layer (SSL) encryption",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What is hypertext?",
+   "a" : "Extended text - documents that contain references-links to other documents that are commonly accessed by mouse click. A key underlying concept of WWW.",
+   "ex" :  "Any web page that contains links to other pages that contain links to other pages (including the formerly mentioned web page)"
+        },
+        {
+   "q" : "What is the difference between URI, URL and URN?",
+   "a" : "The first stands for uniform resource identifier, the second for location and the third for name",
+   "ex" :  "ex"
+        },
+        {
+   "q" : "What is the difference between web1 and web2?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What is local storage?",
+   "a" : "It enables the application to ‘remember’ the user’s actions so that when the page is refreshed or closed and reopened, the user doesn’t have to start the task all over. The data is stored on the user’s device (hard drive, more specifically a portion of the memory that the browser takes up on the hard drive) rather than the app’s database.",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What is session storage?",
+   "a" : "It’s gone once the browser is closed. Often used for security reasons where sensitive information is entered",
+   "ex" :  "example"
+        }
+    ],
+
+"html" : [
+        {
+"q" : "What is DOCTYPE?",
+  "a" : "answer",
+  "ex" :  "example"
+        },
+        {
+   "q" : "What are html tags? Name as many as you can remember and provide brief explanations.",
+   "a" : "They are building blocks of an html page. <head> containing <meta> and <link> that contain information about the website/app that is invisible to the user but relevant to browsers and search engines. Then <body> that contains all the elements of the webpage that user is supposed to see: <header>, <main>, <footer>, <nav>, <div>, <section>, <p>, <anchor>, <li>, <img>, <picture>, <video>, <form>, <table>, <summary>, <article>, <details>… They can be semantic and non-semantic, block and inline and some of them even have built-in functionality",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What is the difference between a <span> and <p> element?",
+   "a" : "The former is inline while the latter is block type element",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What is metadata?",
+   "a" : "It’s the behind-the-scenes data that contains information about the website that is read by the browser and search engines. It is relevant to how the website shows in search results. It is located in the <head> of the html file",
+   "ex" :  "example"
+        }
+    ],
+
+
+
+"css" : [
+        {
+"q" : "What does CSS stand for?",
+  "a" : "Cascading Style Sheet. it means that the code can be overwritten by the code below it depending on its specificity.",
+  "ex" :  "example"
+        },
+        {
+"q" : "What are CSS sprites?",
+  "a" : "answer",
+  "ex" :  "example"
+        },
+        {
+   "q" : "What is the difference between inline, block and inline-block?",
+   "a" : "answer",
+   "ex" :  "example"
+        }
+    ],
+
+
+
+"javascript" : [
+        {
+"q" : "What are object prototypes?",
+ "a" : "answer",
+ "ex" :  "example"
+        },
+        {
+"q" : "What is an object constructor?",
+ "a" :  "answer"
+        },
+        {
+"q" :  "Explain inheritance in OOP.",
+ "a" : "answer"
+        },
+        {
+
+"q" : "What are subroutines?",
+ "a" : "answer"
+        },
+        {
+
+"q" : "Name and explain data types.",
+"a" : "answer"
+        },
+        {
+
+"q" : "What are wrapper functions? How do you wrap code in a function?",
+ "a" : "answer"
+        },
+        {
+
+"q" : "What are errors?",
+"a" :  "answer"
+        },
+        {
+"q" : "Name types of notation, demonstrate the use.",
+ "a" : "answer"
+        },
+        {
+
+"q" : "What is binding? When and why is it used?",
+ "a" : "answer"
+        },
+        {
+   "q" : "What is API?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What is AJAX?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "Name and explain main characteristics of javascript. What is javascript used for?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What is ECMAScript?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What are methods?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "Define arguments. How do they differ from parameters?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What are classes in javascript?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "Explain polymorphism.",
+   "a" : "It refers to the ability of code to work for different objects - to be reusable.",
+   "ex" :  "A method given to a class will be accessible to all instances of the said class’ extensions (and their extensions) "
+        },
+        {
+   "q" : "What is abstraction and why is it important?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What are frameworks? Name some of the most popular javascript frameworks.",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "Operators in javascript.",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What is destructuring? What can we destructure in javascript and how?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What is cloning in javascript? What types of cloning are there?",
+   "a" : "It’s simply creating an exact copy of an object. It can be shallow and deep. The deep variant can only effectively be used for JSON objects. If an object contains a method, it won’t be copied."
+        },
+        {
+   "q" : "Define attributes and properties in javascript? How do they differ?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What are enumerable properties in javascript?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What are arrow functions?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What are keywords in javascript?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What are object literals?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What is the difference between var, let and const?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What is hoisting?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "Explain encapsulation.",
+   "a" : "Encapsulation enables abstraction and vice versa",
+   "ex" :  "example"
+        },
+        {
+   "q" : "Explain abstraction.",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What is JSON?",
+   "a" : "Javascript object notation. It consists of string-only, comma-separated  key : value  pairs organized in array and object-like structures that can be nested. It is lightweight and therefore convenient for fast transfer of data. It is supported by the majority of programming languages. ",
+   "ex" :  "ex"
+        },
+        {
+   "q" : "What is a loosely typed language?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What is the difference between clientX, pageX, screenX and offsetX?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "Explain (im)mutability in JS.",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What is strict mode?",
+   "a" : "answer",
+   "ex" :  "example"
+        },
+        {
+   "q" : "What is the difference between Object.freeze() and Object.seal()?",
+   "a" : "Both built-in JS methods, the former prevents the code inside an object from being deleted, added or modified in other ways while the latter prevents adding and deleting, but allows the values being changed ",
+   "ex" :  "ex"
+        },
+        {
+   "q" : "What are polyfills?",
+   "a" : "Code that is implemented to make sure that apps/websites work well on different platforms. Without them, we would have to write different code for every browser so our app doesn’t break.",
+   "ex" :  "Say that our website uses fetch, but we need to make it display properly in browsers that don’t have a built-in support for the fetch API. We either find or code a polyfill ourselves that we can reuse for other projects that require solving the same problem. "
+        }
+    ]
+}
