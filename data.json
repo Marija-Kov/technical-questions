@@ -159,7 +159,7 @@
         },
         {
    "q" : "What are methods?",
-   "a" : "answer",
+   "a" : "Functions stored as properties in an object. Some of them are built-in and are called with dot notation and parentheses.",
    "ex" :  "example"
         },
         {
@@ -179,17 +179,17 @@
         },
         {
    "q" : "What is abstraction and why is it important?",
-   "a" : "answer",
-   "ex" :  "example"
+   "a" : "When we assign an object to an identifier, we create one of those. It's important so we don't have to waste our time rewriting the whole object every time we want to use it for something.",
+   "ex" :  "Bread is water, flour, yeast and salt mixed together, kneaded, proofed, baked and sliced, but we don't say 'excuse me, where can I find flour and water with a bit of yeast and salt kneaded together..' you get the hint."
         },
         {
-   "q" : "What are frameworks? Name some of the most popular javascript frameworks.",
+   "q" : "What are frameworks?",
    "a" : "answer",
    "ex" :  "example"
         },
         {
    "q" : "Operators in javascript.",
-   "a" : "answer",
+   "a" : "+, -, *, **(for exponential numbers), =/+=/-=(assignment), ===(strict equality), !(bang - not) ",
    "ex" :  "example"
         },
         {
@@ -199,7 +199,7 @@
         },
         {
    "q" : "What is cloning in javascript? What types of cloning are there?",
-   "a" : "It’s simply creating an exact copy of an object. It can be shallow and deep. The deep variant can only effectively be used for JSON objects. If an object contains a method, it won’t be copied."
+   "a" : "It’s simply creating a more or less identical copy of an object. It can be shallow and deep. The deep variant can only effectively be used for JSON objects. If an object contains a method, it won’t be copied."
         },
         {
    "q" : "Define attributes and properties in javascript? How do they differ?",
@@ -218,17 +218,17 @@
         },
         {
    "q" : "What are keywords in javascript?",
-   "a" : "answer",
-   "ex" :  "example"
+   "a" : "Those that have special use in javascript and can't be used as identifiers.",
+   "ex" :  "if, const, finally, interface, void, goto"
         },
         {
    "q" : "What are object literals?",
-   "a" : "answer",
+   "a" : "Type of value in JS that usually consists of key: value pairs wrapped with curly braces. The second word in the name refers to the fact that it's all written down as it is i.e. you will use the key as typed to get the paired value as typed.",
    "ex" :  "example"
         },
         {
    "q" : "What is the difference between var, let and const?",
-   "a" : "answer",
+   "a" : "The first is hoisted, the second and the third aren't. The second can be redeclared, the third can't.",
    "ex" :  "example"
         },
         {
