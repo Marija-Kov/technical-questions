@@ -1,4 +1,5 @@
-{"general" : [
+{
+    "general" : [
         {
    "q" : "What is a program?",
    "a" : "answer",
@@ -95,191 +96,193 @@
 
 
 "javascript" : [
-        {
-"q" : "What are object prototypes?",
- "a" : "answer",
- "ex" :  "example"
-        },
-        {
-"q" : "What is an object constructor?",
- "a" :  "answer"
-        },
-        {
-"q" :  "Explain inheritance in OOP.",
- "a" : "answer"
-        },
-        {
+  {
+    "q": "What are object prototypes?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What is an object constructor?",
+    "a": "answer"
+  },
+  {
+    "q": "Explain inheritance in OOP.",
+    "a": "answer"
+  },
+  {
+    "q": "What are subroutines?",
+    "a": "answer"
+  },
+  {
+    "q": "Name and explain data types.",
+    "a": "answer"
+  },
+  {
+    "q": "What are wrapper functions? How do you wrap code in a function?",
+    "a": "answer"
+  },
+  {
+    "q": "What are errors?",
+    "a": "answer"
+  },
+  {
+    "q": "Name types of notation, demonstrate the use.",
+    "a": "answer"
+  },
+  {
+    "q": "What is binding? When and why is it used?",
+    "a": "answer"
+  },
+  {
+    "q": "What is API?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What is AJAX?",
+    "a": "Asynchronous javascript and XML. It's nothing tangible, it describes a practice of file transfer using multiple technologies together.",
+    "ex": "example"
+  },
+  {
+    "q": "Name and explain main characteristics of javascript. What is javascript used for?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What is ECMAScript?",
+    "a": "Essentially Javascript.",
+    "ex": "example"
+  },
+  {
+    "q": "What are methods?",
+    "a": "Functions stored as properties in an object. Some of them are built-in and are called with dot notation and parentheses.",
+    "ex": "example"
+  },
+  {
+    "q": "Define arguments. How do they differ from parameters?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What are classes in javascript?",
+    "a": "Syntactical sugar to constructor functions denoting properties and methods that would be inherited by its instances. They can be extended and be extensions of others of their kind.",
+    "ex": "example"
+  },
+  {
+    "q": "What are generator functions?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "Explain polymorphism.",
+    "a": "It refers to the ability of code to work for different objects - to be reusable.",
+    "ex": "A method given to a class will be accessible to all instances of the said class’ extensions (and their extensions) "
+  },
+  {
+    "q": "What is abstraction and why is it important?",
+    "a": "When we assign an object to an identifier, we create one of those. It's important so we don't have to waste our time rewriting the whole object every time we want to use it for something.",
+    "ex": "Bread is water, flour, yeast and salt mixed together, kneaded, proofed, baked and sliced, but we don't say 'excuse me, where can I find flour and water with a bit of yeast and salt kneaded together..' you get the hint."
+  },
+  {
+    "q": "What are frameworks?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "Operators in javascript.",
+    "a": "+, -, *, **(exponentiation), =/+=/-=(assignment), ===(strict equality), !(bang - not), %(modulus), &&(returns true only if all statements are truthy), ||(returns the first truthy statement)",
+    "ex": "example"
+  },
+  {
+    "q": "What is destructuring? What can we destructure in javascript and how?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What is cloning in javascript? What types of cloning are there?",
+    "a": "It’s simply creating a more or less identical copy of an object. It can be shallow and deep. The deep variant can only effectively be used for JSON objects. If an object contains a method, it won’t be copied.",
+    "e": "Object.assign({}, obj), where 'obj' is the one being copied creates a shallow copy. JSON.parse(JSON.stringify(obj)) will create a deep copy of a JSON file. There is almost no practical use for copying an object."
+  },
+  {
+    "q": "Define attributes and properties in javascript? How do they differ?",
+    "a": "The former can be set up on an element in HTML. The latter are built-in to objects and some of them can reflect the former or be otherwise related to them and also can be used to retreive them.",
+    "ex": "example"
+  },
+  {
+    "q": "What are enumerable properties in javascript?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What are arrow functions?",
+    "a": "They are anonymous and they don't bind 'this' keyword themselves, but inherit the context from a parent function.",
+    "ex": "example"
+  },
+  {
+    "q": "What are keywords in javascript?",
+    "a": "Those that have special use in javascript and can't be used as identifiers.",
+    "ex": "if, const, finally, interface, void, goto"
+  },
+  {
+    "q": "What are object literals?",
+    "a": "Type of value in JS that usually consists of key: value pairs wrapped with curly braces. The second word in the name refers to the fact that it's all written down as it is i.e. you will use the key as typed to get the paired value as typed.",
+    "ex": "example"
+  },
+  {
+    "q": "What is the difference between var, let and const?",
+    "a": "The first is hoisted, the second and the third aren't. The second can be redeclared, the third can't.",
+    "ex": "example"
+  },
+  {
+    "q": "What is hoisting?",
+    "a": "It enables the use of a variable (var) above the point where it was defined in a document. It may be a problem so 'var' is beig phased out in favour of 'let' and 'const'",
+    "ex": "example"
+  },
+  {
+    "q": "Explain encapsulation.",
+    "a": "Encapsulation enables abstraction and vice versa",
+    "ex": "example"
+  },
+  {
+    "q": "Explain abstraction.",
+    "a": "answer",
+    "ex": "example"
+  },
 
-"q" : "What are subroutines?",
- "a" : "answer"
-        },
-        {
-
-"q" : "Name and explain data types.",
-"a" : "answer"
-        },
-        {
-
-"q" : "What are wrapper functions? How do you wrap code in a function?",
- "a" : "answer"
-        },
-        {
-
-"q" : "What are errors?",
-"a" :  "answer"
-        },
-        {
-"q" : "Name types of notation, demonstrate the use.",
- "a" : "answer"
-        },
-        {
-
-"q" : "What is binding? When and why is it used?",
- "a" : "answer"
-        },
-        {
-   "q" : "What is API?",
-   "a" : "answer",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What is AJAX?",
-   "a" : "answer",
-   "ex" :  "example"
-        },
-        {
-   "q" : "Name and explain main characteristics of javascript. What is javascript used for?",
-   "a" : "answer",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What is ECMAScript?",
-   "a" : "answer",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What are methods?",
-   "a" : "Functions stored as properties in an object. Some of them are built-in and are called with dot notation and parentheses.",
-   "ex" :  "example"
-        },
-        {
-   "q" : "Define arguments. How do they differ from parameters?",
-   "a" : "answer",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What are classes in javascript?",
-   "a" : "answer",
-   "ex" :  "example"
-        },
-        {
-   "q" : "Explain polymorphism.",
-   "a" : "It refers to the ability of code to work for different objects - to be reusable.",
-   "ex" :  "A method given to a class will be accessible to all instances of the said class’ extensions (and their extensions) "
-        },
-        {
-   "q" : "What is abstraction and why is it important?",
-   "a" : "When we assign an object to an identifier, we create one of those. It's important so we don't have to waste our time rewriting the whole object every time we want to use it for something.",
-   "ex" :  "Bread is water, flour, yeast and salt mixed together, kneaded, proofed, baked and sliced, but we don't say 'excuse me, where can I find flour and water with a bit of yeast and salt kneaded together..' you get the hint."
-        },
-        {
-   "q" : "What are frameworks?",
-   "a" : "answer",
-   "ex" :  "example"
-        },
-        {
-   "q" : "Operators in javascript.",
-   "a" : "+, -, *, **(for exponential numbers), =/+=/-=(assignment), ===(strict equality), !(bang - not) ",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What is destructuring? What can we destructure in javascript and how?",
-   "a" : "answer",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What is cloning in javascript? What types of cloning are there?",
-   "a" : "It’s simply creating a more or less identical copy of an object. It can be shallow and deep. The deep variant can only effectively be used for JSON objects. If an object contains a method, it won’t be copied."
-        },
-        {
-   "q" : "Define attributes and properties in javascript? How do they differ?",
-   "a" : "answer",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What are enumerable properties in javascript?",
-   "a" : "answer",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What are arrow functions?",
-   "a" : "answer",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What are keywords in javascript?",
-   "a" : "Those that have special use in javascript and can't be used as identifiers.",
-   "ex" :  "if, const, finally, interface, void, goto"
-        },
-        {
-   "q" : "What are object literals?",
-   "a" : "Type of value in JS that usually consists of key: value pairs wrapped with curly braces. The second word in the name refers to the fact that it's all written down as it is i.e. you will use the key as typed to get the paired value as typed.",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What is the difference between var, let and const?",
-   "a" : "The first is hoisted, the second and the third aren't. The second can be redeclared, the third can't.",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What is hoisting?",
-   "a" : "answer",
-   "ex" :  "example"
-        },
-        {
-   "q" : "Explain encapsulation.",
-   "a" : "Encapsulation enables abstraction and vice versa",
-   "ex" :  "example"
-        },
-        {
-   "q" : "Explain abstraction.",
-   "a" : "answer",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What is JSON?",
-   "a" : "Javascript object notation. It consists of string-only, comma-separated  key : value  pairs organized in array and object-like structures that can be nested. It is lightweight and therefore convenient for fast transfer of data. It is supported by the majority of programming languages. ",
-   "ex" :  "ex"
-        },
-        {
-   "q" : "What is a loosely typed language?",
-   "a" : "answer",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What is the difference between clientX, pageX, screenX and offsetX?",
-   "a" : "answer",
-   "ex" :  "example"
-        },
-        {
-   "q" : "Explain (im)mutability in JS.",
-   "a" : "answer",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What is strict mode?",
-   "a" : "answer",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What is the difference between Object.freeze() and Object.seal()?",
-   "a" : "Both built-in JS methods, the former prevents the code inside an object from being deleted, added or modified in other ways while the latter prevents adding and deleting, but allows the values being changed ",
-   "ex" :  "ex"
-        },
-        {
-   "q" : "What are polyfills?",
-   "a" : "Code that is implemented to make sure that apps/websites work well on different platforms. Without them, we would have to write different code for every browser so our app doesn’t break.",
-   "ex" :  "Say that our website uses fetch, but we need to make it display properly in browsers that don’t have a built-in support for the fetch API. We either find or code a polyfill ourselves that we can reuse for other projects that require solving the same problem. "
-        }
-    ]
+  {
+    "q": "What is JSON?",
+    "a": "Javascript object notation. It consists of string-only, comma-separated  key : value  pairs organized in array and object-like structures that can be nested. It is lightweight and therefore convenient for fast transfer of data. It is supported by the majority of programming languages. ",
+    "ex": "ex"
+  },
+  {
+    "q": "What is a loosely typed language?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What is the difference between clientX, pageX, screenX and offsetX?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "Explain (im)mutability in JS.",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What is strict mode?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What is the difference between Object.freeze() and Object.seal()?",
+    "a": "Both built-in JS methods, the former prevents the code inside an object from being deleted, added or modified in other ways while the latter prevents adding and deleting, but allows the values being changed ",
+    "ex": "ex"
+  },
+  {
+    "q": "What are polyfills?",
+    "a": "Code that is implemented to make sure that apps/websites work well on different platforms. Without them, we would have to write different code for every browser so our app doesn’t break.",
+    "ex": "Say that our website uses fetch, but we need to make it display properly in browsers that don’t have a built-in support for the fetch API. We either find or code a polyfill ourselves that we can reuse for other projects that require solving the same problem. "
+  }
+]
 }
