@@ -18,37 +18,54 @@
     ],
 
 "web" : [
-        {
-   "q" : "What does HTTP(S) stand for?",
-   "a" : "HyperText Transport Protocol (Secure). The latter uses secure socket layer (SSL) encryption",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What is hypertext?",
-   "a" : "Extended text - documents that contain references-links to other documents that are commonly accessed by mouse click. A key underlying concept of WWW.",
-   "ex" :  "Any web page that contains links to other pages that contain links to other pages (including the formerly mentioned web page)"
-        },
-        {
-   "q" : "What is the difference between URI, URL and URN?",
-   "a" : "The first stands for uniform resource identifier, the second for location and the third for name",
-   "ex" :  "ex"
-        },
-        {
-   "q" : "What is the difference between web1 and web2?",
-   "a" : "answer",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What is local storage?",
-   "a" : "It enables the application to ‘remember’ the user’s actions so that when the page is refreshed or closed and reopened, the user doesn’t have to start the task all over. The data is stored on the user’s device (hard drive, more specifically a portion of the memory that the browser takes up on the hard drive) rather than the app’s database.",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What is session storage?",
-   "a" : "It’s gone once the browser is closed. Often used for security reasons where sensitive information is entered",
-   "ex" :  "example"
-        }
-    ],
+  {
+    "q": "What does HTTP(S) stand for?",
+    "a": "HyperText Transport Protocol (Secure). The latter uses secure socket layer (SSL) encryption",
+    "ex": "example"
+  },
+  {
+    "q": "What is hypertext?",
+    "a": "Extended text - documents that contain references-links to other documents that are commonly accessed by mouse click. A key underlying concept of WWW.",
+    "ex": "Any web page that contains links to other pages that contain links to other pages (including the formerly mentioned web page)"
+  },
+  {
+    "q": "What is the difference between URI, URL and URN?",
+    "a": "The first stands for uniform resource identifier, the second for location and the third for name",
+    "ex": "ex"
+  },
+  {
+    "q": "What is the difference between web1 and web2?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What is local storage?",
+    "a": "It enables the application to ‘remember’ the user’s actions so that when the page is refreshed or closed and reopened, the user doesn’t have to start the task all over. The data is stored on the user’s device (hard drive, more specifically a portion of the memory that the browser takes up on the hard drive) rather than the app’s database.",
+    "ex": "example"
+  },
+
+  {
+    "q": "What is AJAX?",
+    "a": "Asynchronous javascript and XML. It's nothing tangible, it describes a practice of file transfer using multiple technologies together.",
+    "ex": "example"
+  },
+  {
+    "q": "What is XML?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What is DTD?",
+    "a": "answer",
+    "ex": "example"
+  },
+
+  {
+    "q": "What is session storage?",
+    "a": "It’s gone once the browser is closed. Often used for security reasons where sensitive information is entered",
+    "ex": "example"
+  }
+],
 
 "html" : [
         {
@@ -138,11 +155,7 @@
     "a": "answer",
     "ex": "example"
   },
-  {
-    "q": "What is AJAX?",
-    "a": "Asynchronous javascript and XML. It's nothing tangible, it describes a practice of file transfer using multiple technologies together.",
-    "ex": "example"
-  },
+  
   {
     "q": "Name and explain main characteristics of javascript. What is javascript used for?",
     "a": "answer",
