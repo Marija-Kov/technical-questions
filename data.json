@@ -22,7 +22,7 @@
       },
       {
         "q": "What are dictionaries?",
-        "a": "Data structures similar to arrays that use hash instead of index. They make accessing data quick with the known reference. They are used in circumstances when speed is prioritized at the cost of memory space as dictionaries are usually much larger than the size of data they contain.",
+        "a": "Data structures similar to arrays that use hashing to store items inside array. They make accessing data quick with the known reference. They are used in circumstances when speed is prioritized at the cost of memory space as dictionaries are usually much larger than the size of data they contain.",
         "ex": "example"
       },
       {
@@ -31,7 +31,12 @@
         "ex": "Say we have a node 'bread' that has two nodes, 'regular' and 'whole-grain'. So when we're looking for whole grain wheat bread, we're looking only through (ideally) 50% of breads which implies that the search time is cut by 50% (can vary based on the number of children nodes)."
       },
       {
-        "q": "What is hash?",
+        "q": "What is hashing?",
+        "a": " ",
+        "ex": "example"
+      },
+      {
+        "q": "What are collisions in data structures and what ways are there to resolve them?",
         "a": " ",
         "ex": "example"
       },
@@ -46,7 +51,7 @@
 "web" : [
   {
     "q": "What does HTTP(S) stand for?",
-    "a": "HyperText Transport Protocol (Secure). The latter uses secure socket layer (SSL) encryption",
+    "a": "Stands for hypertext transport protocol that is sometimes secure. For security, it uses secure socket layer (SSL) encryption",
     "ex": "example"
   },
   {
@@ -61,7 +66,7 @@
   },
   {
     "q": "What is the difference between web1 and web2?",
-    "a": "answer",
+    "a": "THe former is read-only. The latter allows interactions like commenting.",
     "ex": "example"
   },
   {
@@ -82,7 +87,7 @@
   },
   {
     "q": "What is DTD?",
-    "a": "answer",
+    "a": "Stands for document type declaration. It is written at the top of source code file and tells the browser what type of 'building blocks' to expect.",
     "ex": "example"
   },
 
@@ -96,7 +101,7 @@
 "html" : [
         {
 "q" : "What is DOCTYPE?",
-  "a" : "It's what is written at the top of html file so that browser interprets it correctly.",
+  "a" : "It's what is written at the top of SGML file so that browsers can interpret it correctly.",
   "ex" :  "example"
         },
         {
@@ -126,7 +131,7 @@
         },
         {
 "q" : "What are CSS sprites?",
-  "a" : "answer",
+  "a" : "Images that are consisted of multiple smaller images (usually icons) that substitute multiple image files. Instead of spending time and bandwidth on loading multiple image files, we can use sprites and write a couple of lines of code that will display adequate parts of the same image.",
   "ex" :  "example"
         },
         {
@@ -170,7 +175,7 @@
   },
   {
     "q": "Name types of notation, demonstrate the use.",
-    "a": "answer"
+    "a": "In javascript, there is dot, square bracket and object (and maybe some others that I don't know of yet). Dot is used to get properties, square for getting array items by index and using names that contain more than one string ['multi string']. {} in object literals, for javascript in template literals and in JSON "
   },
   {
     "q": "What is binding? When and why is it used?",
@@ -178,7 +183,7 @@
   },
   {
     "q": "What is API?",
-    "a": "answer",
+    "a": "Stands for application programming interface and is a type of online resource for building software. They come with documentation that instructs us how to use them.",
     "ex": "example"
   },
   
