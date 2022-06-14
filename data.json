@@ -184,7 +184,7 @@
   },
   {
     "q": "What is binding? When and why is it used?",
-    "a": "It is a method used to add context."
+    "a": "It is a method used to add context - sometimes things lose context in javascript."
   },
   {
     "q": "What is API?",

@@ -13,6 +13,6 @@ The practice of adding data to the document usually goes like this:
 
 As I get more familiar with some concepts, I revise the answers and add more detailed explanations.
 
-I could have just a text file, but I find this format more motivating as I'll also end up having structured data that I could use for a flash card app.
+I could have just written this in a text format, but I find this format more motivating as I'll also end up having structured data that I could use for a flash card app.
 
 
