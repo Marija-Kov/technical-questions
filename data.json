@@ -32,12 +32,17 @@
       },
       {
         "q": "What is hashing?",
-        "a": " ",
+        "a": "A way of creating an association between a key and a corresponding value in a data structure. This function uses ASCII code chart to convert string into number which is then divided by array length and the resulting number is the index of the place where the corresponding value is stored.  ",
         "ex": "example"
       },
       {
         "q": "What are collisions in data structures and what ways are there to resolve them?",
-        "a": " ",
+        "a": "They occur when multiple values are assigned to one array index. One way to deal with this is to get the data to occupy the first empty spot in the array checking left to right. That means that when we search for the said data, the search will start at the index to which the data was assigned first (but that was already occupied) and then proceed checking each next index until it finds the value. Another way of dealing with this is creating a linked list of items at each array index that is assigned more than one value. Additional function can be added to prevent cluttering (poor, uneven distribution of data throughout the array).",
+        "ex": "example"
+      },
+      {
+        "q": "What is double-hashing?",
+        "a": "A way of preventing collision and cluttering of data by using another function after initial hashing that will end up in more even distribution of data and shorten search time.",
         "ex": "example"
       },
 
@@ -167,7 +172,7 @@
   },
   {
     "q": "What are wrapper functions? How do you wrap code in a function?",
-    "a": "answer"
+    "a": "They are used to enclose code and limit access to it on a global level."
   },
   {
     "q": "What are errors?",
@@ -179,14 +184,14 @@
   },
   {
     "q": "What is binding? When and why is it used?",
-    "a": "answer"
+    "a": "It is a method used to add context."
   },
   {
     "q": "What is API?",
     "a": "Stands for application programming interface and is a type of online resource for building software. They come with documentation that instructs us how to use them.",
     "ex": "example"
   },
-  
+
   {
     "q": "Name and explain main characteristics of javascript. What is javascript used for?",
     "a": "answer",
@@ -194,7 +199,7 @@
   },
   {
     "q": "What is ECMAScript?",
-    "a": "Essentially Javascript.",
+    "a": "An object-oriented programming language, serves as a standard for scripting languages like javascript.",
     "ex": "example"
   },
   {
@@ -208,18 +213,24 @@
     "ex": "example"
   },
   {
+    "q": "What are constructor functions?",
+    "a": "They represent a basis - define parameters - for creating instances of themselves using the 'new' keyword.",
+    "ex": "example"
+  },
+
+  {
     "q": "What are classes in javascript?",
     "a": "Syntactical sugar to constructor functions denoting properties and methods that would be inherited by its instances. They can be extended and be extensions of others of their kind.",
     "ex": "example"
   },
   {
     "q": "What are generator functions?",
-    "a": "answer",
+    "a": "They are used to extract properties from objects. They have '*' and use 'yield' keyword.",
     "ex": "example"
   },
   {
     "q": "Explain polymorphism.",
-    "a": "It refers to the ability of code to work for different objects - to be reusable.",
+    "a": "It refers to the capacity of code to work for different objects - to be reusable.",
     "ex": "A method given to a class will be accessible to all instances of the said class’ extensions (and their extensions) "
   },
   {
@@ -229,7 +240,7 @@
   },
   {
     "q": "What are frameworks?",
-    "a": "answer",
+    "a": "Basically code libraries that are supposed to make writing software easier and faster.",
     "ex": "example"
   },
   {
@@ -239,7 +250,7 @@
   },
   {
     "q": "What is destructuring? What can we destructure in javascript and how?",
-    "a": "answer",
+    "a": "It's a way to 'extract' value from objects - map them into variables",
     "ex": "example"
   },
   {
@@ -269,7 +280,7 @@
   },
   {
     "q": "What are object literals?",
-    "a": "Type of value in JS that usually consists of key: value pairs wrapped with curly braces. The second word in the name refers to the fact that it's all written down as it is i.e. you will use the key as typed to get the paired value as typed.",
+    "a": "They consist of key:value pairs and/or functions wrapped with curly braces. The second word in the name refers to the fact that it's all written down as it is i.e. you will use the key as typed to get the paired value as typed.",
     "ex": "example"
   },
   {
@@ -284,15 +295,9 @@
   },
   {
     "q": "Explain encapsulation.",
-    "a": "Encapsulation enables abstraction and vice versa",
+    "a": "It's done to enable abstraction - it's integral to abstraction.",
     "ex": "example"
   },
-  {
-    "q": "Explain abstraction.",
-    "a": "answer",
-    "ex": "example"
-  },
-
   {
     "q": "What is JSON?",
     "a": "Javascript object notation. It consists of string-only, comma-separated  key : value  pairs organized in array and object-like structures that can be nested. It is lightweight and therefore convenient for fast transfer of data. It is supported by the majority of programming languages. ",
@@ -300,22 +305,22 @@
   },
   {
     "q": "What is a loosely typed language?",
-    "a": "answer",
+    "a": "Means that the type of variable doesn't have to be declared. Javascript and python are examples.",
     "ex": "example"
   },
   {
     "q": "What is the difference between clientX, pageX, screenX and offsetX?",
-    "a": "answer",
+    "a": "They all refer to the X-axis point of event-firing relative to a different starting point (left edge of display, browser window, element that has the event listener).",
     "ex": "example"
   },
   {
     "q": "Explain (im)mutability in JS.",
-    "a": "answer",
-    "ex": "example"
+    "a": "Refers to the fact that some types can't be altered in javascript. Like the string will always be a string and same goes for all primitive types (numbers, booleans, undefined, null). Object properties can be changed/added/deleted and some types of variables can be reassigned different values. Whenever a method is applied to an array, a new array is created.",
+    "ex": "Strings can't be altered "
   },
   {
     "q": "What is strict mode?",
-    "a": "answer",
+    "a": "In value comparison, it means that types of values are also taken into account. ",
     "ex": "example"
   },
   {
