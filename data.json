@@ -1,4 +1,5 @@
-{
+{ 
+
     "general" : [
       {
         "q": "What is a program?",
@@ -265,6 +266,11 @@
   },
   {
     "q": "What are enumerable properties in javascript?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What is the difference between assignment and initialization?",
     "a": "answer",
     "ex": "example"
   },
