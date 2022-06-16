@@ -1,22 +1,31 @@
 //the app should get a random question
 //the user should be able to pick the category from which the question is drawn (general CS, javascript, css, html, web), or get a random question without a category specified
- 
+//GETTING A RANDOM CATEGORY: 
+//Get all the names of categories (strings)
+//for each string, create a hash
 
 //the user should be able to put aside the questions that they don't want to come up again 
 async function getRandomQuestion() {
 
-    const response = await fetch('data.json');
+    const response = await fetch('test.json');
 
     if (!response.ok) {
       throw new Error(`Error! status: ${response.status}`);
     }
 
-    const data = await response.json();
+    const test = await response.json();
     
-    console.log(data)
+    console.log(test[0])
   
 
 }
+
+function asciiConverter(string) {
+  for (let i = 0; i < string.length; ++i){
+  return string.split("").map(letter => letter.charCodeAt(i));
+  }
+}
+console.log(asciiConverter("buzz"))
 
 getRandomQuestion(); 
 // fetch WORKS in the browser console with the live SERVER - I get the data as I wanted it. 

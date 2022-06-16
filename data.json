@@ -1,11 +1,13 @@
 { 
-
-    "general" : [
-      {
+    "generalCS" : [
+      { 
         "q": "What is a program?",
         "a": "A set of instructions to a computer written in code. It can be written in higher and lower level languages that a computer converts to binary before executing it",
         "ex": "example"
-      },
+      }
+    ],
+
+    "dataStructures" : [
       {
         "q": "What is a data structure? What are some basic types of data structures?",
         "a": "A tool/system for handling data. It allows us to store, organize, add, remove and retrieve data with specific methods. Linked lists, arrays, dictionaries and trees are the basic types.  ",
@@ -72,7 +74,7 @@
   },
   {
     "q": "What is the difference between web1 and web2?",
-    "a": "THe former is read-only. The latter allows interactions like commenting.",
+    "a": "The former is read-only. The latter allows interactions like commenting.",
     "ex": "example"
   },
   {
@@ -130,22 +132,37 @@
 
 
 "css" : [
-        {
-"q" : "What does CSS stand for?",
-  "a" : "Cascading Style Sheets. It means that the code can be overwritten by the code below it depending on its specificity.",
-  "ex" :  "example"
-        },
-        {
-"q" : "What are CSS sprites?",
-  "a" : "Images that are consisted of multiple smaller images (usually icons) that substitute multiple image files. Instead of spending time and bandwidth on loading multiple image files, we can use sprites and write a couple of lines of code that will display adequate parts of the same image.",
-  "ex" :  "example"
-        },
-        {
-   "q" : "What is the difference between inline, block and inline-block?",
-   "a" : "They are values of the display element property. The last has access to features of both the other two. The first means that the element to which it's assigned (by default or otherwise) takes up only the amount of space that the content requires while the second takes up the whole width of the page.",
-   "ex" :  "Any element's default display property can be changed manually regardless of what's default for that element."
-        }
-    ],
+  {
+    "q": "What does CSS stand for?",
+    "a": "Cascading Style Sheets. It means that the code can be overwritten by the code below it depending on its specificity.",
+    "ex": "example"
+  },
+  {
+    "q": "What are CSS sprites?",
+    "a": "Images that are consisted of multiple smaller images (usually icons) that substitute multiple image files. Instead of spending time and bandwidth on loading multiple image files, we can use sprites and write a couple of lines of code that will display adequate parts of the same image.",
+    "ex": "example"
+  },
+  {
+    "q": "What is the difference between inline, block and inline-block?",
+    "a": "They are values of the display element property. The last has access to features of both the other two. The first means that the element to which it's assigned (by default or otherwise) takes up only the amount of space that the content requires while the second takes up the whole width of the page.",
+    "ex": "Any element's default display property can be changed manually regardless of what's default for that element."
+  },
+  {
+    "q": "What are custom CSS properties?",
+    "a": "answer",
+    "ex": "example"
+  },
+    {
+      "q": "What are CSS variables?",
+      "a": "answer",
+      "ex": "example"
+    },
+      {
+        "q": "What are media queries?",
+        "a": "answer",
+        "ex": "example"
+      }
+],
 
 
 
@@ -266,12 +283,12 @@
   },
   {
     "q": "What are enumerable properties in javascript?",
-    "a": "answer",
+    "a": "Properties with the corresponding attribute set to true, those that can be looped through.",
     "ex": "example"
   },
   {
     "q": "What is the difference between assignment and initialization?",
-    "a": "answer",
+    "a": "Concerning object properties, both are ways to add properties to an object. The former is a simple operation that is done outside an object with dot notation (object.prop = 'value'). The latter is done inside an object in the key : value form ",
     "ex": "example"
   },
   {

@@ -1,0 +1,24 @@
+   [ {"dataStructures" : [
+      {
+        "q": "What is a data structure? What are some basic types of data structures?",
+        "a": "A tool/system for handling data. It allows us to store, organize, add, remove and retrieve data with specific methods. Linked lists, arrays, dictionaries and trees are the basic types.  ",
+        "ex": "example"
+      },
+      {
+        "q": "What are linked lists?",
+        "a": "A type of data structure composed out of nodes. Each node contains data an a reference to the node in front of it or both in the front and behind it. This data structure is memory-efficient and it's easy to add and remove nodes, but finding data can take time because every node has to be checked, head to tail.",
+        "ex": "example"
+      },
+      {
+        "q": "What are arrays?",
+        "a": "A data structure that is indexed with numbers starting with 0. They enable quick access to data, as long as the index is known, but adding, removing and modifying can be time-consuming. In order to add a new item, a new, larger data stucture has to be created and all the data from the previous one copied with addition of new data. Same principle goes for removing data, it can't be just deleted from the data structure without leaving an empty spot reserved in memory, so if memory space is an issue, the time has to be taken to create a smaller array where the needed data will be copied.",
+        "ex": "example"
+      },
+      {
+        "q": "What are dictionaries?",
+        "a": "Data structures similar to arrays that use hashing to store items inside array. They make accessing data quick with the known reference. They are used in circumstances when speed is prioritized at the cost of memory space as dictionaries are usually much larger than the size of data they contain.",
+        "ex": "example"
+      }
+    ]
+}
+]
