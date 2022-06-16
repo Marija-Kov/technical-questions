@@ -1,8 +1,6 @@
 //the app should get a random question
 //the user should be able to pick the category from which the question is drawn (general CS, javascript, css, html, web), or get a random question without a category specified
-//GETTING A RANDOM CATEGORY: 
-//Get all the names of categories (strings)
-//for each string, create a hash
+//GETTING A RANDOM QUESTION OUT OF A RANDOM CATEGORY
 
 //the user should be able to put aside the questions that they don't want to come up again 
 async function getRandomQuestion() {
