@@ -190,7 +190,7 @@
   },
   {
     "q": "What are wrapper functions? How do you wrap code in a function?",
-    "a": "They are used to enclose code and limit access to it on a global level."
+    "a": "They are used to enclose code and limit access to it on a global level i.e. create a local scope for functions and variables."
   },
   {
     "q": "What are errors?",
