@@ -138,6 +138,26 @@
     "ex": "example"
   },
   {
+    "q": "What is specificity in CSS and how does it work? How do you calculate specificity score?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What is float and how does it work?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "Why would you reset CSS?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "Why would you normalize CSS?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
     "q": "What are CSS sprites?",
     "a": "Images that are consisted of multiple smaller images (usually icons) that substitute multiple image files. Instead of spending time and bandwidth on loading multiple image files, we can use sprites and write a couple of lines of code that will display adequate parts of the same image.",
     "ex": "example"
@@ -152,16 +172,56 @@
     "a": "answer",
     "ex": "example"
   },
-    {
-      "q": "What are CSS variables?",
-      "a": "answer",
-      "ex": "example"
-    },
-      {
-        "q": "What are media queries?",
-        "a": "answer",
-        "ex": "example"
-      }
+  {
+    "q": "What is grid good for?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What is flexbox? What can you do with it?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "When is grid more convenient than flexbox and vice versa?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What are CSS variables?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What are media queries? What types of media queries are there?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What are rem and em? When and why would you use them?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What is a responsive layout?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What are CSS frameworks? How helpful are they and are there any disadvantages?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "Is there any way to make layouts look good on ALL browsers and ALL devices?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What is z-index? Describe situations when it's most useful to specify z-index.",
+    "a": "answer",
+    "ex": "example"
+  }
 ],
 
 
@@ -190,7 +250,7 @@
   },
   {
     "q": "What are wrapper functions? How do you wrap code in a function?",
-    "a": "They are used to enclose code and limit access to it on a global level i.e. create a local scope for functions and variables."
+    "a": "They are used to enclose code and limit access to it on a global level."
   },
   {
     "q": "What are errors?",
