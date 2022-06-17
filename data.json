@@ -107,27 +107,63 @@
 ],
 
 "html" : [
-        {
-"q" : "What is DOCTYPE?",
-  "a" : "It's what is written at the top of SGML file so that browsers can interpret it correctly.",
-  "ex" :  "example"
-        },
-        {
-   "q" : "What are html tags? Name as many as you can remember and provide brief explanations.",
-   "a" : "They are building blocks of an html page. <head> containing <meta> and <link> that contain information about the website/app that is invisible to the user but relevant to browsers and search engines. Then <body> that contains all the elements of the webpage that user is supposed to see: <header>, <main>, <footer>, <nav>, <div>, <section>, <p>, <anchor>, <li>, <img>, <picture>, <video>, <form>, <table>, <summary>, <article>, <details>… They can be semantic and non-semantic, block and inline and some of them even have built-in functionality",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What is the difference between a <span> and <p> element?",
-   "a" : "The former is inline while the latter is block type element",
-   "ex" :  "example"
-        },
-        {
-   "q" : "What is metadata?",
-   "a" : "It’s the behind-the-scenes data that contains information about the website that is read by the browser and search engines. It is relevant to how the website shows in search results. It is located in the <head> of the html file",
-   "ex" :  "example"
-        }
-    ],
+  {
+    "q": "What is DOCTYPE?",
+    "a": "It's what is written at the top of SGML file so that browsers can interpret it correctly.",
+    "ex": "example"
+  },
+  {
+    "q": "What are html tags? Name as many as you can remember and describe what each of them does.",
+    "a": "They are building blocks of an html page. <head> containing <meta> and <link> that contain information about the website/app that is invisible to the user but relevant to browsers and search engines. Then <body> that contains all the elements of the webpage that user is supposed to see: <header>, <main>, <footer>, <nav>, <div>, <section>, <p>, <anchor>, <li>, <img>, <picture>, <video>, <form>, <table>, <summary>, <article>, <details>… They can be semantic and non-semantic, block and inline and some of them even have built-in functionality",
+    "ex": "example"
+  },
+
+  {
+    "q": "What is the difference between a <span> and <p> element?",
+    "a": "The former is inline while the latter is block type element",
+    "ex": "example"
+  },
+  {
+    "q": "What is metadata?",
+    "a": "It’s the behind-the-scenes data that contains information about the website that is read by the browser and search engines. It is relevant to how the website shows in search results. It is located in the <head> of the html file",
+    "ex": "example"
+  },
+  {
+    "q": "How do you make a multilingual website?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "You probably hear about html5 a lot. What's so special about it?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What are templating languages?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "Can you name any html tags that have built-in special features?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "When handling image files, what options does html offer?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "When handling video files, what options/features does html offer?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What are data attributes? Are there some attributes that are exclusive to certain types of data and can you name them and what they do?",
+    "a": "answer",
+    "ex": "example"
+  }
+],
 
 
 
@@ -174,6 +210,16 @@
   },
   {
     "q": "What are custom CSS properties?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What are some conventions for writing DRY CSS?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What are web design comps?",
     "a": "answer",
     "ex": "example"
   },
@@ -229,6 +275,11 @@
   },
   {
     "q": "What is z-index? Describe situations when it's most useful to specify z-index.",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What does SVG stand for? What are the cases for the use of SVG in styling?",
     "a": "answer",
     "ex": "example"
   },
