@@ -143,6 +143,11 @@
     "ex": "example"
   },
   {
+    "q": "What are CSS selectors? How does the browser read them?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
     "q": "What is float and how does it work?",
     "a": "answer",
     "ex": "example"
@@ -213,12 +218,22 @@
     "ex": "example"
   },
   {
+    "q": "What are CSS preprocessors?",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
     "q": "Is there any way to make layouts look good on ALL browsers and ALL devices?",
     "a": "answer",
     "ex": "example"
   },
   {
     "q": "What is z-index? Describe situations when it's most useful to specify z-index.",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "What is accessibility? What are ways to make the page's content accessible without compromising visual appeal of the page?",
     "a": "answer",
     "ex": "example"
   }
@@ -251,6 +266,11 @@
   {
     "q": "What are wrapper functions? How do you wrap code in a function?",
     "a": "They are used to enclose code and limit access to it on a global level."
+  },
+  {
+    "q": "What are events? What does it mean for an event to propagate?",
+    "a": "answer",
+    "ex": "example"
   },
   {
     "q": "What are errors?",
