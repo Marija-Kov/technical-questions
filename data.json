@@ -1,13 +1,11 @@
-{ 
-    "generalCS" : [
+
+    [
       { 
         "q": "What is a program?",
         "a": "A set of instructions to a computer written in code. It can be written in higher and lower level languages that a computer converts to binary before executing it",
         "ex": "example"
-      }
-    ],
-
-    "dataStructures" : [
+      },
+    
       {
         "q": "What is a data structure? What are some basic types of data structures?",
         "a": "A tool/system for handling data. It allows us to store, organize, add, remove and retrieve data with specific methods. Linked lists, arrays, dictionaries and trees are the basic types.  ",
@@ -53,10 +51,8 @@
         "q": "What is IDE?",
         "a": "Integrated developer environment. It is a source-code editor that facilitates writing code with integrated functionalities such as autocomplete, syntax highlighting, debugging, compiling, interpreting, build automation",
         "ex": "VS code, Atom.."
-      }
-    ],
-
-"web" : [
+      },
+  
   {
     "q": "What does HTTP(S) stand for?",
     "a": "Stands for hypertext transport protocol that is sometimes secure. For security, it uses secure socket layer (SSL) encryption",
@@ -103,10 +99,8 @@
     "q": "What is session storage?",
     "a": "It’s gone once the browser is closed. Often used for security reasons where sensitive information is entered",
     "ex": "example"
-  }
-],
+  },
 
-"html" : [
   {
     "q": "What is DOCTYPE?",
     "a": "It's what is written at the top of SGML file so that browsers can interpret it correctly.",
@@ -134,7 +128,7 @@
     "ex": "example"
   },
   {
-    "q": "You probably hear about html5 a lot. What's so special about it?",
+    "q": "You probably hear about HTML5 a lot. What's so special about it?",
     "a": "answer",
     "ex": "example"
   },
@@ -149,7 +143,7 @@
     "ex": "example"
   },
   {
-    "q": "When handling image files, what options does html offer?",
+    "q": "When handling image files, what options/features does html offer?",
     "a": "answer",
     "ex": "example"
   },
@@ -159,15 +153,20 @@
     "ex": "example"
   },
   {
-    "q": "What are data attributes? Are there some attributes that are exclusive to certain types of data and can you name them and what they do?",
+    "q": "What is srcset? How does it differ from src?",
     "a": "answer",
     "ex": "example"
-  }
-],
-
-
-
-"css" : [
+  },
+  {
+    "q": "What are data attributes? ",
+    "a": "answer",
+    "ex": "example"
+  },
+  {
+    "q": "When handling image files, what options does html offer?",
+    "a": "answer",
+    "ex": "example"
+  },
   {
     "q": "What does CSS stand for?",
     "a": "Cascading Style Sheets. It means that the code can be overwritten by the code below it depending on its specificity.",
@@ -287,12 +286,7 @@
     "q": "What is accessibility? What are ways to make the page's content accessible without compromising visual appeal of the page?",
     "a": "answer",
     "ex": "example"
-  }
-],
-
-
-
-"javascript" : [
+  },
   {
     "q": "What are object prototypes?",
     "a": "They are properties - objects - that refer to an object's 'ancestry'. Every object has a prototype, unless it's in the beginning of a prototype chain, in which case it returns null. It contains the properties that are not stated in the child-object. So when we tell JS to find a property in an object and it can't find the property in the object itself, it goes up the prototype chain to check for it. This is closely related to the concept of inheritance.",
@@ -340,7 +334,6 @@
     "a": "Stands for application programming interface and is a type of online resource for building software. They come with documentation that instructs us how to use them.",
     "ex": "example"
   },
-
   {
     "q": "Name and explain main characteristics of javascript. What is javascript used for?",
     "a": "answer",
@@ -488,4 +481,4 @@
     "ex": "Say that our website uses fetch, but we need to make it display properly in browsers that don’t have a built-in support for the fetch API. We either find or code a polyfill ourselves that we can reuse for other projects that require solving the same problem. "
   }
 ]
-}
+

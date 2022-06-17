@@ -1,0 +1,75 @@
+$card-background-js: rgb(156, 224, 221);
+$card-background-css: rgb(224, 235, 195);
+$card-background-html: rgb(156, 224, 176);
+$card-data-structures: rgb(224, 156, 196);
+$card-text: rgb(78, 78, 78);
+$btn-font: monospace;
+$text-font: Arial, sans-serif;;
+$btn-next-border: solid 0.1em rgb(176, 112, 228); 
+$btn-text-color: rgb(112, 133, 228);
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    
+}
+
+@mixin center-aligned {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+body {
+    @include center-aligned;
+    margin-top: 10%;
+    font-family: $text-font;
+    color: $card-text;
+    transition: 0.3s;
+}
+
+.card {
+height: clamp(320px, 100vh, 500px);
+width: clamp(300px, 80vw, 600px);
+background: $card-background-css;
+border-radius: 1.5em;
+box-shadow: 0.3em 0.3em 0.2em rgba(36, 36, 36, 0.2);
+@include center-aligned;
+flex-direction: column;
+
+}
+
+button {
+    background: rgb(250, 255, 244);
+    border: solid 0.1em rgb(112, 133, 228);
+    border-radius: 1em;
+    padding: 0.5em 2em;
+    font-family: $btn-font;
+    color: $btn-text-color;
+    cursor: pointer;
+}
+
+.next-random {
+    border: $btn-next-border;
+    text-transform: uppercase;
+}
+
+.question,
+.answer {
+    margin: 10%;
+    font-size: 1em;
+    max-height: 30%;
+    
+}
+
+.answer {
+    overflow-y: scroll;
+    
+}
+
