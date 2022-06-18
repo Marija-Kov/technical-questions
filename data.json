@@ -154,17 +154,17 @@
   },
   {
     "q": "What is srcset? How does it differ from src?",
-    "a": "answer",
-    "ex": "example"
+    "a": "It's an attribute that applies itself to an element (tells the browser to use the url) only under certain conditions, unlike src that uses the provided url value in all circumstances.",
+    "ex": "Picture elements contain img elements with srcset attributes that will be displayed with the corresponding window size. A fallback img element (with a src attribute) should be provided as well."
   },
   {
     "q": "What are data attributes? ",
-    "a": "answer",
+    "a": "They provide the browser with additional information about the data that it has to display - like how to present the data(style) or where to get it from (src)",
     "ex": "example"
   },
   {
     "q": "When handling image files, what options does html offer?",
-    "a": "answer",
+    "a": "A picture element containing multiple img files that would be diplayed only if the window is the certain size (like lower resolution images for mobile devices)",
     "ex": "example"
   },
   {
@@ -184,17 +184,17 @@
   },
   {
     "q": "What is float and how does it work?",
-    "a": "answer",
+    "a": "It's a CSS property used to create a responsive layout. ",
     "ex": "example"
   },
   {
     "q": "Why would you reset CSS?",
-    "a": "answer",
+    "a": "You would do that to strip the page of all default styling before adding your own.",
     "ex": "example"
   },
   {
     "q": "Why would you normalize CSS?",
-    "a": "answer",
+    "a": "You would do that to eliminate, but also preserve some default styling (like headings)",
     "ex": "example"
   },
   {
@@ -219,7 +219,7 @@
   },
   {
     "q": "What are web design comps?",
-    "a": "answer",
+    "a": "It stands for a comprehensive version of design like the one you would present to the client before really elaborating on the project.",
     "ex": "example"
   },
   {
