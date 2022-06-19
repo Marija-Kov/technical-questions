@@ -1,7 +1,7 @@
-$card-background-js: rgb(156, 224, 221);
-$card-background-css: rgb(224, 235, 195);
-$card-background-html: rgb(156, 224, 176);
-$card-data-structures: rgb(224, 156, 196);
+$card-bkg-js: rgb(156, 224, 221);
+$card-bkg-css: rgb(224, 235, 195);
+$card-bkg-html: rgb(156, 224, 176);
+$card-bkg-data-structures: rgb(224, 156, 196);
 $card-text: rgb(78, 78, 78);
 $btn-font: monospace;
 $text-font: Arial, sans-serif;;
@@ -23,24 +23,34 @@ $btn-text-color: rgb(112, 133, 228);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5em;
+    
 }
 
 body {
     @include center-aligned;
+    flex-direction: column;
     margin-top: 10%;
     font-family: $text-font;
     color: $card-text;
     transition: 0.3s;
+    background: beige;
+}
+
+h2 {
+    background: $card-bkg-css;
+    padding: 1%;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
 }
 
 .card {
 height: clamp(320px, 100vh, 500px);
 width: clamp(300px, 80vw, 600px);
-background: $card-background-css;
+background: $card-bkg-css;
 border-radius: 1.5em;
 box-shadow: 0.3em 0.3em 0.2em rgba(36, 36, 36, 0.2);
 @include center-aligned;
+gap: 0.5em;
 flex-direction: column;
 
 }
@@ -71,5 +81,9 @@ button {
 .answer {
     overflow-y: scroll;
     
+}
+
+img {
+    max-width: 200px;
 }
 
