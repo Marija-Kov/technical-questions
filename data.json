@@ -255,7 +255,7 @@
       },
       {
         "q": "What are rem and em? When and why would you use them?",
-        "a": "answer",
+        "a": "They are non-fixed measuring units in CSS (unlike px). They let the size of an element change relative to parent or root elements.",
         "ex": "example"
       },
       {
@@ -270,22 +270,22 @@
       },
       {
         "q": "What are CSS preprocessors?",
-        "a": "answer",
-        "ex": "example"
+        "a": "They are basically extensions of CSS. They are built to make writing CSS simpler and enable using of conditional logic in CSS and nesting. Also they automatically take care of the browser support issues for some CSS properties.  ",
+        "ex": "SASS, LESS"
       },
       {
         "q": "Is there any way to make layouts look good on ALL browsers and ALL devices?",
-        "a": "To do this, you can use media queries. There is a variety of things that can be done to make the process simpler - like use %, rem, em instead pixels, use clamp",
+        "a": "To do this, you can use CSS media queries. There is a variety of things that can be done to make the process simpler - like use %, rem, em instead pixels. You can also use clamp.",
         "ex": "example"
       },
       {
         "q": "What is z-index? Describe situations when it's most useful to specify z-index.",
-        "a": "answer",
+        "a": "Property that allows stacking of elements. The default value is 0 and the higher the index, the closer to the top of the stack the element will be. It can be used to hide some elements or, more importantly, to make sure nothing gets in the way of elements like navigation, hamburger menu button or modules - any content that's supposed to appear on top of the rest of the content will have high number value of this property.",
         "ex": "example"
       },
       {
         "q": "What does SVG stand for? What are the cases for the use of SVG in styling?",
-        "a": "answer",
+        "a": "Scalable vector graphics (a bit excessive with the S as vectors are implicitly scalable). They are practical as they provide consistent graphic quality and they are way lighter than other image files as they are basically code. When we implement them, we copy-paste code in our markup file. ",
         "ex": "example"
       },
       {
@@ -295,7 +295,7 @@
       },
       {
         "q": "What are object prototypes?",
-        "a": "They are properties - objects - that refer to an object's 'ancestry'. Every object has a prototype, unless it's in the beginning of a prototype chain, in which case it returns null. It contains the properties that are not stated in the child-object. So when we tell JS to find a property in an object and it can't find the property in the object itself, it goes up the prototype chain to check for it. This is closely related to the concept of inheritance.",
+        "a": "They are properties - objects - that refer to objects' 'ancestry'. Every object has a prototype, unless it's in the beginning of a prototype chain, in which case it returns null. It contains the properties that are not stated in the child-object. So when we tell JS to find a property in an object and it can't find the property in the object itself, it goes up the prototype chain to check for it. This is closely related to the concept of inheritance.",
         "ex": "example"
       },
       {
@@ -316,16 +316,16 @@
       },
       {
         "q": "What are wrapper functions? How do you wrap code in a function?",
-        "a": "They are used to enclose code and limit access to it on a global level."
+        "a": "They are used to enclose code and limit access to it on a global level i.e. limit the scope of variables and functions."
       },
       {
         "q": "What are events? What does it mean for an event to propagate?",
-        "a": "answer",
+        "a": "Everything that happens as a consequence of the user interacting with the software",
         "ex": "example"
       },
       {
         "q": "What are errors?",
-        "a": "Objects that are returned when something goes wrong in our code, be it syntax, type, reference issue. Although most consoles have a built-in way to handle these objects, it's always better to write code to deal with it manually. This type of object is returned by .catch() method."
+        "a": "Objects that are returned when something goes wrong in our code, be it syntax, type, reference issue etc. Although most consoles have a built-in way to handle these objects, it's always better to write code to deal with it manually. This type of object is returned by .catch() method."
       },
       {
         "q": "Name types of notation, demonstrate the use.",
@@ -333,7 +333,7 @@
       },
       {
         "q": "What is binding? When and why is it used?",
-        "a": "It is a method used to add context - sometimes things lose context in javascript."
+        "a": "When a method of an object is stored in a new variable, it loses track of its original context, meaning that if it's called using the variable, it will return undefined. That's where the method in question jumps in and gives back the original context. The name of the object represents the context and is passed to the method as an argument."
       },
       {
         "q": "What is API?",
@@ -357,7 +357,7 @@
       },
       {
         "q": "Define arguments. How do they differ from parameters?",
-        "a": "answer",
+        "a": "The latter is what goes in the function parenthesies and announces that a function takes in values and, ideally, suggests the types of values that it takes in. The former is the term for the actual value that is passed to the function when the function is called for.",
         "ex": "example"
       },
       {
@@ -398,7 +398,7 @@
       },
       {
         "q": "What is destructuring? What can we destructure in javascript and how?",
-        "a": "It's a way to 'extract' value from objects - map them into variables",
+        "a": "It's a way to 'extract' value from objects.",
         "ex": "example"
       },
       {
@@ -473,7 +473,7 @@
       },
       {
         "q": "What is strict mode?",
-        "a": "In value comparison, it means that types of values are also taken into account. ",
+        "a": "In javascript, it disallows things that are allowed in 'normal' mode. It's more eager in catching errors and forbids new(-ish) JS features.",
         "ex": "example"
       },
       {
