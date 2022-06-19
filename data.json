@@ -78,6 +78,11 @@
         "a": "It enables the application to ‘remember’ the user’s actions so that when the page is refreshed or closed and reopened, the user doesn’t have to start the task all over. The data is stored on the user’s device (hard drive, more specifically a portion of the memory that the browser takes up on the hard drive) rather than the app’s database.",
         "ex": "example"
       },
+      {
+        "q": "What is session storage?",
+        "a": "It is gone once the page is closed or refreshed, meaning the user would have to start the task all over. ",
+        "ex": "example"
+      },
 
       {
         "q": "What is AJAX?",
@@ -94,13 +99,6 @@
         "a": "Stands for document type declaration. It is written at the top of source code file and tells the browser what type of 'building blocks' to expect.",
         "ex": "example"
       },
-
-      {
-        "q": "What is session storage?",
-        "a": "It’s gone once the browser is closed. Often used for security reasons where sensitive information is entered",
-        "ex": "example"
-      },
-
       {
         "q": "What is DOCTYPE?",
         "a": "It's what is written at the top of SGML file so that browsers can interpret it correctly.",
@@ -140,12 +138,12 @@
 
       {
         "q": "What are templating languages?",
-        "a": "answer",
-        "ex": "example"
+        "a": "They have their own syntax that more or less resembles the one of a markup language like html, but are supposed to simplify and speed up the process of writing code.",
+        "ex": "Jade, .."
       },
       {
         "q": "Can you name any html tags that have built-in special features?",
-        "a": "answer",
+        "a": "Input tag with type attribute set to date shows a calendar...video tag allows playing and pausing the video",
         "ex": "example"
       },
       {
