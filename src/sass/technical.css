@@ -1,0 +1,72 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  background: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
+  font-family: Arial, sans-serif;
+  color: rgb(78, 78, 78);
+  transition: 0.3s;
+  background: beige;
+}
+
+h2 {
+  background: rgb(224, 235, 195);
+  padding: 1%;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.card {
+  height: clamp(320px, 100vh, 500px);
+  width: clamp(300px, 80vw, 600px);
+  background-image: url("media/paper-texture-121.jpeg");
+  background-size: cover;
+  border-radius: 1.5em;
+  box-shadow: 0.3em 0.3em 0.2em rgba(36, 36, 36, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  flex-direction: column;
+}
+
+button {
+  background: rgb(250, 255, 244);
+  border: solid 0.1em rgb(112, 133, 228);
+  border-radius: 1em;
+  padding: 0.5em 2em;
+  font-family: monospace;
+  color: rgb(112, 133, 228);
+  cursor: pointer;
+}
+
+.next-random {
+  border: solid 0.1em rgb(176, 112, 228);
+  text-transform: uppercase;
+}
+
+.question,
+.answer {
+  margin: 10%;
+  font-size: 1em;
+  max-height: 30%;
+}
+
+.answer {
+  overflow-y: scroll;
+}
+
+img {
+  max-width: 200px;
+}/*# sourceMappingURL=technical.css.map */
