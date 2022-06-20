@@ -13,7 +13,7 @@
       },
       {
         "q": "What are linked lists?",
-        "a": "A type of data structure composed out of nodes. Each node contains data an a reference to the node in front of it or both in the front and behind it. This data structure is memory-efficient and it's easy to add and remove nodes, but finding data can take time because every node has to be checked, head to tail.",
+        "a": "A type of data structure composed out of nodes. Each node contains data and a reference to the node in front of it or both in the front and behind it. This data structure is memory-efficient and it's easy to add and remove nodes, but finding data can take time because every node has to be checked, head to tail.",
         "ex": "example"
       },
       {
@@ -23,7 +23,7 @@
       },
       {
         "q": "What are dictionaries?",
-        "a": "Data structures similar to arrays that use hashing to store items inside array. They make accessing data quick with the known reference. They are used in circumstances when speed is prioritized at the cost of memory space as dictionaries are usually much larger than the size of data they contain.",
+        "a": "Data structures similar to arrays that use hashing to store items inside array. They make accessing data quick, if the key is known. They are used in circumstances when speed is prioritized at the cost of memory space as dictionaries are usually much larger than the size of data they contain.",
         "ex": "example"
       },
       {
@@ -446,7 +446,7 @@
       },
       {
         "q": "Explain encapsulation.",
-        "a": "It's done to enable abstraction - it's integral to abstraction.",
+        "a": "It's a method of keeping data hidden/secure. It enables abstraction.",
         "ex": "example"
       },
       {
@@ -466,12 +466,62 @@
       },
       {
         "q": "Explain (im)mutability in JS.",
-        "a": "Refers to the fact that some types can't be altered in javascript. Like the string will always be a string and same goes for all primitive types (numbers, booleans, undefined, null). Object properties can be changed/added/deleted and some types of variables can be reassigned different values. Whenever a method is applied to an array, a new array is created.",
-        "ex": "Strings can't be altered "
+        "a": "Refers to the fact that some types can't be altered in javascript. Like the string will always be a string and same goes for all primitive types (numbers, booleans, undefined, null). Object properties can be changed/added/deleted and some types of variables can be reassigned different values. Whenever a method is applied to an array, a new array is created. This characteristic, of course, reflects in variables that point to the said value types.",
+        "ex": "Strings can't be altered, object property values can."
+      },
+      {
+        "q": "What are (dis)advantages of (im)mutability?",
+        "a": "Answer",
+        "ex": "example"
+      },
+      {
+        "q": "What is a shared state?",
+        "a": "Answer",
+        "ex": "example"
+      },
+      {
+        "q": "What is recursion? How does it differ from for loops? Are there any specific use cases for one or another?",
+        "a": "Answer",
+        "ex": "example"
+      },
+      {
+        "q": "What is a first class function?",
+        "a": "Answer",
+        "ex": "example"
+      },
+      {
+        "q": "What are higher order functions?",
+        "a": "Answer",
+        "ex": "example"
       },
       {
         "q": "What is strict mode?",
-        "a": "In javascript, it disallows things that are allowed in 'normal' mode. It's more eager in catching errors and forbids new(-ish) JS features.",
+        "a": "In javascript, it disallows things that are allowed in 'normal' mode. It's more eager in catching errors and forbids new(-ish) JS features ensuring cross-platform support.",
+        "ex": "example"
+      },
+      {
+        "q": "Explain transpiling.",
+        "a": "Answer",
+        "ex": "example"
+      },
+      {
+        "q": "Explain compiling vs interpreting.",
+        "a": "Answer",
+        "ex": "example"
+      },
+      {
+        "q": "Explain the difference between scripting and programming language.",
+        "a": "Answer",
+        "ex": "example"
+      },
+      {
+        "q": "Can you give an example where a scripting language automates tasks in a program?",
+        "a": "Answer",
+        "ex": "example"
+      },
+      {
+        "q": "Can you explain some situations where two programming paradigms combined can 'collide'? Can you use an example of OOP and functional programming? ",
+        "a": "First define what is it that sets the two programming paradigms apart. Is there anything typical for one that would be unfavourable for another?",
         "ex": "example"
       },
       {

@@ -8,6 +8,17 @@ $text-font: Arial, sans-serif;;
 $btn-next-border: solid 0.1em rgb(176, 112, 228); 
 $btn-text-color: rgb(128, 128, 128);
 
+::-webkit-scrollbar {
+  width: 0.5em;
+
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: rgb(153, 153, 153);
+  border-radius: 50px;
+}
+
 *,
 ::before,
 ::after {
