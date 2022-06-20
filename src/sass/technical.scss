@@ -2,11 +2,11 @@ $card-bkg-js: rgb(156, 224, 221);
 $card-bkg-css: rgb(224, 235, 195);
 $card-bkg-html: rgb(156, 224, 176);
 $card-bkg-data-structures: rgb(224, 156, 196);
-$card-text: rgb(78, 78, 78);
+$card-text: rgb(128, 128, 128);
 $btn-font: monospace;
 $text-font: Arial, sans-serif;;
 $btn-next-border: solid 0.1em rgb(176, 112, 228); 
-$btn-text-color: rgb(112, 133, 228);
+$btn-text-color: rgb(128, 128, 128);
 
 *,
 ::before,
@@ -27,13 +27,13 @@ $btn-text-color: rgb(112, 133, 228);
 }
 
 body {
+    height: 100vh;
     @include center-aligned;
     flex-direction: column;
-    margin-top: 10%;
     font-family: $text-font;
     color: $card-text;
     transition: 0.3s;
-    background: beige;
+    background: linear-gradient(340deg, rgba(61,150,185,1) 5%, rgba(0,251,255,1) 100%);
 }
 
 h2 {
@@ -58,17 +58,24 @@ flex-direction: column;
 }
 
 button {
-    background: rgb(250, 255, 244);
-    border: solid 0.1em rgb(112, 133, 228);
+    background: transparent;
+    //border: solid 0.1em rgb(112, 133, 228);
+    box-shadow: inset 7px 0px 10px 0px rgba(128, 128, 128, 0.3);
     border-radius: 1em;
     padding: 0.5em 2em;
     font-family: $btn-font;
     color: $btn-text-color;
     cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+         box-shadow: inset 10px 0px 10px 5px rgba(255, 255, 255, 0.9), inset 0px -5px 8px 5px rgba(128, 128, 128, 0.2), 1px 0px 0px 0px rgba(128, 128, 128, 0.05);
+         color: rgb(156, 156, 156);
+         transition: 0.2s;
+    }
 }
 
 .next-random {
-    border: $btn-next-border;
+   // border: $btn-next-border;
     text-transform: uppercase;
 }
 
@@ -81,7 +88,9 @@ button {
 }
 
 .answer {
+    height: 0;
     overflow-y: scroll;
+    font-size: 14px;
     
 }
 

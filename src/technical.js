@@ -22,6 +22,8 @@ async function getRandomQuestion() {
 
     const data = await response.json();
     const randomQuestion = await data[Math.round(Math.random()*96)];
+    localStorage.setItem("deck", randomQuestion.q);
+    console.log(localStorage.getItem('deck'));
     question.innerText = `${randomQuestion.q}`;
     answer.setAttribute('style', "height: 0");
     answer.innerText = `${randomQuestion.a}`;
