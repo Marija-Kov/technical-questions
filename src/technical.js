@@ -7,9 +7,20 @@ const card = document.querySelector(".card");
 const remaining = document.querySelector(".remaining");
 const reshuffle = document.querySelector(".reshuffle");
 
+
+
 reshuffle.addEventListener('click', ()=> {
+if(reshuffle.innerText.toLowerCase() === 'start') {
+  showAnswer.style.visibility = "visible";
+  nextQuestion.style.visibility = "visible";
+  reshuffle.innerText = 'restart';
+  nextQuestion.click()
+} else {
   localStorage.clear();
   window.location.reload();
+
+}
+
 })
 
 nextQuestion.addEventListener('click', getRandomQuestion);
@@ -24,21 +35,21 @@ async function getRandomQuestion() {
     }
 
     const data = await response.json();
-    remaining.innerText = `Cards remaining: ${data.length-1-Number(localStorage.length)}`;
+    remaining.innerText = `Cards remaining: ${data.length-1-localStorage.length}`;
     const randomQuestion = await data[Math.round(Math.random()*data.length)];
-    if (Number(localStorage.length) === data.length) {
-      noMore().then(() => reshuffle.click());
+    if (localStorage.length === data.length) {
+      noMore().then(reshuffle.click());
     }
     if (!localStorage.getItem(`${asciiConverter(randomQuestion.q)}`)) {
       localStorage.setItem(
         `${asciiConverter(randomQuestion.q)}`,
         randomQuestion.q
       );
-    console.log(
-      `Item: ${randomQuestion.q} - number: ${asciiConverter(
-        localStorage.getItem(`${asciiConverter(randomQuestion.q)}`)
-      )} - is now inside local storage.`
-    );
+    // console.log(
+    //   `Item: ${randomQuestion.q} - number: ${asciiConverter(
+    //     localStorage.getItem(`${asciiConverter(randomQuestion.q)}`)
+    //   )} - is now inside local storage.`
+    // );
     question.innerText = `${randomQuestion.q}`;
     answer.setAttribute('style', "height: 0");
     answer.innerText = `${randomQuestion.a}`;
@@ -49,7 +60,7 @@ async function getRandomQuestion() {
   }
 }
 
-getRandomQuestion(); 
+
 
 //it should be ensured that a random card does not get drawn twice until the end of the deck
 

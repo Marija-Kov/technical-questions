@@ -85,7 +85,10 @@ button {
          transition: 0.2s;
     }
 }
-
+.show-answer,
+.next-random {
+    visibility: hidden;
+}
 .next-random,
 .reshuffle {
    // border: $btn-next-border;
@@ -100,6 +103,7 @@ button {
         color: white;
     }
 }
+
 
 .remaining {
     color:rgb(36, 36, 36);
