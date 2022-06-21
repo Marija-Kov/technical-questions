@@ -70,7 +70,7 @@
       },
       {
         "q": "What is the difference between web1 and web2?",
-        "a": "The former is read-only. The latter allows interactions like commenting.",
+        "a": "The former is read-only. The latter allows interactions like commenting or uploading any content online.",
         "ex": "example"
       },
       {
@@ -148,7 +148,7 @@
       },
       {
         "q": "When handling image files, what options/features does html offer?",
-        "a": "answer",
+        "a": "A self-closing <img> tag, <picture> </picture> tag that can contain multiple img-s to be displayed conditionally (srcset attribute.",
         "ex": "example"
       },
       {
@@ -178,12 +178,12 @@
       },
       {
         "q": "What is specificity in CSS and how does it work? How do you calculate specificity score?",
-        "a": "answer",
+        "a": "It is determined by the number of selectors, individual score of a selector(.class, #id, [attr=''], tag etc) and the position in the stylesheet file.",
         "ex": "example"
       },
       {
-        "q": "What are CSS selectors? How does the browser read them?",
-        "a": "answer",
+        "q": "What are CSS selectors? How does the browser read them and why?",
+        "a": "They represent the first part of the CSS rule (before the curly braces). The browser reads them bottom to top / right to left / child to parent which ensures iteration through as few elements as possible to get the selected element.",
         "ex": "example"
       },
       {
@@ -466,22 +466,22 @@
       },
       {
         "q": "Explain (im)mutability in JS.",
-        "a": "Refers to the fact that some types can't be altered in javascript. Like the string will always be a string and same goes for all primitive types (numbers, booleans, undefined, null). Object properties can be changed/added/deleted and some types of variables can be reassigned different values. Whenever a method is applied to an array, a new array is created. This characteristic, of course, reflects in variables that point to the said value types.",
+        "a": "Refers to the fact that some types can't be altered in javascript. Like the string will always be a string and same goes for all primitive types (numbers, booleans, undefined, null). Object properties can be changed/added/deleted and some types of variables can be reassigned different values. Whenever a method is applied to an array, a new array is created. This characteristic, of course, reflects in variables that point to the said value types. Immutability is the principle in functional programming, as mutability is in OOP. ",
         "ex": "Strings can't be altered, object property values can."
       },
       {
         "q": "What are (dis)advantages of (im)mutability?",
-        "a": "Answer",
+        "a": "Immutability principle ensures consistency and easy maintenance/debugging, but makes it hard to write more complex programs and stand by the immutability principle. Mutability allows more complexity that comes at the cost of maintainability. ",
         "ex": "example"
       },
       {
         "q": "What is a shared state?",
-        "a": "Answer",
+        "a": "It's a value that other values in multiple different objects depend on",
         "ex": "example"
       },
       {
         "q": "What is recursion? How does it differ from for loops? Are there any specific use cases for one or another?",
-        "a": "Answer",
+        "a": "It's when a function makes a call to itself",
         "ex": "example"
       },
       {
@@ -491,7 +491,7 @@
       },
       {
         "q": "What are higher order functions?",
-        "a": "Answer",
+        "a": "Functions that return functions",
         "ex": "example"
       },
       {
@@ -511,7 +511,7 @@
       },
       {
         "q": "Explain the difference between scripting and programming language.",
-        "a": "Answer",
+        "a": "Al scripting langs are programming langs. Unlike other programming langs, scripting langs don't need to be compiled, but require interpretation (in html, by a browser). Non-scripting langs are compiled and don't need a separate program to run.",
         "ex": "example"
       },
       {
