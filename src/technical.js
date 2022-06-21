@@ -1,11 +1,16 @@
-//the app should get a random question
-//the user should be able to pick the category from which the question is drawn (general CS, javascript, css, html, web), or get a random question without a category specified
-//GETTING A RANDOM QUESTION OUT OF A RANDOM CATEGORY
-//the user should be able to put aside the questions that they don't want to come up again 
-let showAnswer = document.querySelector('.show-answer');
-let nextQuestion = document.querySelector(".next-random");
-let question = document.querySelector(".question");
-let answer = document.querySelector(".answer");
+//it should be ensured that a random card does not get drawn twice until the end of the deck
+const showAnswer = document.querySelector('.show-answer');
+const nextQuestion = document.querySelector(".next-random");
+const question = document.querySelector(".question");
+const answer = document.querySelector(".answer");
+const card = document.querySelector(".card");
+const remaining = document.querySelector(".remaining");
+const reshuffle = document.querySelector(".reshuffle");
+
+reshuffle.addEventListener('click', ()=> {
+  localStorage.clear();
+  window.location.reload();
+})
 
 nextQuestion.addEventListener('click', getRandomQuestion);
 showAnswer.addEventListener('click', () => {
@@ -13,32 +18,52 @@ showAnswer.addEventListener('click', () => {
 })
 
 async function getRandomQuestion() {
-
     const response = await fetch('data.json');
-
     if (!response.ok) {
       throw new Error(`Error! status: ${response.status}`);
     }
 
     const data = await response.json();
-    const randomQuestion = await data[Math.round(Math.random()*96)];
-    localStorage.setItem("deck", randomQuestion.q);
-    console.log(localStorage.getItem('deck'));
+    remaining.innerText = `Cards remaining: ${data.length-1-Number(localStorage.length)}`;
+    const randomQuestion = await data[Math.round(Math.random()*data.length)];
+    if (Number(localStorage.length) === data.length) {
+      noMore().then(() => reshuffle.click());
+    }
+    if (!localStorage.getItem(`${asciiConverter(randomQuestion.q)}`)) {
+      localStorage.setItem(
+        `${asciiConverter(randomQuestion.q)}`,
+        randomQuestion.q
+      );
+    console.log(
+      `Item: ${randomQuestion.q} - number: ${asciiConverter(
+        localStorage.getItem(`${asciiConverter(randomQuestion.q)}`)
+      )} - is now inside local storage.`
+    );
     question.innerText = `${randomQuestion.q}`;
     answer.setAttribute('style', "height: 0");
     answer.innerText = `${randomQuestion.a}`;
-  
+    card.style =`background-position-x: ${Math.round(Math.random() * 100)}%`; //
+    card.style = `background-position-y: ${Math.round(Math.random() * 100)}%`; // this will give the illusion as if the cards are being switched css sprite-style
+  } else {
+    getRandomQuestion()
+  }
 }
 
 getRandomQuestion(); 
 
+//it should be ensured that a random card does not get drawn twice until the end of the deck
 
-// function asciiConverter(string) {
-//   for (let i = 0; i < string.length; ++i){
-//   return string.split("").map(letter => letter.charCodeAt(i));
-//   }
-// }
-// //console.log(asciiConverter("buzz"))
+
+function asciiConverter(string) {
+  for (let i = 0; i < string.length; ++i){
+  return string.split("").map(letter => letter.charCodeAt(i)).join('');
+  }
+}
+
+async function noMore(){
+  alert('No more cards!')
+
+}
 
 
 // fetch WORKS in the browser console with the live SERVER - I get the data as I wanted it. 

@@ -41,6 +41,7 @@ body {
     height: 100vh;
     @include center-aligned;
     flex-direction: column;
+    gap: 5%;
     font-family: $text-font;
     color: $card-text;
     transition: 0.3s;
@@ -59,7 +60,7 @@ height: clamp(320px, 100vh, 500px);
 width: clamp(300px, 80vw, 600px);
 background: $card-bkg-html;
 background-image: url('/src/media/white-paper.jpg');
-background-size: 150%;
+background-size: 380%;
 border-radius: 1.5em;
 box-shadow: 0.3em 0.3em 0.2em rgba(36, 36, 36, 0.2);
 @include center-aligned;
@@ -85,16 +86,32 @@ button {
     }
 }
 
-.next-random {
+.next-random,
+.reshuffle {
    // border: $btn-next-border;
     text-transform: uppercase;
 }
+
+.reshuffle {
+    color:rgb(36, 36, 36);
+    border: solid 1px rgb(36, 36, 36);
+    &:hover {
+        box-shadow: none;
+        color: white;
+    }
+}
+
+.remaining {
+    color:rgb(36, 36, 36);
+}
+
 
 .question,
 .answer {
     margin: 10%;
     font-size: 1em;
     max-height: 30%;
+    text-align: center;
     
 }
 
