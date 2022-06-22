@@ -7,6 +7,16 @@ const card = document.querySelector(".card");
 const remaining = document.querySelector(".remaining");
 const reshuffle = document.querySelector(".reshuffle");
 
+if(!localStorage.getItem('i')) 
+{
+  localStorage.setItem('i', '0') 
+}
+
+
+
+if (localStorage.length > 1) {
+ showLast()
+}
 
 reshuffle.addEventListener('click', ()=> {
 if(reshuffle.innerText.toLowerCase() === 'start') {
@@ -33,9 +43,13 @@ async function getRandomQuestion() {
     if (!response.ok) {
       throw new Error(`Error! status: ${response.status}`);
     }
-
     const data = await response.json();
-    remaining.innerText = `Cards remaining: ${data.length-1-localStorage.length}`;
+    let questionsLeft = data.length - 1 - localStorage.getItem('i');
+    remaining.innerText = `Cards remaining: ${questionsLeft}`;
+    localStorage.setItem(
+      "remaining",
+      `${questionsLeft}`
+    );
     const randomQuestion = await data[Math.round(Math.random()*data.length)];
     if (remaining.innerText === 'Cards remaining: 0') {
       nextQuestion.disabled = "true";  
@@ -47,10 +61,14 @@ async function getRandomQuestion() {
     }
 
     if (!localStorage.getItem(`${asciiConverter(randomQuestion.q)}`)) {
+      
       localStorage.setItem(
         `${asciiConverter(randomQuestion.q)}`,
         randomQuestion.q
       );
+      localStorage.setItem('lastQ', `${randomQuestion.q}`);
+      localStorage.setItem("lastA", `${randomQuestion.a}`);
+      localStorage.setItem("i", `${(Number(localStorage.getItem('i')) + 1)}`);
     // console.log(
     //   `Item: ${randomQuestion.q} - number: ${asciiConverter(
     //     localStorage.getItem(`${asciiConverter(randomQuestion.q)}`)
@@ -68,13 +86,25 @@ async function getRandomQuestion() {
 
 
 
-//it should be ensured that a random card does not get drawn twice until the end of the deck
+// helper functions below: 
 
 
 function asciiConverter(string) {
   for (let i = 0; i < string.length; ++i){
   return string.split("").map(letter => letter.charCodeAt(i)).join(''); 
   }
+}
+
+function showLast() {
+  question.innerText = `${localStorage.getItem('lastQ')}`;
+  answer.innerText = `${localStorage.getItem('lastA')}`;
+   showAnswer.style.visibility = "visible";
+   nextQuestion.style.visibility = "visible";
+   reshuffle.innerText = "restart";
+   remaining.innerText = `Cards remaining: ${localStorage.getItem(
+     "remaining"
+   )}`;
+   reshuffle.classList.remove('anim');
 }
 
 
