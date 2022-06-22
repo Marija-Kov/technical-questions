@@ -8,12 +8,12 @@ const remaining = document.querySelector(".remaining");
 const reshuffle = document.querySelector(".reshuffle");
 
 
-
 reshuffle.addEventListener('click', ()=> {
 if(reshuffle.innerText.toLowerCase() === 'start') {
   showAnswer.style.visibility = "visible";
   nextQuestion.style.visibility = "visible";
   reshuffle.innerText = 'restart';
+  reshuffle.classList.remove('anim');
   getRandomQuestion();
 } else {
   localStorage.clear();
@@ -42,6 +42,7 @@ async function getRandomQuestion() {
       nextQuestion.style = "display: none";
       setTimeout(() => {
       remaining.innerText = "No more cards! Press 'RESTART' to practice again.";
+      reshuffle.classList.add('anim');
       }, 1000) 
     }
 
@@ -61,7 +62,7 @@ async function getRandomQuestion() {
     card.style =`background-position-x: ${Math.round(Math.random() * 100)}%`; //
     card.style = `background-position-y: ${Math.round(Math.random() * 100)}%`; // this will give the illusion as if the cards are being switched css sprite-style
   } else {
-    getRandomQuestion()
+    getRandomQuestion()  // if the item picked by getRandomQuestion is already in the localStorage, run it again. This solution poses an issue/gives errors as with each next call it's taking longer and longer to randomly bump into items not already into localStorage.
   }
 }
 
