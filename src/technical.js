@@ -14,7 +14,7 @@ if(reshuffle.innerText.toLowerCase() === 'start') {
   showAnswer.style.visibility = "visible";
   nextQuestion.style.visibility = "visible";
   reshuffle.innerText = 'restart';
-  nextQuestion.click()
+  getRandomQuestion();
 } else {
   localStorage.clear();
   window.location.reload();
@@ -37,9 +37,14 @@ async function getRandomQuestion() {
     const data = await response.json();
     remaining.innerText = `Cards remaining: ${data.length-1-localStorage.length}`;
     const randomQuestion = await data[Math.round(Math.random()*data.length)];
-    if (localStorage.length === data.length) {
-      noMore().then(reshuffle.click());
+    if (remaining.innerText === 'Cards remaining: 0') {
+      nextQuestion.disabled = "true";  
+      nextQuestion.style = "display: none";
+      setTimeout(() => {
+      remaining.innerText = "No more cards! Press 'RESTART' to practice again.";
+      }, 1000) 
     }
+
     if (!localStorage.getItem(`${asciiConverter(randomQuestion.q)}`)) {
       localStorage.setItem(
         `${asciiConverter(randomQuestion.q)}`,
@@ -67,14 +72,10 @@ async function getRandomQuestion() {
 
 function asciiConverter(string) {
   for (let i = 0; i < string.length; ++i){
-  return string.split("").map(letter => letter.charCodeAt(i)).join('');
+  return string.split("").map(letter => letter.charCodeAt(i)).join(''); 
   }
 }
 
-async function noMore(){
-  alert('No more cards!')
-
-}
 
 
 // fetch WORKS in the browser console with the live SERVER - I get the data as I wanted it. 
