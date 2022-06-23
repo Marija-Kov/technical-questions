@@ -45,16 +45,16 @@ async function getRandomQuestion() {
    
     const randomQuestion = await data[Math.round(Math.random()*data.length)];
 
-    if (remaining.innerText === 'Cards remaining: 0') { // This conditional determines what happens when all cards have been picked out ...
-      nextQuestion.disabled = "true";  // ..this button is disabled
+    if (remaining.innerText === 'Cards remaining: 0') { // This conditional determines what happens when all cards have been picked out: ...
+      nextQuestion.disabled = "true";  // ..'NEXT' button gets disabled
       //nextQuestion.style = "display: none";  // or hidden, too...
       setTimeout(() => {
-      remaining.innerText = "No more cards! Press 'RESTART' to practice again.";  // and the user is pointed to the 'RESTART' button.
-      reshuffle.classList.add('blink'); // ...which starts blinking also.
+      remaining.innerText = "No more cards! Press 'RESTART' to practice again.";  // and the user is pointed to the 'RESTART' button
+      reshuffle.classList.add('blink'); // ...which starts blinking, also.
       }, 1000) 
     }
 
-    if (!localStorage.getItem(`${asciiConverter(randomQuestion.q)}`)) { // This conditional checks if the randomQuestion is already in localStorage...
+    if (!localStorage.getItem(`${asciiConverter(randomQuestion.q)}`)) { // This conditional checks if the randomQuestion is not yet in localStorage...
       localStorage.setItem(  
         `${asciiConverter(randomQuestion.q)}`,  // ...sets it in localStorage under a unique key,
         randomQuestion.q
@@ -69,7 +69,7 @@ async function getRandomQuestion() {
     card.style =`background-position-x: ${Math.round(Math.random() * 100)}%`; //
     card.style = `background-position-y: ${Math.round(Math.random() * 100)}%`; // ...This will give the background illusion that the cards are being switched css sprite-style
   } else {
-    getRandomQuestion()  // if the item picked by getRandomQuestion is already in the localStorage, run it again. This solution poses an issue/gives errors as with each next call it's taking longer and longer to randomly bump into items not already into localStorage. There is a way around this - by shuffling the array of cards before pulling them one by one start to end, which would get rid of collision and all collateral issues. It was an interesting challenge doing it the hard, buggy way. 
+    getRandomQuestion()  // if the item picked by getRandomQuestion is already in the localStorage, run it again. Btw, this whole solution poses an issue/gives errors as with each next call it's taking longer and longer to randomly bump into items not already into localStorage. There is a way around this - by shuffling the array of cards before pulling them one by one start to end, which would get rid of the collision and all collateral issues. It was an interesting challenge doing it the hard, buggy way. 
   }
    let questionsLeft = data.length - localStorage.getItem('i'); // Knowing that 'i' represents the number of picked cards, this is self-explanatory.
     remaining.innerText = `Cards remaining: ${questionsLeft}`; 
@@ -92,7 +92,7 @@ function asciiConverter(string) {  // I used this function to create an unique k
 
 function showLast() {  // This function ensures that....
   question.innerText = `${localStorage.getItem('lastQ')}`; // the question shown is the last random unique question from the localStorage,
-  answer.innerText = `${localStorage.getItem('lastA')}`;  // ...the answer is the corresponding answer to it,
+  answer.innerText = `${localStorage.getItem('lastA')}`;  // ...the answer shown is the corresponding answer to it,
    showAnswer.style.visibility = "visible";  // ...that both buttons on the card remain visible,
    nextQuestion.style.visibility = "visible";
    reshuffle.innerText = "restart";  // ...that 'RESTART' is shown
