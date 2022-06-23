@@ -9,7 +9,6 @@
 
 }
 
-
 ::-webkit-scrollbar-thumb {
   background: rgb(105, 142, 160);
   border-radius: 50px;
@@ -35,27 +34,26 @@ body {
     color: vars.$card-text;
     transition: 0.3s;
     background: linear-gradient(340deg, rgba(61,150,185,1) 5%, rgba(0,251,255,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
 
 .card {
-height: clamp(320px, 100vh, 500px);
-width: clamp(300px, 80vw, 600px);
-background: vars.$card-bkg-html;
-background-image: url('/src/media/white-paper.jpg');
-background-size: 380%;
-border-radius: 1.5em;
-box-shadow: 0.3em 0.3em 0.2em rgba(36, 36, 36, 0.2);
+@include mixins.card-style;
 @include mixins.center-aligned;
-gap: 0.5em;
-flex-direction: column;
 
+}
+
+.card-stack {
+@include mixins.card-style;
+@include mixins.center-aligned;
+border: solid 1px gray;
 }
 
 button {
     background: transparent;
-    //border: solid 0.1em rgb(112, 133, 228);
     box-shadow: inset 7px 0px 10px 0px rgba(128, 128, 128, 0.3);
     border-radius: 1em;
     padding: 0.5em 2em;

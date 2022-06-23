@@ -6,3 +6,14 @@
     align-items: center;
     
 }
+
+@mixin card-style {
+height: clamp(320px, 100vh, 500px);
+width: clamp(300px, 80vw, 600px);
+background-image: url('/src/media/white-paper.jpg');
+background-size: 380%;
+border-radius: 1.5em;
+box-shadow: 0.3em 0.3em 0.2em rgba(36, 36, 36, 0.2);
+gap: 0.5em;
+flex-direction: column;
+}
