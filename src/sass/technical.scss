@@ -30,6 +30,7 @@ body {
     @include mixins.center-aligned;
     flex-direction: column;
     gap: 5%;
+    padding: 10% 5%;
     font-family: vars.$text-font;
     color: vars.$card-text;
     transition: 0.3s;
