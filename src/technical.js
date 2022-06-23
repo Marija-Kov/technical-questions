@@ -1,4 +1,3 @@
-//it should be ensured that a random card does not get drawn twice until the end of the deck
 const showAnswer = document.querySelector('.show-answer');
 const nextQuestion = document.querySelector(".next-random");
 const question = document.querySelector(".question");
@@ -7,11 +6,10 @@ const card = document.querySelector(".card");
 const remaining = document.querySelector(".remaining"); // 'Cards remaining: number'
 const reshuffle = document.querySelector(".reshuffle"); // 'START' and 'RESTART' button
 
-if(!localStorage.getItem('i')) // 'i' represents the number of randomly picked unique questions at and will be subtracted from data.length to calculate the remaining number of cards/questions. It will be set to 0 only if item 'i' isn't in the localStorage yet, i.e. only before the 'START' button is clicked.
+if(!localStorage.getItem('i')) // 'i' represents the number of randomly picked unique questions at and will be subtracted from data.length with every getRandomCard() call to calculate the remaining number of cards/questions. It will be set to 0 only if item 'i' isn't in the localStorage yet, i.e. only before the 'START' button is clicked.
 {
   localStorage.setItem('i', '0') 
 }
-
 
 
 if (localStorage.length > 1) {  // This condition makes sure that the practice session doesn't restart on refresh. It's '> 1' not '> 0' because there will always be at least one item ('i') in the localStorage.
@@ -64,11 +62,7 @@ async function getRandomQuestion() {
       localStorage.setItem('lastQ', `${randomQuestion.q}`); // makes sure the browser remembers the last picked question and answer in case of refreshing / closing and reopening the window.
       localStorage.setItem("lastA", `${randomQuestion.a}`);
       localStorage.setItem("i", `${(Number(localStorage.getItem('i')) + 1)}`);  // stores the new value (increments it by one) under the key 'i' that represents the number of picked cards 
-    // console.log(
-    //   `Item: ${randomQuestion.q} - number: ${asciiConverter(
-    //     localStorage.getItem(`${asciiConverter(randomQuestion.q)}`)
-    //   )} - is now inside local storage.`
-    // );
+
     question.innerText = `${randomQuestion.q}`; // ...gets the corresponding question and answer to be displayed on the card,
     answer.setAttribute('style', "height: 0");  // ..makes sure the answer remains hidden until manually revealed;
     answer.innerText = `${randomQuestion.a}`;

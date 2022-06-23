@@ -1,3 +1,7 @@
+@forward 'seeAll';
+@use 'mixins';
+@forward 'keyframes';
+
 $card-bkg-js: rgb(156, 224, 221);
 $card-bkg-css: rgb(224, 235, 195);
 $card-bkg-html: rgb(156, 224, 176);
@@ -30,32 +34,9 @@ $btn-text-color: rgb(128, 128, 128);
     
 }
 
-@keyframes blink {
-    0% {
-        border: solid 1px rgb(36, 36, 36);
-        color:rgb(36, 36, 36);
-    }
-    50% {
-         border: solid 1px white;
-         color:white;
-    }
-    100% {
-        border: solid 1px rgb(36, 36, 36);
-        color:rgb(36, 36, 36);
-    }
-    
-}
-
-@mixin center-aligned {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
 body {
     height: 100vh;
-    @include center-aligned;
+    @include mixins.center-aligned;
     flex-direction: column;
     gap: 5%;
     font-family: $text-font;
@@ -64,12 +45,7 @@ body {
     background: linear-gradient(340deg, rgba(61,150,185,1) 5%, rgba(0,251,255,1) 100%);
 }
 
-h2 {
-    background: $card-bkg-css;
-    padding: 1%;
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
-}
+
 
 .card {
 height: clamp(320px, 100vh, 500px);
@@ -79,7 +55,7 @@ background-image: url('/src/media/white-paper.jpg');
 background-size: 380%;
 border-radius: 1.5em;
 box-shadow: 0.3em 0.3em 0.2em rgba(36, 36, 36, 0.2);
-@include center-aligned;
+@include mixins.center-aligned;
 gap: 0.5em;
 flex-direction: column;
 
@@ -146,7 +122,4 @@ button {
     
 }
 
-img {
-    max-width: 200px;
-}
 

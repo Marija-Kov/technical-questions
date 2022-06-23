@@ -1,0 +1,15 @@
+@keyframes blink {
+    0% {
+        border: solid 1px rgb(36, 36, 36);
+        color:rgb(36, 36, 36);
+    }
+    50% {
+         border: solid 1px white;
+         color:white;
+    }
+    100% {
+        border: solid 1px rgb(36, 36, 36);
+        color:rgb(36, 36, 36);
+    }
+    
+}

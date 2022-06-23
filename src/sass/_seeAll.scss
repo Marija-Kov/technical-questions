@@ -1,0 +1,20 @@
+
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: monospace;
+    
+}
+
+.see-all {
+    padding: 2.5px 5px;
+    transition: 0.2s;
+    position: absolute;
+    top: 1%;
+    right: 15%;
+    &:hover {
+        color:rgb(36, 36, 36);
+        transition: 0.2s;
+    }
+}
