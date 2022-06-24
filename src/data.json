@@ -605,8 +605,8 @@
       },
       {
         "q": "What are pure functions?",
-        "a": "..",
-        "ex": "example",
+        "a": "Those that always return the same value, no console-logs, no mutable variables, no shared states.",
+        "ex": "function(a, b) { return a + b } is a simple pure function.",
         "category": "general"
       },
       {
@@ -616,20 +616,20 @@
         "category": "javascript"
       },
       {
-        "q": "Explain transpiling.",
+        "q": "Explain transpiling vs compiling.",
         "a": "Answer",
         "ex": "example",
         "category": "javascript"
       },
       {
         "q": "Explain compiling vs interpreting.",
-        "a": "Answer",
+        "a": "..",
         "ex": "example",
         "category": "general"
       },
       {
         "q": "Explain the difference between scripting and programming language.",
-        "a": "Al scripting langs are programming langs. Unlike other programming langs, scripting langs don't need to be compiled, but require interpretation (in html, by a browser). Non-scripting langs are compiled and don't need a separate program to run.",
+        "a": "All scripting langs are programming langs. Unlike other programming langs, scripting langs don't need to be compiled, but require interpretation (in html, by a browser). Non-scripting langs are compiled and don't need a separate program to run.",
         "ex": "example",
         "category": "general"
       },
