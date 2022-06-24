@@ -628,8 +628,20 @@
         "category": "general"
       },
       {
+        "q": "What does it mean for a language to execute its own source code at runtime?.",
+        "a": "..",
+        "ex": "example",
+        "category": "general"
+      },
+      {
+        "q": "What is runtime vs compile time?",
+        "a": "..",
+        "ex": "example",
+        "category": "general"
+      },
+      {
         "q": "Explain the difference between scripting and programming language.",
-        "a": "All scripting langs are programming langs. Unlike other programming langs, scripting langs don't need to be compiled, but require interpretation (in html, by a browser). Non-scripting langs are compiled and don't need a separate program to run.",
+        "a": "The latter is a more general term.",
         "ex": "example",
         "category": "general"
       },
@@ -649,13 +661,13 @@
         "q": "What is the difference between Object.freeze() and Object.seal()?",
         "a": "Both built-in JS methods, the former prevents the code inside an object from being deleted, added or modified in other ways while the latter prevents adding and deleting, but allows the values being changed ",
         "ex": "ex",
-        "category":"javascript"
+        "category": "javascript"
       },
       {
         "q": "What are polyfills?",
         "a": "Code that is implemented to make sure that apps/websites work well on different platforms. Without them, we would have to write different code for every browser so our app doesn’t break.",
         "ex": "Say that our website uses fetch, but we need to make it display properly in browsers that don’t have a built-in support for the fetch API. We either find or code a polyfill ourselves that we can reuse for other projects that require solving the same problem. ",
-        "category":"web"
+        "category": "web"
       }
     ]
 
