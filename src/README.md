@@ -18,4 +18,13 @@ https://github.com/h5bp/Front-end-Developer-Interview-Questions
 
 I could have just written this in a text format, but I find this format more motivating as I'll also end up having structured data that I could use for a flash card app.
 
+Each JSON object has 4 keys: 
+
+q - question
+a - answer
+ex - example that may contain more thorough explanation or a code snippet
+category** - general (general programming), web, html, css, javascript, data-structures.
+
+** Questions are superficially categorized primarily to enable more app functionality and some of them may belong to two or more categories.
+
 

@@ -3,376 +3,465 @@
       {
         "q": "What is a program?",
         "a": "A set of instructions to a computer written in code. It can be written in higher and lower level languages that a computer converts to binary before executing it",
-        "ex": "example"
+        "ex": "example",
+        "category": "general"
       },
 
       {
         "q": "What is a data structure? What are some basic types of data structures?",
         "a": "A tool/system for handling data. It allows us to store, organize, add, remove and retrieve data with specific methods. Linked lists, arrays, dictionaries and trees are the basic types.  ",
-        "ex": "example"
+        "ex": "example",
+        "category": "data-structures"
       },
       {
         "q": "What are linked lists?",
         "a": "A type of data structure composed out of nodes. Each node contains data and a reference to the node in front of it or both in the front and behind it. This data structure is memory-efficient and it's easy to add and remove nodes, but finding data can take time because every node has to be checked, head to tail.",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What are arrays?",
         "a": "A data structure that is indexed with numbers starting with 0. They enable quick access to data, as long as the index is known, but adding, removing and modifying can be time-consuming. In order to add a new item, a new, larger data stucture has to be created and all the data from the previous one copied with addition of new data. Same principle goes for removing data, it can't be just deleted from the data structure without leaving an empty spot reserved in memory, so if memory space is an issue, the time has to be taken to create a smaller array where the needed data will be copied.",
-        "ex": "example"
+        "ex": "example",
+        "category": "data-structures"
       },
       {
         "q": "What are dictionaries?",
         "a": "Data structures similar to arrays that use hashing to store items inside array. They make accessing data quick, if the key is known. They are used in circumstances when speed is prioritized at the cost of memory space as dictionaries are usually much larger than the size of data they contain.",
-        "ex": "example"
+        "ex": "example",
+        "category": "data-structures"
       },
       {
         "q": "What are trees?",
         "a": "Data structures that are composed of nodes where each node has a parent and/or child node. They are suitable in situations where there are hierarchical relations within data and therefore make it easy and fast to find a node knowing its ancestor(s). Usually, each node has two children.",
-        "ex": "Say we have a node 'bread' that has two nodes, 'regular' and 'whole-grain'. So when we're looking for whole grain wheat bread, we're looking only through (ideally) 50% of breads which implies that the search time is cut by 50% (can vary based on the number of children nodes)."
+        "ex": "Say we have a node 'bread' that has two nodes, 'regular' and 'whole-grain'. So when we're looking for whole grain wheat bread, we're looking only through (ideally) 50% of breads which implies that the search time is cut by 50% (can vary based on the number of children nodes).",
+        "category": "data-structures"
       },
       {
         "q": "What is hashing?",
         "a": "A way of creating an association between a key and a corresponding value in a data structure. This function uses ASCII code chart to convert string into number which is then divided by array length and the resulting number is the index of the place where the corresponding value is stored.  ",
-        "ex": "example"
+        "ex": "example",
+        "category": "data-structures"
       },
       {
         "q": "What are collisions in data structures and what ways are there to resolve them?",
         "a": "They occur when multiple values are assigned to one array index. One way to deal with this is to get the data to occupy the first empty spot in the array checking left to right. That means that when we search for the said data, the search will start at the index to which the data was assigned first (but that was already occupied) and then proceed checking each next index until it finds the value. Another way of dealing with this is creating a linked list of items at each array index that is assigned more than one value. Additional function can be added to prevent cluttering (poor, uneven distribution of data throughout the array).",
-        "ex": "example"
+        "ex": "example",
+        "category": "data-structures"
       },
       {
         "q": "What is double-hashing?",
         "a": "A way of preventing collision and cluttering of data by using another function after initial hashing that will end up in more even distribution of data and shorten search time.",
-        "ex": "example"
+        "ex": "example",
+        "category": "data-structures"
       },
 
       {
         "q": "What is IDE?",
         "a": "Integrated developer environment. It is a source-code editor that facilitates writing code with integrated functionalities such as autocomplete, syntax highlighting, debugging, compiling, interpreting, build automation",
-        "ex": "VS code, Atom.."
+        "ex": "VS code, Atom..",
+        "category": "general"
       },
 
       {
         "q": "What does HTTP(S) stand for?",
         "a": "Stands for hypertext transport protocol that is sometimes secure. For security, it uses secure socket layer (SSL) encryption",
-        "ex": "example"
+        "ex": "example",
+        "category": "web"
       },
       {
         "q": "What is hypertext?",
         "a": "Extended text - documents that contain references-links to other documents that are commonly accessed by mouse click. A key underlying concept of WWW.",
-        "ex": "Any web page that contains links to other pages that contain links to other pages (including the formerly mentioned web page)"
+        "ex": "Any web page that contains links to other pages that contain links to other pages (including the formerly mentioned web page)",
+        "category": "web"
       },
       {
         "q": "What is the difference between URI, URL and URN?",
         "a": "The first stands for uniform resource identifier, the second for location and the third for name",
-        "ex": "ex"
+        "ex": "ex",
+        "category": "web"
       },
       {
         "q": "What is the difference between web1 and web2?",
         "a": "The former is read-only. The latter allows interactions like commenting or uploading any content online.",
-        "ex": "example"
+        "ex": "example",
+        "category": "web"
       },
       {
         "q": "What is local storage?",
         "a": "It enables the application to ‘remember’ the user’s actions so that when the page is refreshed or closed and reopened, the user doesn’t have to start the task all over. The data is stored on the user’s device (hard drive, more specifically a portion of the memory that the browser takes up on the hard drive) rather than the app’s database.",
-        "ex": "example"
+        "ex": "example",
+        "category": "web"
       },
       {
         "q": "What is session storage?",
         "a": "It is gone once the page is closed or refreshed, meaning the user would have to start the task all over. ",
-        "ex": "example"
+        "ex": "example",
+        "category": "web"
       },
 
       {
         "q": "What is AJAX?",
         "a": "Stands for asynchronous javascript and XML (or any other transferrable format, like JSON). It's nothing tangible, it describes a practice of file transfer using multiple technologies together.",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What is XML?",
         "a": "Stands for extensible markup language. It's a format developed to enable quicker and simpler data transfer and use across platforms. It's supported by most programming languages and requires a special converter for that purpose (unlike JSON, that can be converted by writing a common JS function). It contains custom tags that are used for organizing data in a readable way. ",
-        "ex": "example"
+        "ex": "example",
+        "category": "web"
       },
       {
         "q": "What is DTD?",
         "a": "Stands for document type declaration. It is written at the top of source code file and tells the browser what type of 'building blocks' to expect.",
-        "ex": "example"
+        "ex": "example",
+        "category": "web"
       },
       {
         "q": "What is DOCTYPE?",
         "a": "It's what is written at the top of SGML file so that browsers can interpret it correctly.",
-        "ex": "example"
+        "ex": "example",
+        "category": "web"
       },
       {
         "q": "What are html tags? Name as many as you can remember and describe what each of them does.",
         "a": "They are building blocks of an html page. <head> containing <meta> and <link> that contain information about the website/app that is invisible to the user but relevant to browsers and search engines. Then <body> that contains all the elements of the webpage that user is supposed to see: <header>, <main>, <footer>, <nav>, <div>, <section>, <p>, <anchor>, <li>, <img>, <picture>, <video>, <form>, <table>, <summary>, <article>, <details>… They can be semantic and non-semantic, block and inline and some of them even have built-in functionality",
-        "ex": "example"
+        "ex": "example",
+        "category": "html"
       },
 
       {
         "q": "What is the difference between a <span> and <p> element?",
         "a": "The former is inline while the latter is block type element",
-        "ex": "example"
+        "ex": "example",
+        "category": "html"
       },
       {
         "q": "What is metadata?",
         "a": "It’s the behind-the-scenes data that contains information about the website that is read by the browser and search engines. It is relevant to how the website shows in search results. It is located in the <head> of the html file",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "How do you make a multilingual website?",
         "a": "One way to do this is to pre-write a JSON file with the content in multiple languages where each language content would be added to the html dynamically using javascript function and event listener. Multi-language content could also be written statically in hidden elements that would be set to visible with JS event listeners.",
-        "ex": "example"
+        "ex": "example",
+        "category": "html"
       },
       {
         "q": "You probably hear about HTML5 a lot. What's so special about it?",
         "a": "answer",
-        "ex": "example"
+        "ex": "example",
+        "category": "html"
       },
       {
         "q": "What does progressive rendering mean?",
         "a": "It means that, upon the page being opened, the server sends content in chunks (ideally higher priority content first) rather than sending the page only after rendering the whole thing. Overall, this type of rendering results in faster page load and is more favourable than its alternatives. ",
-        "ex": "Lazy loading."
+        "ex": "Lazy loading.",
+        "category": "web"
       },
 
       {
         "q": "What are templating languages?",
         "a": "They have their own syntax that more or less resembles the one of a markup language like html, but are supposed to simplify and speed up the process of writing code.",
-        "ex": "Jade, .."
+        "ex": "Jade, ..",
+        "category": "web"
       },
       {
         "q": "Can you name any html tags that have built-in special features?",
         "a": "Input tag with type attribute set to date shows a calendar...video tag allows playing and pausing the video",
-        "ex": "example"
+        "ex": "example",
+        "category": "html"
       },
       {
         "q": "When handling image files, what options/features does html offer?",
         "a": "A self-closing <img> tag, <picture> </picture> tag that can contain multiple img-s to be displayed conditionally (srcset attribute.",
-        "ex": "example"
+        "ex": "example",
+        "category": "html"
       },
       {
         "q": "When handling video files, what options/features does html offer?",
         "a": "answer",
-        "ex": "example"
+        "ex": "example",
+        "category": "html"
       },
       {
         "q": "What is srcset? How does it differ from src?",
         "a": "It's an attribute that applies itself to an element (tells the browser to use the url) only under certain conditions, unlike src that uses the provided url value in all circumstances.",
-        "ex": "Picture elements contain img elements with srcset attributes that will be displayed with the corresponding window size. A fallback img element (with a src attribute) should be provided as well."
+        "ex": "Picture elements contain img elements with srcset attributes that will be displayed with the corresponding window size. A fallback img element (with a src attribute) should be provided as well.",
+        "category": "html"
       },
       {
         "q": "What are data attributes? ",
         "a": "They provide the browser with additional information about the data that it has to display - like how to present the data(style) or where to get it from (src)",
-        "ex": "example"
+        "ex": "example",
+        "category": "html"
       },
       {
         "q": "When handling image files, what options does html offer?",
         "a": "A picture element containing multiple img files that would be diplayed only if the window is the certain size (like lower resolution images for mobile devices)",
-        "ex": "example"
+        "ex": "example",
+        "category": "html"
       },
       {
         "q": "What does CSS stand for?",
         "a": "Cascading Style Sheets. It means that the code can be overwritten by the code below it depending on its specificity.",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "What is specificity in CSS and how does it work? How do you calculate specificity score?",
         "a": "It is determined by the number of selectors, individual score of a selector(.class, #id, [attr=''], tag etc) and the position in the stylesheet file.",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "What are CSS selectors? How does the browser read them and why?",
         "a": "They represent the first part of the CSS rule (before the curly braces). The browser reads them bottom to top / right to left / child to parent which ensures iteration through as few elements as possible to get the selected element.",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "What is 'float' in CSS and how does it work?",
         "a": "It's a CSS property used to create a responsive layout. ",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
+      },
+      {
+        "q": "What are floats?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "general"
       },
       {
         "q": "Why would you reset CSS?",
         "a": "You would do that to strip the page of all default styling before adding your own.",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "Why would you normalize CSS?",
         "a": "You would do that to eliminate, but also preserve some default styling (like headings)",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "What are CSS sprites?",
         "a": "Images that are consisted of multiple smaller images (usually icons) that substitute multiple image files. Instead of spending time and bandwidth on loading multiple image files, we can use sprites and write a couple of lines of code that will display adequate parts of the same image.",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "What is the difference between inline, block and inline-block?",
         "a": "They are values of the display element property. The last has access to features of both the other two. The first means that the element to which it's assigned (by default or otherwise) takes up only the amount of space that the content requires while the second takes up the whole width of the page.",
-        "ex": "Any element's default display property can be changed manually regardless of what's default for that element."
+        "ex": "Any element's default display property can be changed manually regardless of what's default for that element.",
+        "category": "css"
       },
       {
         "q": "What are custom CSS properties?",
         "a": "answer",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "What are some conventions for writing DRY CSS?",
         "a": "answer",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "What are web design comps?",
         "a": "It stands for a comprehensive version of design like the one you would present to the client before really elaborating on the project.",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "What is grid good for?",
         "a": "It's a good way to create a responsive, two-dimensional layout. Flexbox can do only row or column at a time.",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "What is flexbox? What can you do with it?",
         "a": "It's a way to create a one-dimensional responsive layout by setting the display property to it.",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "When is grid more convenient than flexbox and vice versa?",
         "a": "The former is useful when we need to create more complex responsive layouts and want to avoid excessive wrapper elements/nesting in the DOM. For simple responsive layouts, the former is just enough.",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "What are CSS variables?",
         "a": "Much like in programming languages, they are used to store values - the ones that CSS can understand. Then, they can be used instead of bare values with properties, while making it easy to change those values later if needed. They are ideally defined at the top of the CSS file so we can access them quickly and restyle multiple elements at the same time. SASS has its own version with simpler syntax.",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "What are media queries? What types of media queries are there?",
         "a": "answer",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "What are rem and em? When and why would you use them?",
         "a": "They are non-fixed measuring units in CSS (unlike px). They let the size of an element change relative to parent or root elements.",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "What is a responsive layout?",
         "a": "The one that looks pleasing on all devices/viewport sizes. I.e. the one that responds to user's needs regardless what device they're using.",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "What are CSS frameworks? How helpful are they and are there any disadvantages?",
-        "a": "answer",
-        "ex": "example"
+        "a": "They are software that's supposed to make building large-scale projects simpler and faster. The downside is that they change pretty often - new rules added, old ones deprecated so the projects built with them need more maintenance.",
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "What are CSS preprocessors?",
         "a": "They are basically extensions of CSS. They are built to make writing CSS simpler and enable using of conditional logic in CSS and nesting. Also they automatically take care of the browser support issues for some CSS properties.  ",
-        "ex": "SASS, LESS"
+        "ex": "SASS, LESS",
+        "category": "css"
       },
       {
         "q": "Is there any way to make layouts look good on ALL browsers and ALL devices?",
         "a": "To do this, you can use CSS media queries. There is a variety of things that can be done to make the process simpler - like use %, rem, em instead pixels. You can also use clamp.",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "What is z-index? Describe situations when it's most useful to specify z-index.",
         "a": "Property that allows stacking of elements. The default value is 0 and the higher the index, the closer to the top of the stack the element will be. It can be used to hide some elements or, more importantly, to make sure nothing gets in the way of elements like navigation, hamburger menu button or modules - any content that's supposed to appear on top of the rest of the content will have high number value of this property.",
-        "ex": "example"
+        "ex": "example",
+        "category": "css"
       },
       {
         "q": "What does SVG stand for? What are the cases for the use of SVG in styling?",
         "a": "Scalable vector graphics (a bit excessive with the S as vectors are implicitly scalable). They are practical as they provide consistent graphic quality and they are way lighter than other image files as they are basically code. When we implement them, we copy-paste code in our markup file. ",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What is accessibility? What are ways to make the page's content accessible without compromising visual appeal of the page?",
         "a": "answer",
-        "ex": "example"
+        "ex": "example",
+        "category": "web"
       },
       {
         "q": "What are object prototypes?",
         "a": "They are properties - objects - that refer to objects' 'ancestry'. Every object has a prototype, unless it's in the beginning of a prototype chain, in which case it returns null. It contains the properties that are not stated in the child-object. So when we tell JS to find a property in an object and it can't find the property in the object itself, it goes up the prototype chain to check for it. This is closely related to the concept of inheritance.",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What is an object constructor?",
-        "a": "It's a type of objects that is used to create instances of itself or other constructors."
+        "a": "It's a type of objects that is used to create instances of itself or other constructors.",
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "Explain inheritance in OOP.",
-        "a": "It means that a child object has access to parent object's properties/methods that don'have to be explicitly stated in the child object itself. "
+        "a": "It means that a child object has access to parent object's properties/methods that don'have to be explicitly stated in the child object itself. ",
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What are subroutines?",
-        "a": "It's a different name for functions, which are blocks of code that instruct a computer to do something."
+        "a": "It's a different name for functions, which are blocks of code that instruct a computer to do something.",
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "Name and explain data types in JS.",
-        "a": "Generally speaking they can be primitives (number, boolean, string etc.) and they can be objects (that contain primitives and other objects - methods). Primitives are immutable, while objects have some aspects that are mutable."
+        "a": "Generally speaking they can be primitives (number, boolean, string etc.) and they can be objects (that contain primitives and other objects - methods). Primitives are immutable, while objects have some aspects that are mutable.",
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What are wrapper functions? How do you wrap code in a function?",
-        "a": "They are used to enclose code and limit access to it on a global level i.e. limit the scope of variables and functions."
+        "a": "They are used to enclose code and limit access to it on a global level i.e. limit the scope of variables and functions.",
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What are events? What does it mean for an event to propagate?",
         "a": "Everything that happens as a consequence of the user interacting with the software",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What are errors?",
-        "a": "Objects that are returned when something goes wrong in our code, be it syntax, type, reference issue etc. Although most consoles have a built-in way to handle these objects, it's always better to write code to deal with it manually. This type of object is returned by .catch() method."
+        "a": "Objects that are returned when something goes wrong in our code, be it syntax, type, reference issue etc. Although most consoles have a built-in way to handle these objects, it's always better to write code to deal with it manually. This type of object is returned by .catch() method.",
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "Name types of notation, demonstrate the use.",
-        "a": "In javascript, there is dot, square bracket and object (and maybe some others that I don't know of yet). Dot is used to get properties, square for getting array items by index and using names that contain more than one string ['multi string']. {} in object literals, for javascript in template literals and in JSON "
+        "a": "In javascript, there is dot, square bracket and object (and maybe some others that I don't know of yet). Dot is used to get properties, square for getting array items by index and using names that contain more than one string ['multi string']. {} in object literals, for javascript in template literals and in JSON ",
+        "ex": "example",
+        "category": "javascript"
       },
       {
-        "q": "What is binding? When and why is it used?",
-        "a": "When a method of an object is stored in a new variable, it loses track of its original context, meaning that if it's called using the variable, it will return undefined. That's where the method in question jumps in and gives back the original context. The name of the object represents the context and is passed to the method as an argument."
+        "q": "What is binding in JS? When and why is it used?",
+        "a": "When a method of an object is stored in a new variable, it loses track of its original context, meaning that if it's called using the variable, it will return undefined. That's where the method in question jumps in and gives back the original context. The name of the object represents the context and is passed to the method as an argument.",
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What is API?",
         "a": "Stands for application programming interface and is a type of online resource for building software. They come with documentation that instructs us how to use them.",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "Name and explain main characteristics of javascript. What is javascript used for?",
-        "a": "answer",
-        "ex": "example"
+        "a": "Multi-paradigm (supports OOP, functional and procedural programming), high-level (closer to human language), loosely typed (types of variables don't have to be specified), multi-purpose, case-sensitive, scripting language (is not compiled, uses other software to be interpreted), ",
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What is ECMAScript?",
         "a": "An object-oriented programming language, serves as a standard for scripting languages like javascript.",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What are methods?",
-        "a": "Functions stored as properties in an object. Some of them are built-in and are called with dot notation and parentheses.",
-        "ex": "example"
+        "a": "Functions stored as object's properties. Some of them are built-in and are called with dot notation and parentheses.",
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "Define arguments. How do they differ from parameters?",
         "a": "The latter is what goes in the function parenthesies and announces that a function takes in values and, ideally, suggests the types of values that it takes in. The former is the term for the actual value that is passed to the function when the function is called for.",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What are constructor functions?",
         "a": "They represent a basis - define parameters - for creating instances of themselves using the 'new' keyword.",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
 
       {
         "q": "What are classes in javascript?",
         "a": "Syntactical sugar to constructor functions denoting properties and methods that would be inherited by its instances. They can be extended and be extensions of others of their kind.",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What are generator functions?",
         "a": "They are used to extract properties from objects. They have '*' and use 'yield' keyword.",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "Explain polymorphism.",
@@ -387,17 +476,20 @@
       {
         "q": "What are frameworks?",
         "a": "Basically code libraries that are supposed to make writing software easier and faster.",
-        "ex": "example"
+        "ex": "",
+        "category": "general"
       },
       {
         "q": "Operators in javascript.",
         "a": "+, -, *, **(exponentiation), =/+=/-=(assignment), ===(strict equality), !(bang - not), %(modulus), &&(returns true only if all statements are truthy), ||(returns the first truthy statement)",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What is destructuring? What can we destructure in javascript and how?",
         "a": "It's a way to 'extract' value from objects.",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What is cloning in javascript? What types of cloning are there?",
@@ -407,22 +499,26 @@
       {
         "q": "Define attributes and properties in javascript? How do they differ?",
         "a": "The former can be set up on an element in HTML. The latter are built-in to objects and some of them can reflect the former or be otherwise related to them and also can be used to retreive them.",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What are enumerable properties in javascript?",
         "a": "Properties with the corresponding attribute set to true, those that can be looped through.",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What is the difference between assignment and initialization?",
         "a": "Concerning object properties, both are ways to add properties to an object. The former is a simple operation that is done outside an object with dot notation (object.prop = 'value'). The latter is done inside an object in the key : value form ",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What are arrow functions?",
-        "a": "They are anonymous and they don't bind 'this' keyword themselves, but inherit the context from a parent function.",
-        "ex": "example"
+        "a": "They are anonymous f()s and they don't bind 'this' keyword themselves, but inherit the context from a parent function.",
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What are keywords in javascript?",
@@ -432,107 +528,134 @@
       {
         "q": "What are object literals?",
         "a": "They consist of key:value pairs and/or functions wrapped with curly braces. The second word in the name refers to the fact that it's all written down as it is i.e. you will use the key as typed to get the paired value as typed.",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What is the difference between var, let and const?",
         "a": "The first is hoisted, the second and the third aren't. The second can be redeclared, the third can't.",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What is hoisting?",
         "a": "It enables the use of a variable (var) above the point where it was defined in a document. It may be a problem so 'var' is beig phased out in favour of 'let' and 'const'",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "Explain encapsulation.",
         "a": "It's a method of keeping data hidden/secure. It enables abstraction.",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What is JSON?",
         "a": "Javascript object notation. It consists of string-only, comma-separated  key : value  pairs organized in array and object-like structures that can be nested. It is lightweight and therefore convenient for fast transfer of data. It is supported by the majority of programming languages. ",
-        "ex": "ex"
+        "ex": "ex",
+        "category": "javascript"
       },
       {
         "q": "What is a loosely typed language?",
         "a": "Means that the type of variable doesn't have to be declared. Javascript and python are examples.",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What is the difference between clientX, pageX, screenX and offsetX?",
         "a": "They all refer to the X-axis point of event-firing relative to a different starting point (left edge of display, browser window, element that has the event listener).",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "Explain (im)mutability in JS.",
         "a": "Refers to the fact that some types can't be altered in javascript. Like the string will always be a string and same goes for all primitive types (numbers, booleans, undefined, null). Object properties can be changed/added/deleted and some types of variables can be reassigned different values. Whenever a method is applied to an array, a new array is created. This characteristic, of course, reflects in variables that point to the said value types. Immutability is the principle in functional programming, as mutability is in OOP. ",
-        "ex": "Strings can't be altered, object property values can."
+        "ex": "Strings can't be altered, object property values can.",
+        "category": "javascript"
       },
       {
         "q": "What are (dis)advantages of (im)mutability?",
         "a": "Immutability principle ensures consistency and easy maintenance/debugging, but makes it hard to write more complex programs and stand by the immutability principle. Mutability allows more complexity that comes at the cost of maintainability. ",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What is a shared state?",
         "a": "It's a value that other values in multiple different objects depend on",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What is recursion? How does it differ from for loops? Are there any specific use cases for one or another?",
         "a": "It's when a function makes a call to itself",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What is a first class function?",
         "a": "Answer",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What are higher order functions?",
         "a": "Functions that return functions",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
+      },
+      {
+        "q": "What are pure functions?",
+        "a": "..",
+        "ex": "example",
+        "category": "general"
       },
       {
         "q": "What is strict mode?",
         "a": "In javascript, it disallows things that are allowed in 'normal' mode. It's more eager in catching errors and forbids new(-ish) JS features ensuring cross-platform support.",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "Explain transpiling.",
         "a": "Answer",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "Explain compiling vs interpreting.",
         "a": "Answer",
-        "ex": "example"
+        "ex": "example",
+        "category": "general"
       },
       {
         "q": "Explain the difference between scripting and programming language.",
         "a": "Al scripting langs are programming langs. Unlike other programming langs, scripting langs don't need to be compiled, but require interpretation (in html, by a browser). Non-scripting langs are compiled and don't need a separate program to run.",
-        "ex": "example"
+        "ex": "example",
+        "category": "general"
       },
       {
         "q": "Can you give an example where a scripting language automates tasks in a program?",
         "a": "Answer",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "Can you explain some situations where two programming paradigms combined can 'collide'? Can you use an example of OOP and functional programming? ",
         "a": "First define what is it that sets the two programming paradigms apart. Is there anything typical for one that would be unfavourable for another?",
-        "ex": "example"
+        "ex": "example",
+        "category": "javascript"
       },
       {
         "q": "What is the difference between Object.freeze() and Object.seal()?",
         "a": "Both built-in JS methods, the former prevents the code inside an object from being deleted, added or modified in other ways while the latter prevents adding and deleting, but allows the values being changed ",
-        "ex": "ex"
+        "ex": "ex",
+        "category":"javascript"
       },
       {
         "q": "What are polyfills?",
         "a": "Code that is implemented to make sure that apps/websites work well on different platforms. Without them, we would have to write different code for every browser so our app doesn’t break.",
-        "ex": "Say that our website uses fetch, but we need to make it display properly in browsers that don’t have a built-in support for the fetch API. We either find or code a polyfill ourselves that we can reuse for other projects that require solving the same problem. "
+        "ex": "Say that our website uses fetch, but we need to make it display properly in browsers that don’t have a built-in support for the fetch API. We either find or code a polyfill ourselves that we can reuse for other projects that require solving the same problem. ",
+        "category":"web"
       }
     ]
 

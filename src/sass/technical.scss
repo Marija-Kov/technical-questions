@@ -113,8 +113,19 @@ button {
     
 }
 
-footer {
-    display: none
+.attribution {
+    font-size: 0.5em;
+    color: vars.$dark-txt;
+    top: 2%;
+    left: 2%;
+    position: absolute;
 }
-
+#mk {
+    color: vars.$dark-txt;
+    background: peachpuff;
+    padding: 0 2px;
+    &:hover {
+       background: plum;
+    }
+}
 
