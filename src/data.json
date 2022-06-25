@@ -466,17 +466,20 @@
       {
         "q": "Explain polymorphism.",
         "a": "It refers to the capacity of code to work for different objects - to be reusable.",
-        "ex": "A method given to a class will be accessible to all instances of the said class’ extensions (and their extensions) "
+        "ex": "A method given to a class will be accessible to all instances of the said class’ extensions (and their extensions) ",
+        "category":"javascript"
+
       },
       {
         "q": "What is abstraction and why is it important?",
         "a": "When we assign an object to an identifier, we create one of those. It's important so we don't have to waste our time rewriting the whole object every time we want to use it for something.",
-        "ex": "Bread is water, flour, yeast and salt mixed together, kneaded, proofed, baked and sliced, but we don't say 'excuse me, where can I find flour and water with a bit of yeast and salt kneaded together..' you get the hint."
+        "ex": "Bread is water, flour, yeast and salt mixed together, kneaded, proofed, baked and sliced, but we don't say 'excuse me, where can I find flour and water with a bit of yeast and salt kneaded together..' you get the hint.",
+        "category": "javascript"
       },
       {
         "q": "What are frameworks?",
         "a": "Basically code libraries that are supposed to make writing software easier and faster.",
-        "ex": "",
+        "ex": "Javascript frameworks: jQuery, React, Angular, Vue, Svelte.. CSS frameworks: Tailwind, Bootstrap, Bulma, Skeleton, Lotus..  ",
         "category": "general"
       },
       {
@@ -517,6 +520,12 @@
       {
         "q": "What are arrow functions?",
         "a": "They are anonymous f()s and they don't bind 'this' keyword themselves, but inherit the context from a parent function.",
+        "ex": "example",
+        "category": "javascript"
+      },
+      {
+        "q": "What is a difference between an object and an object literal?",
+        "a": "answer",
         "ex": "example",
         "category": "javascript"
       },
@@ -580,6 +589,12 @@
         "category": "javascript"
       },
       {
+        "q": "What is namespace?",
+        "a": "answer",
+        "ex": "example",
+        "category": "general"
+      },
+      {
         "q": "What is a shared state?",
         "a": "It's a value that other values in multiple different objects depend on",
         "ex": "example",
@@ -617,7 +632,7 @@
       },
       {
         "q": "Explain transpiling vs compiling.",
-        "a": "Answer",
+        "a": "The latter is the process of converting code written in programming language to code that a computer can understand. The former os converting a more recent version of a language to its less recent version so it's readable to platforms that are not compatible with new features of a language.",
         "ex": "example",
         "category": "javascript"
       },

@@ -25,6 +25,13 @@ a - answer
 ex - example that may contain more thorough explanation or a code snippet
 category** - general (general programming), web, html, css, javascript, data-structures.
 
+      {
+        "q": "question",
+        "a": "answer",
+        "ex": "example",
+        "category": "cat"
+      }
+
 ** Questions are superficially categorized primarily to enable more flash card app functionality and some of them may belong to two or more categories.
 
 

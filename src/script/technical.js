@@ -103,7 +103,6 @@ function showLast() {  // This function ensures that....
 }
 
 
-
 // fetch WORKS in the browser console with the live SERVER - I get the data as I wanted it. 
 //HOWEVER, in the VS integrated terminal, it first requires fetch to be installed (npm init -y ; npm install node-fetch ; add "type":"module" to package.json ; import fetch from "node-fetch" in the js file where fetch is being used -- this works perfectly for online API data, but not for local json file)
 //after fetch has been installed and implemented, it throws TypeError [ERR_INVALID_URL]: Invalid URL.....  input: 'data.json', code: 'ERR_INVALID_URL'

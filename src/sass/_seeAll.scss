@@ -11,10 +11,25 @@ a {
     padding: 2.5px 5px;
     transition: 0.2s;
     position: absolute;
-    top: 1%;
-    right: 15%;
+    top: 5%;
+    &::after {
+        position: absolute;
+        top: 150%;
+        left: 45%;
+        margin: 0 auto;
+        content: "";
+        width: 20px;
+        border-bottom: solid 3px white;
+        transition: 0.2s;
+    }
     &:hover {
         color:rgb(36, 36, 36);
         transition: 0.2s;
+        &::after {
+            top: 100%;
+            width: 100%;
+            left: 0;
+            border-bottom: solid 1px white;
+        }
     }
 }

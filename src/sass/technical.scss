@@ -47,12 +47,6 @@ body {
 
 }
 
-.card-stack {
-@include mixins.card-style;
-@include mixins.center-aligned;
-border: solid 1px gray;
-}
-
 button {
     background: transparent;
     box-shadow: inset 7px 0px 10px 0px rgba(128, 128, 128, 0.3);
