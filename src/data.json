@@ -468,7 +468,6 @@
         "a": "It refers to the capacity of code to work for different objects - to be reusable.",
         "ex": "A method given to a class will be accessible to all instances of the said class’ extensions (and their extensions) ",
         "category":"javascript"
-
       },
       {
         "q": "What is abstraction and why is it important?",
@@ -590,8 +589,8 @@
       },
       {
         "q": "What is namespace?",
-        "a": "answer",
-        "ex": "example",
+        "a": "It is a reference to an object. It has a hierarchical structure and defines a scope which enables the reuse of same name in multiple different structures.",
+        "ex": "File systems  Folder1/text.txt  and  Folder2/text.txt  would be a simple example of two namespaces that each have a file with the same name.",
         "category": "general"
       },
       {
