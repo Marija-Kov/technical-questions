@@ -608,13 +608,13 @@
       },
       {
         "q": "What is a first class function?",
-        "a": "Answer",
+        "a": "It's the thing in functional programming. It's closely related to higher order functions.",
         "ex": "example",
         "category": "javascript"
       },
       {
         "q": "What are higher order functions?",
-        "a": "Functions that return functions",
+        "a": "Functions that return functions and/or use other functions as arguments",
         "ex": "example",
         "category": "javascript"
       },
@@ -638,31 +638,31 @@
       },
       {
         "q": "Explain compiling vs interpreting.",
-        "a": "..",
+        "a": "Scripting languages require the latter, while the former is for non-scripting, lower-level languages.",
         "ex": "example",
         "category": "general"
       },
       {
         "q": "What does it mean for a language to execute its own source code at runtime?.",
-        "a": "..",
+        "a": "Means it doesn't need a separate software to do it, duh. And some other stuff.",
         "ex": "example",
         "category": "general"
       },
       {
         "q": "What is runtime vs compile time?",
-        "a": "..",
+        "a": "The former refers to when the program is running, while the latter is when the code is being converted to low-level code that the machine can understand.",
         "ex": "example",
         "category": "general"
       },
       {
         "q": "Explain the difference between scripting and programming language.",
-        "a": "The latter is a more general term.",
+        "a": "The latter is a more general term. The former can be referred by the latter, but not vice versa. The difference is in whether they are compiled or interpreted.",
         "ex": "example",
         "category": "general"
       },
       {
         "q": "Can you give an example where a scripting language automates tasks in a program?",
-        "a": "Answer",
+        "a": "..",
         "ex": "example",
         "category": "javascript"
       },
