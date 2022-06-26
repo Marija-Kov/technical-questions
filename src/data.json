@@ -355,6 +355,18 @@
         "category": "web"
       },
       {
+        "q": "What is a queue?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "general"
+      },
+      {
+        "q": "What is a stack?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "general"
+      },
+      {
         "q": "What are object prototypes?",
         "a": "They are properties - objects - that refer to objects' 'ancestry'. Every object has a prototype, unless it's in the beginning of a prototype chain, in which case it returns null. It contains the properties that are not stated in the child-object. So when we tell JS to find a property in an object and it can't find the property in the object itself, it goes up the prototype chain to check for it. This is closely related to the concept of inheritance.",
         "ex": "example",
@@ -398,7 +410,7 @@
       },
       {
         "q": "What are errors?",
-        "a": "Objects that are returned when something goes wrong in our code, be it syntax, type, reference issue etc. Although most consoles have a built-in way to handle these objects, it's always better to write code to deal with it manually. This type of object is returned by .catch() method.",
+        "a": "Objects that are returned when something goes wrong in our code, be it compile time (syntax, type, reference) or runtime issue. Although most consoles have a built-in way to handle these objects, it's always better to write code to deal with it manually. This type of object is returned by .catch() method.",
         "ex": "example",
         "category": "javascript"
       },
@@ -407,6 +419,24 @@
         "a": "In javascript, there is dot, square bracket and object (and maybe some others that I don't know of yet). Dot is used to get properties, square for getting array items by index and using names that contain more than one string ['multi string']. {} in object literals, for javascript in template literals and in JSON ",
         "ex": "example",
         "category": "javascript"
+      },
+      {
+        "q": "What is the difference between host and native objects?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "javascript"
+      },
+      {
+        "q": "What's the difference between .call and .apply?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "javascript"
+      },
+      {
+        "q": "What's the difference between feature detection/inference and using the UA string?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "general"
       },
       {
         "q": "What is binding in JS? When and why is it used?",
@@ -467,7 +497,7 @@
         "q": "Explain polymorphism.",
         "a": "It refers to the capacity of code to work for different objects - to be reusable.",
         "ex": "A method given to a class will be accessible to all instances of the said class’ extensions (and their extensions) ",
-        "category":"javascript"
+        "category": "javascript"
       },
       {
         "q": "What is abstraction and why is it important?",
@@ -496,7 +526,8 @@
       {
         "q": "What is cloning in javascript? What types of cloning are there?",
         "a": "It’s simply creating a more or less identical copy of an object. It can be shallow and deep. The deep variant can only effectively be used for JSON objects. If an object contains a method, it won’t be copied.",
-        "e": "Object.assign({}, obj), where 'obj' is the one being copied creates a shallow copy. JSON.parse(JSON.stringify(obj)) will create a deep copy of a JSON file. There is almost no practical use for copying an object."
+        "ex": "Object.assign({}, obj), where 'obj' is the one being copied creates a shallow copy. JSON.parse(JSON.stringify(obj)) will create a deep copy of a JSON file. There is almost no practical use for copying an object.",
+        "category": "javascript"
       },
       {
         "q": "Define attributes and properties in javascript? How do they differ?",
@@ -529,9 +560,76 @@
         "category": "javascript"
       },
       {
+        "q": "Why would you extend a built-in javascript object?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "javascript"
+      },
+      {
+        "q": "Explain the difference between function Person(){}, let person = Person(), and let person = new Person().",
+        "a": "The first one is a constructor function, the second one is a creating a variable pointing to the constructor, and the last one is a variable pointing to an instance of the constructor. ",
+        "ex": "example",
+        "category": "javascript"
+      },
+      {
+        "q": "DOMContentLoaded vs. document.load?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "javascript"
+      },
+      {
+        "q": "What are some libraries for javascript templating?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "general"
+      },
+      {
+        "q": "Are there any disadvantages to using Ajax?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "javascript"
+      },
+      {
+        "q": "Why would you change the global scope of a website?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "javascript"
+      },
+      {
+        "q": "What can load events do? Are there any better alternatives?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "javascript"
+      },
+      {
+        "q": "What does SEO-friendly mean?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "web"
+      },
+      {
+        "q": "What is a ternary expression?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "javascript"
+      },
+      {
+        "q": "Explain same-origin policy with regards to javascript.",
+        "a": "answer ",
+        "ex": "example",
+        "category": "javascript"
+      },
+      {
+        "q": "When would you use document.write()?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "javascript"
+      },
+      {
         "q": "What are keywords in javascript?",
         "a": "Those that have special use in javascript and can't be used as identifiers.",
-        "ex": "if, const, finally, interface, void, goto"
+        "ex": "if, const, finally, interface, void, goto",
+        "category": "javascript"
       },
       {
         "q": "What are object literals?",
@@ -682,6 +780,18 @@
         "a": "Code that is implemented to make sure that apps/websites work well on different platforms. Without them, we would have to write different code for every browser so our app doesn’t break.",
         "ex": "Say that our website uses fetch, but we need to make it display properly in browsers that don’t have a built-in support for the fetch API. We either find or code a polyfill ourselves that we can reuse for other projects that require solving the same problem. ",
         "category": "web"
+      },
+      {
+        "q": "What are some features in javascript that might require the use of polyfills?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "javascript"
+      },
+      {
+        "q": "What is a single-page app?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "general"
       }
     ]
 
