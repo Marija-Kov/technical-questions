@@ -58,14 +58,14 @@
 
       {
         "q": "What is IDE?",
-        "a": "Integrated developer environment. It is a source-code editor that facilitates writing code with integrated functionalities such as autocomplete, syntax highlighting, debugging, compiling, interpreting, build automation",
+        "a": "Integrated developer environment. It is a source-code (text) editor that facilitates writing code with integrated functionalities such as autocomplete, syntax highlighting, debugging, compiling, interpreting, build automation",
         "ex": "VS code, Atom..",
         "category": "general"
       },
 
       {
         "q": "What does HTTP(S) stand for?",
-        "a": "Stands for hypertext transport protocol that is sometimes secure. For security, it uses secure socket layer (SSL) encryption",
+        "a": "Stands for hypertext transfer protocol that is sometimes secure. For security, it uses secure socket layer (SSL) encryption",
         "ex": "example",
         "category": "web"
       },
