@@ -792,6 +792,60 @@
         "a": "answer ",
         "ex": "example",
         "category": "general"
+      },
+      {
+        "q": "What is the difference between the global object in the browser and the one in node.js?",
+        "a": "answer",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "What does require() do?",
+        "a": "answer",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "What does module.exports do?",
+        "a": "answer",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "What are streams? What kinds of streams are there?",
+        "a": "answer",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "What are buffers?",
+        "a": "answer",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "What is localhost?",
+        "a": "answer",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "What is a server?",
+        "a": "answer",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "What is a port (number)?",
+        "a": "answer",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "What is a router?",
+        "a": "answer",
+        "ex": "example",
+        "category": "nodejs"
       }
     ]
 
