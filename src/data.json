@@ -794,6 +794,12 @@
         "category": "general"
       },
       {
+        "q": "What is lazy evaluation?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "general"
+      },
+      {
         "q": "What is the difference between the global object in the browser and the one in node.js?",
         "a": "answer",
         "ex": "example",
@@ -842,7 +848,37 @@
         "category": "nodejs"
       },
       {
-        "q": "What is a router?",
+        "q": "What does a router do?",
+        "a": "answer",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "What are status codes for?",
+        "a": "answer",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "What do view engines do?",
+        "a": "answer",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "What does EJS stand for? What does it do?",
+        "a": "answer",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "What is server-side rendering?",
+        "a": "answer",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "Can you explain what does middleware do? Why is it called like that?",
         "a": "answer",
         "ex": "example",
         "category": "nodejs"
