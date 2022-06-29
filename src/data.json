@@ -164,9 +164,9 @@
 
       {
         "q": "What are templating languages?",
-        "a": "They have their own syntax that more or less resembles the one of a markup language like html, but are supposed to simplify and speed up the process of writing code.",
-        "ex": "Jade, ..",
-        "category": "web"
+        "a": "They allow dynamic writing in html using express.js framework. They have a specific syntax",
+        "ex": "Jade, EJS..",
+        "category": "nodejs"
       },
       {
         "q": "Can you name any html tags that have built-in special features?",
@@ -393,6 +393,18 @@
       {
         "q": "Name and explain data types in JS.",
         "a": "Generally speaking they can be primitives (number, boolean, string etc.) and they can be objects (that contain primitives and other objects - methods). Primitives are immutable, while objects have some aspects that are mutable.",
+        "ex": "example",
+        "category": "javascript"
+      },
+      {
+        "q": "What is the difference between null, undefined and NaN?",
+        "a": "answer",
+        "ex": "example",
+        "category": "javascript"
+      },
+      {
+        "q": "Which values are falsy in javascript? What does truthy and falsy mean?",
+        "a": "answer",
         "ex": "example",
         "category": "javascript"
       },
