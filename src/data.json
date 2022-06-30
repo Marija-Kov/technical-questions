@@ -894,6 +894,19 @@
         "a": "answer",
         "ex": "example",
         "category": "nodejs"
+      },      
+      {
+        "q": "What is a model?",
+        "a": "answer",
+        "ex": "example",
+        "category": "nodejs"
+      },       
+      {
+        "q": "What is a schema?",
+        "a": "answer",
+        "ex": "example",
+        "category": "nodejs"
       }
+
     ]
 
