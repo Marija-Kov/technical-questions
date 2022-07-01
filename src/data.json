@@ -807,7 +807,7 @@
       },
       {
         "q": "What is lazy evaluation?",
-        "a": "answer ",
+        "a": "It's an optimization technique in functional programming. It means run code as you need it and don't run it twice for the same value.",
         "ex": "example",
         "category": "general"
       },
@@ -819,19 +819,19 @@
       },
       {
         "q": "What does require() do?",
-        "a": "answer",
-        "ex": "example",
+        "a": "It is a method that imports a module in nodejs",
+        "ex": "const app = require(express())",
         "category": "nodejs"
       },
       {
         "q": "What does module.exports do?",
-        "a": "answer",
-        "ex": "example",
+        "a": "It literally states what the said module exports to other modules.",
+        "ex": "module.exports = Obj",
         "category": "nodejs"
       },
       {
         "q": "What are streams? What kinds of streams are there?",
-        "a": "answer",
+        "a": "They refer to data that is rendered and forwarded from server to client-side platform gradually, consistently, in chunks - as opposed to being rendered entirely server-side and sent all at once.",
         "ex": "example",
         "category": "nodejs"
       },
@@ -843,7 +843,7 @@
       },
       {
         "q": "What is localhost?",
-        "a": "answer",
+        "a": "It refers to the the server on your own computer. It has a default loopback IP address 127.0.0.1 (which is within the range of addresses starting at 127. that does not exist on the WWW. It was created for web development purposes.",
         "ex": "example",
         "category": "nodejs"
       },
@@ -903,6 +903,12 @@
       },       
       {
         "q": "What is a schema?",
+        "a": "answer",
+        "ex": "example",
+        "category": "nodejs"
+      },      
+      {
+        "q": "What does software like MongoDB do?",
         "a": "answer",
         "ex": "example",
         "category": "nodejs"
