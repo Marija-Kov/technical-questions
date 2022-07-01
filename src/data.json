@@ -99,6 +99,12 @@
         "ex": "example",
         "category": "web"
       },
+      {
+        "q": "What is cache?",
+        "a": "It's a part of the memory storage that the browser uses to store some content so it doesn't have to be re-rendered every time the user revisits the page. It's integral to the concept of lazy evaluation.",
+        "ex": "example",
+        "category": "web"
+      },
 
       {
         "q": "What is AJAX?",
@@ -849,7 +855,7 @@
       },
       {
         "q": "What is a server?",
-        "a": "answer",
+        "a": "It's a computer that stores and serves data on request",
         "ex": "example",
         "category": "nodejs"
       },
@@ -867,52 +873,51 @@
       },
       {
         "q": "What are status codes for?",
-        "a": "answer",
+        "a": "They let us know about the status of the request made to the server.",
         "ex": "example",
         "category": "nodejs"
       },
       {
         "q": "What do view engines do?",
-        "a": "answer",
+        "a": "It lets us serve static content by rendering html from our views, which are written in templating languages like EJS",
         "ex": "example",
         "category": "nodejs"
       },
       {
         "q": "What does EJS stand for? What does it do?",
-        "a": "answer",
+        "a": "Embedded javascript. It's a templating language.",
         "ex": "example",
         "category": "nodejs"
       },
       {
         "q": "What is server-side rendering?",
-        "a": "answer",
+        "a": "Refers to when the whole page is rendered on the server-side before it's sent at the request.",
         "ex": "example",
         "category": "nodejs"
       },
       {
         "q": "Can you explain what does middleware do? Why is it called like that?",
-        "a": "answer",
+        "a": "It's all code that runs 'in between' the server and a client-side platform. ",
         "ex": "example",
         "category": "nodejs"
-      },      
+      },
       {
         "q": "What is a model?",
-        "a": "answer",
+        "a": "It's an object that gets data from a database and does something with it. It contains a Schema.",
         "ex": "example",
         "category": "nodejs"
-      },       
+      },
       {
         "q": "What is a schema?",
-        "a": "answer",
+        "a": "It's an object that represents the structure of data that is stored in/retrieved from a database.",
         "ex": "example",
         "category": "nodejs"
-      },      
+      },
       {
         "q": "What does software like MongoDB do?",
-        "a": "answer",
+        "a": "It provides data storage on a server located somewhere in the world - what is also known as a cloud.",
         "ex": "example",
         "category": "nodejs"
       }
-
     ]
 
