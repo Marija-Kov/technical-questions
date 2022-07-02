@@ -902,6 +902,12 @@
         "category": "nodejs"
       },
       {
+        "q": "What is a dynamic variable",
+        "a": "answer",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
         "q": "What is a model?",
         "a": "It's an object that gets data from a database and does something with it. It contains a Schema.",
         "ex": "example",
@@ -916,6 +922,12 @@
       {
         "q": "What does software like MongoDB do?",
         "a": "It provides data storage on a server located somewhere in the world - what is also known as a cloud.",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {      
+        "q": "What are route parameters?",
+        "a": "answer",
         "ex": "example",
         "category": "nodejs"
       }
