@@ -64,13 +64,16 @@ async function getRandomQuestion() {
     }
     const data = await response.json();
 
-    let randomQuestion;
-    if(val != 'undefined'){
-      let qCategory = randomByCategory(val, data)
-    randomQuestion = await qCategory[Math.round(Math.random() * qCategory.length)];
-    console.log(val, qCategory.length)
+    let randomQuestion;  // declaring a variable that will take in a random question from the selected category or all of them
+    let len; // this variable will take in the length of the category or the total data length
+    if(val){
+     let qCategory = randomByCategory(val, data);
+     randomQuestion = await qCategory[Math.round(Math.random() * qCategory.length)];
+     len = qCategory.length;
+     console.log(val, qCategory.length)
     }else{
-    randomQuestion = await data[Math.round(Math.random()*data.length)];
+     randomQuestion = await data[Math.round(Math.random()*data.length)];
+     len = data.length;
     }
     if (remaining.innerText === 'Cards remaining: 0') { // This conditional determines what happens when all cards have been picked out: ...
       nextQuestion.disabled = "true";  // ..'NEXT' button gets disabled
@@ -98,7 +101,8 @@ async function getRandomQuestion() {
   } else {
     getRandomQuestion()  // if the item picked by getRandomQuestion is already in the localStorage, run it again. Btw, this whole solution poses an issue/gives errors as with each next call it's taking longer and longer to randomly bump into items not already into localStorage. There is a way around this - by shuffling the array of cards before pulling them one by one start to end, which would get rid of the collision and all collateral issues. It was an interesting challenge doing it the hard, buggy way. 
   }
-   let questionsLeft = data.length - localStorage.getItem('i'); // Knowing that 'i' represents the number of picked cards, this is self-explanatory.
+
+   let questionsLeft =  len - localStorage.getItem('i'); // Knowing that 'i' represents the number of picked cards, this is self-explanatory.
     remaining.innerText = `Cards remaining: ${questionsLeft}`; 
     localStorage.setItem(
       "remaining",
@@ -131,6 +135,7 @@ function showLast() {  // This function ensures that....
   answer.innerText = `${localStorage.getItem('lastA')}`;  // ...the answer shown is the corresponding answer to it,
    showAnswer.style.visibility = "visible";  // ...that both buttons on the card remain visible,
    nextQuestion.style.visibility = "visible";
+   document.querySelector(`#${localStorage.getItem("category")}`).style.background = "yellow"; // ...the category stays highlighted,
    reshuffle.innerText = "restart";  // ...that 'RESTART' is shown
    remaining.innerText = `Cards remaining: ${localStorage.getItem(
      "remaining"
