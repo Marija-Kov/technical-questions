@@ -62,6 +62,21 @@ button {
          transition: 0.2s;
     }
 }
+.category-selection {
+    display: flex;
+    gap: 0.2em;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.category-selection > button{
+  font-size: 80%;
+  box-shadow: unset;
+  padding: 0.2em 1em;
+  border: solid 1px yellow;
+  &:hover {
+      background: yellow;
+  }
+}
 .show-answer,
 .next-random {
     visibility: hidden;

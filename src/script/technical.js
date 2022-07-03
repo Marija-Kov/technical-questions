@@ -5,6 +5,27 @@ const answer = document.querySelector(".answer");
 const card = document.querySelector(".card");
 const remaining = document.querySelector(".remaining"); // 'Cards remaining: number'
 const reshuffle = document.querySelector(".reshuffle"); // 'START' and 'RESTART' button
+const categories = document.querySelectorAll('.category-selection > button');
+let val;  // this variable will take the picked category once getCategory() runs
+
+
+function getCategory(){
+ categories.forEach(c => { 
+  c.addEventListener("click", () => {
+    val = c.getAttribute('id');
+    localStorage.setItem('category', `${val}`);
+    c.style.background = "yellow";
+    categories.forEach(cat => {
+      if (cat !== c){
+        cat.style.background = 'transparent'
+      }
+    })
+    return val
+  })
+ })
+}
+
+getCategory()
 
 if(!localStorage.getItem('i')) // 'i' represents the number of randomly picked unique questions at and will be subtracted from data.length with every getRandomCard() call to calculate the remaining number of cards/questions. It will be set to 0 only if item 'i' isn't in the localStorage yet, i.e. only before the 'START' button is clicked.
 {
@@ -21,7 +42,7 @@ if(reshuffle.innerText.toLowerCase() === 'start') {  // This 'then' block makes 
   showAnswer.style.visibility = "visible";  // buttons on the card become visible,
   nextQuestion.style.visibility = "visible"; 
   reshuffle.innerText = 'restart';  //...'START' changes into 'RESTART',
-  reshuffle.classList.remove('blink'); // ...the blinking blinkation stops...
+  reshuffle.classList.remove('blink'); // ...the blinking animation stops...
   getRandomQuestion(); //...and the first random question is shown.
 } else { // This 'else' block makes sure that, when 'RESTART' is clicked,...
   localStorage.clear();  // localStorage is cleared and
@@ -42,9 +63,15 @@ async function getRandomQuestion() {
       throw new Error(`Error! status: ${response.status}`);
     }
     const data = await response.json();
-   
-    const randomQuestion = await data[Math.round(Math.random()*data.length)];
 
+    let randomQuestion;
+    if(val != 'undefined'){
+      let qCategory = randomByCategory(val, data)
+    randomQuestion = await qCategory[Math.round(Math.random() * qCategory.length)];
+    console.log(val, qCategory.length)
+    }else{
+    randomQuestion = await data[Math.round(Math.random()*data.length)];
+    }
     if (remaining.innerText === 'Cards remaining: 0') { // This conditional determines what happens when all cards have been picked out: ...
       nextQuestion.disabled = "true";  // ..'NEXT' button gets disabled
       //nextQuestion.style = "display: none";  // or hidden, too...
@@ -83,6 +110,15 @@ async function getRandomQuestion() {
 
 //////////// Helper functions below: 
 
+function randomByCategory(category, data) {
+  let qsByCategory = [];
+  for(let i = 0; i < data.length; ++i){
+    if( data[i].category === category){
+      qsByCategory.push(data[i])
+    }
+  }
+  return qsByCategory
+}
 
 function asciiConverter(string) {  // I used this function to create an unique key for each question at the time it's randomly picked. 
   for (let i = 0; i < string.length; ++i){
