@@ -81,10 +81,14 @@ button {
 .next-random {
     visibility: hidden;
 }
+.show-answer{
+    font-size: 90%;
+}
 .next-random,
 .reshuffle {
    // border: $btn-next-border;
     text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 .reshuffle {

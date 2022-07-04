@@ -6,30 +6,15 @@ const card = document.querySelector(".card");
 const remaining = document.querySelector(".remaining"); // 'Cards remaining: number'
 const reshuffle = document.querySelector(".reshuffle"); // 'START' and 'RESTART' button
 const categories = document.querySelectorAll('.category-selection > button');
-let val;  // this variable will take the picked category once getCategory() runs
+let val;  // this variable will take the selected category once initGetCategory() runs
 
-
-function getCategory(){
- categories.forEach(c => { 
-  c.addEventListener("click", () => {
-    val = c.getAttribute('id');
-    localStorage.setItem('category', `${val}`);
-    c.style.background = "yellow";
-    categories.forEach(cat => {
-      if (cat !== c){
-        cat.style.background = 'transparent'
-      }
-    })
-    return val
-  })
- })
-}
-
-getCategory()
+initGetCategory();
 
 if(!localStorage.getItem('i')) // 'i' represents the number of randomly picked unique questions at and will be subtracted from data.length with every getRandomCard() call to calculate the remaining number of cards/questions. It will be set to 0 only if item 'i' isn't in the localStorage yet, i.e. only before the 'START' button is clicked.
 {
-  localStorage.setItem('i', '0') 
+  localStorage.setItem('i', '0') // Val would be implicitly set to undefined here, so...
+} else {
+  val = localStorage.getItem('category'); // ...this makes sure that getRandomQuestion preserves the reference to the selected category after refresh and keeps drawing questions from that category.
 }
 
 
@@ -38,7 +23,7 @@ if (localStorage.length > 1) {  // This condition makes sure that the practice s
 }
 
 reshuffle.addEventListener('click', ()=> {   
-if(reshuffle.innerText.toLowerCase() === 'start') {  // This 'then' block makes sure that, when 'START' is clicked,...   
+if(reshuffle.innerText.toLowerCase() === 'start') {  // This conditional makes sure that, when 'START' is clicked,...   
   showAnswer.style.visibility = "visible";  // buttons on the card become visible,
   nextQuestion.style.visibility = "visible"; 
   reshuffle.innerText = 'restart';  //...'START' changes into 'RESTART',
@@ -64,9 +49,9 @@ async function getRandomQuestion() {
     }
     const data = await response.json();
 
-    let randomQuestion;  // declaring a variable that will take in a random question from the selected category or all of them
-    let len; // this variable will take in the length of the category or the total data length
-    if(val){
+    let randomQuestion;  // Declaring a variable that will take in a random question from the selected category or all of them.
+    let len; // This variable will take in the length of the category or the total data length.
+    if(val){  // This conditional asks if val is defined i.e. if a category was selected and stored in val
      let qCategory = randomByCategory(val, data);
      randomQuestion = await qCategory[Math.round(Math.random() * qCategory.length)];
      len = qCategory.length;
@@ -113,6 +98,23 @@ async function getRandomQuestion() {
 
 
 //////////// Helper functions below: 
+
+function initGetCategory() {
+  categories.forEach((c) => {
+    c.addEventListener("click", () => {
+      val = c.getAttribute("id");
+      localStorage.setItem("category", `${val}`);
+      localStorage.setItem("i", '0');
+      c.style.background = "yellow";
+      categories.forEach((cat) => {
+        if (cat !== c) {
+          cat.style.background = "transparent";
+        }
+      });
+      return val;
+    });
+  });
+}
 
 function randomByCategory(category, data) {
   let qsByCategory = [];
