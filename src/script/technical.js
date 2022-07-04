@@ -18,7 +18,7 @@ if(!localStorage.getItem('i')) // 'i' represents the number of randomly picked u
 }
 
 
-if (localStorage.length > 1) {  // This condition makes sure that the practice session doesn't restart on refresh. It's '> 1' not '> 0' because there will always be at least one item ('i') in the localStorage.
+if (localStorage.length > 1) {  // This condition makes sure that the session doesn't restart on refresh. It's '> 1' not '> 0' because there will always be at least one item ('i') in the localStorage.
  showLast()  // This function can be found under '///////Helper functions' below.
 }
 
@@ -60,11 +60,19 @@ async function getRandomQuestion() {
      randomQuestion = await data[Math.round(Math.random()*data.length)];
      len = data.length;
     }
+  
+    if(localStorage.getItem('category')){ // This conditional checks if there is a record of passed questions from a specific category...
+      let curr = localStorage.getItem('category');
+     localStorage.setItem(`${curr}`, `${(Number(localStorage.getItem(`${curr}`)) + 1)}`); // ..if yes, increments it by one..
+    } else {
+      localStorage.setItem(`${localStorage.getItem("category")}`, 0); // ...if no, starts counting the questions under that category.
+    }
+
     if (remaining.innerText === 'Cards remaining: 0') { // This conditional determines what happens when all cards have been picked out: ...
-      nextQuestion.disabled = "true";  // ..'NEXT' button gets disabled
+     //nextQuestion.disabled = "true";  // ..'NEXT' button gets disabled
       //nextQuestion.style = "display: none";  // or hidden, too...
       setTimeout(() => {
-      remaining.innerText = "No more cards! Press 'RESTART' to practice again.";  // and the user is pointed to the 'RESTART' button
+      remaining.innerText = "No more cards! Press 'RESTART' to practice again or switch to a different category where there are still questions left.";  // and the user is pointed to the 'RESTART' button
       reshuffle.classList.add('blink'); // ...which starts blinking, also.
       }, 1000) 
     }
@@ -87,12 +95,18 @@ async function getRandomQuestion() {
     getRandomQuestion()  // if the item picked by getRandomQuestion is already in the localStorage, run it again. Btw, this whole solution poses an issue/gives errors as with each next call it's taking longer and longer to randomly bump into items not already into localStorage. There is a way around this - by shuffling the array of cards before pulling them one by one start to end, which would get rid of the collision and all collateral issues. It was an interesting challenge doing it the hard, buggy way. 
   }
 
-   let questionsLeft =  len - localStorage.getItem('i'); // Knowing that 'i' represents the number of picked cards, this is self-explanatory.
-    remaining.innerText = `Cards remaining: ${questionsLeft}`; 
-    localStorage.setItem(
-      "remaining",
-      `${questionsLeft}` // Each time a unique card is picked, the value of 'remaining' in localStorage is updated.
-    );
+   if (val) {
+     let valQuestionsLeft = len - localStorage.getItem(`${val}`);
+     remaining.innerText = `Cards remaining: ${valQuestionsLeft}`;
+     localStorage.setItem(`${val}-remaining`, `${valQuestionsLeft}`)
+   } else {
+     let questionsLeft = len - localStorage.getItem("i"); // Knowing that 'i' represents the number of picked cards, this is self-explanatory.
+     remaining.innerText = `Cards remaining: ${questionsLeft}`;
+     localStorage.setItem(
+       "remaining",
+       `${questionsLeft}` // Each time a unique card is picked, the value of 'remaining' in localStorage is updated.
+     );
+   }
 }
 
 
@@ -139,9 +153,10 @@ function showLast() {  // This function ensures that....
    nextQuestion.style.visibility = "visible";
    document.querySelector(`#${localStorage.getItem("category")}`).style.background = "yellow"; // ...the category stays highlighted,
    reshuffle.innerText = "restart";  // ...that 'RESTART' is shown
-   remaining.innerText = `Cards remaining: ${localStorage.getItem(
-     "remaining"
-   )}`; // ... that the remaining amount of cards is the last remaining amount of cards/questions stored and 
+   if(val){
+ remaining.innerText = `Cards remaining: ${localStorage.getItem(`${val}-remaining`)}`; 
+   }else{
+   remaining.innerText = `Cards remaining: ${localStorage.getItem("remaining")}`; }// ... that the remaining amount of cards is the last remaining amount of cards/questions stored and 
    reshuffle.classList.remove('blink'); // ...that the 'RESTART' button doesn't start blinking.
 }
 
