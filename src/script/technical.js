@@ -55,27 +55,23 @@ async function getRandomQuestion() {
      let qCategory = randomByCategory(val, data);
      randomQuestion = await qCategory[Math.round(Math.random() * qCategory.length)];
      len = qCategory.length;
-     console.log(val, qCategory.length)
+     console.log(val, `total: ${qCategory.length}`)
     }else{
      randomQuestion = await data[Math.round(Math.random()*data.length)];
      len = data.length;
     }
   
-    if(localStorage.getItem('category')){ // This conditional checks if there is a record of passed questions from a specific category...
-      let curr = localStorage.getItem('category');
-     localStorage.setItem(`${curr}`, `${(Number(localStorage.getItem(`${curr}`)) + 1)}`); // ..if yes, increments it by one..
-    } else {
-      localStorage.setItem(`${localStorage.getItem("category")}`, 0); // ...if no, starts counting the questions under that category.
-    }
+    
 
     if (remaining.innerText === 'Cards remaining: 0') { // This conditional determines what happens when all cards have been picked out: ...
      //nextQuestion.disabled = "true";  // ..'NEXT' button gets disabled
-      //nextQuestion.style = "display: none";  // or hidden, too...
+      //nextQuestion.style = "display: none";  // or hidden, too...  
       setTimeout(() => {
       remaining.innerText = "No more cards! Press 'RESTART' to practice again or switch to a different category where there are still questions left.";  // and the user is pointed to the 'RESTART' button
       reshuffle.classList.add('blink'); // ...which starts blinking, also.
       }, 1000) 
     }
+    
 
     if (!localStorage.getItem(`${asciiConverter(randomQuestion.q)}`)) { // This conditional checks if the randomQuestion is not yet in localStorage...
       localStorage.setItem(  
@@ -85,6 +81,13 @@ async function getRandomQuestion() {
       localStorage.setItem('lastQ', `${randomQuestion.q}`); // makes sure the browser remembers the last picked question and answer in case of refreshing / closing and reopening the window.
       localStorage.setItem("lastA", `${randomQuestion.a}`);
       localStorage.setItem("i", `${(Number(localStorage.getItem('i')) + 1)}`);  // stores the new value (increments it by one) under the key 'i' that represents the number of picked cards 
+
+      if(localStorage.getItem('category')){ // This conditional checks if there is a record of passed questions from a specific category...
+      let curr = localStorage.getItem('category');
+     localStorage.setItem(`${curr}`, `${(Number(localStorage.getItem(`${curr}`)) + 1)}`); // ..if yes, increments it by one..
+    } else {
+      localStorage.setItem(`${localStorage.getItem("category")}`, 0); // ...if no, starts counting the questions under that category.
+    }
 
     question.innerText = `${randomQuestion.q}`; // ...gets the corresponding question and answer to be displayed on the card,
     answer.setAttribute('style', "height: 0");  // ..makes sure the answer remains hidden until manually revealed;
@@ -120,6 +123,7 @@ function initGetCategory() {
       localStorage.setItem("category", `${val}`);
       localStorage.setItem("i", '0');
       c.style.background = "yellow";
+      nextQuestion.innerText = `NEXT RANDOM ${val.toUpperCase()} QUESTION`;
       categories.forEach((cat) => {
         if (cat !== c) {
           cat.style.background = "transparent";

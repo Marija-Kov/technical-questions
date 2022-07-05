@@ -585,7 +585,7 @@
       },
       {
         "q": "Explain the difference between function Person(){}, let person = Person(), and let person = new Person().",
-        "a": "The first one is a constructor function, the second one is a creating a variable pointing to the constructor, and the last one is a variable pointing to an instance of the constructor. ",
+        "a": "The first one is a constructor function, the second one is creating a variable pointing to the constructor, and the last one is a variable pointing to an instance of the constructor. ",
         "ex": "example",
         "category": "javascript"
       },
@@ -639,7 +639,7 @@
       },
       {
         "q": "When would you use document.write()?",
-        "a": "answer ",
+        "a": "You would use it to overwrite the whole existing markup and invite a bunch of bugs in your project",
         "ex": "example",
         "category": "javascript"
       },
@@ -753,7 +753,7 @@
       },
       {
         "q": "Explain compiling vs interpreting.",
-        "a": "Scripting languages require the latter, while the former is for non-scripting, lower-level languages.",
+        "a": "Scripting languages require the latter and it's done at runtime, line by line, while the former is for non-scripting, lower-level languages and done all at once.",
         "ex": "example",
         "category": "general"
       },
@@ -801,6 +801,12 @@
       },
       {
         "q": "What are some features in javascript that might require the use of polyfills?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "javascript"
+      },
+      {
+        "q": "What is inversion of control (callbacks)?",
         "a": "answer ",
         "ex": "example",
         "category": "javascript"
@@ -873,7 +879,7 @@
       },
       {
         "q": "What are status codes for?",
-        "a": "They let us know about the status of the request made to the server.",
+        "a": "They are numbers that inform us about the status of the request made to the server.",
         "ex": "example",
         "category": "nodejs"
       },
@@ -903,13 +909,19 @@
       },
       {
         "q": "What is a dynamic variable",
-        "a": "answer",
+        "a": "Variables created during runtime.",
         "ex": "example",
         "category": "nodejs"
       },
       {
         "q": "What is a model?",
         "a": "It's an object that gets data from a database and does something with it. It contains a Schema.",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "What does MVC stand for?",
+        "a": "answer",
         "ex": "example",
         "category": "nodejs"
       },
@@ -925,7 +937,7 @@
         "ex": "example",
         "category": "nodejs"
       },
-      {      
+      {
         "q": "What are route parameters?",
         "a": "answer",
         "ex": "example",
