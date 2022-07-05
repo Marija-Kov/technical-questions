@@ -753,7 +753,7 @@
       },
       {
         "q": "Explain compiling vs interpreting.",
-        "a": "Scripting languages require the latter and it's done at runtime, line by line, while the former is for non-scripting, lower-level languages and done all at once.",
+        "a": "Scripting languages require the latter and it's done at runtime by a software such as V8, line by line, while the former is for non-scripting, lower-level languages and done all at once.",
         "ex": "example",
         "category": "general"
       },
@@ -909,7 +909,7 @@
       },
       {
         "q": "What is a dynamic variable",
-        "a": "Variables created during runtime.",
+        "a": "A variable created during runtime.",
         "ex": "example",
         "category": "nodejs"
       },
