@@ -362,13 +362,13 @@
       },
       {
         "q": "What is a queue?",
-        "a": "answer ",
+        "a": "A linear data structure that is open on both ends, unlike stack (which is open on one end) and follows the FIFO principle.",
         "ex": "example",
         "category": "general"
       },
       {
         "q": "What is a stack?",
-        "a": "answer ",
+        "a": "It's a list of operations to be performed. Last operation in the list is the first one to be executes (LIFO). It can also denote a collection of software components designed to work together. ",
         "ex": "example",
         "category": "general"
       },
@@ -921,7 +921,7 @@
       },
       {
         "q": "What does MVC stand for?",
-        "a": "answer",
+        "a": "Model view controller. It's a convention for structuring code into modules",
         "ex": "example",
         "category": "nodejs"
       },
@@ -939,7 +939,7 @@
       },
       {
         "q": "What are route parameters?",
-        "a": "answer",
+        "a": "They are variables, URL segments",
         "ex": "example",
         "category": "nodejs"
       }
