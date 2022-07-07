@@ -1,13 +1,13 @@
-import {
+import {val,
   categories,
-  val,
   nextQuestion,
   reshuffle,
   remaining,
   question,
   answer,
   showAnswer,
-  card
+  card,
+  setVal
 } from "./variables.js";
 
 import {
@@ -17,7 +17,8 @@ import {
   showLast,
 } from "./helperFunctions.js";
 
-const getRandomQuestion = async function getRandomQuestion() {
+
+export const getRandomQuestion = async function getRandomQuestion() {
   const response = await fetch("data.json");
   if (!response.ok) {
     throw new Error(`Error! status: ${response.status}`);
@@ -95,7 +96,7 @@ const getRandomQuestion = async function getRandomQuestion() {
   }
 };
 
-export { getRandomQuestion };
+
 
 
 // fetch WORKS in the browser console with the live SERVER - I get the data as I wanted it.

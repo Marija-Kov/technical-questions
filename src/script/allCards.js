@@ -30,13 +30,3 @@ fetch('data.json').then(response => response.json())
 
        }
    }
-
-//    async function topCard(){
-//        let cards = document.querySelectorAll('.card-stack');
-//           cards.forEach(c => { 
-//                c.addEventListener('click', () => {
-//                    c.style = `z-index: ${cards.length}; position: absolute`
-//                })
-//            })
-       
-//    }

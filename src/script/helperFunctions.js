@@ -1,9 +1,11 @@
-import { categories, val, nextQuestion, reshuffle, remaining, question, answer, showAnswer, card } from './variables.js';
+import { val, categories, nextQuestion, reshuffle, remaining, question, answer, showAnswer, card, setVal } from './variables.js';
 
-const initGetCategory = function initGetCategory() {
+
+export const initGetCategory = function initGetCategory() {
   categories.forEach((c) => {
     c.addEventListener("click", () => {
-      val = c.getAttribute("id");
+      let cId = c.getAttribute("id");
+      setVal(cId);
       localStorage.setItem("category", `${val}`);
       localStorage.setItem("i", "0");
       c.style.background = "yellow";
@@ -25,7 +27,7 @@ const initGetCategory = function initGetCategory() {
   });
 }
 
-const randomByCategory = function randomByCategory(category, data) {
+export const randomByCategory = function randomByCategory(category, data) {
   let qsByCategory = [];
   for (let i = 0; i < data.length; ++i) {
     if (data[i].category === category) {
@@ -35,7 +37,7 @@ const randomByCategory = function randomByCategory(category, data) {
   return qsByCategory;
 }
 
-const asciiConverter = function asciiConverter(string) {
+export const asciiConverter = function asciiConverter(string) {
   // I used this function to create an unique key for each question at the time it's randomly picked.
   for (let i = 0; i < string.length; ++i) {
     return string
@@ -45,7 +47,7 @@ const asciiConverter = function asciiConverter(string) {
   }
 }
 
-const showLast = function showLast() {
+export const showLast = function showLast() {
   // This function ensures that....
   question.innerText = `${localStorage.getItem("lastQ")}`; // the question shown is the last random unique question from the localStorage,
   answer.innerText = `${localStorage.getItem("lastA")}`; // ...the answer shown is the corresponding answer to it,
@@ -73,4 +75,3 @@ const showLast = function showLast() {
   } // ... that the remaining amount of cards is the last remaining amount of cards/questions stored and
   reshuffle.classList.remove("blink"); // ...that the 'RESTART' button doesn't start blinking.
 }
-export { initGetCategory, randomByCategory, asciiConverter, showLast } ;
