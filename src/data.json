@@ -6,7 +6,84 @@
         "ex": "example",
         "category": "general"
       },
-
+      {
+        "q": "What's the difference between feature detection/inference and using the UA string?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "general"
+      },
+      {
+        "q": "What is IDE?",
+        "a": "Integrated developer environment. It is a source-code (text) editor that facilitates writing code with integrated functionalities such as autocomplete, syntax highlighting, debugging, compiling, interpreting, build automation",
+        "ex": "VS code, Atom..",
+        "category": "general"
+      },
+      {
+        "q": "What is a queue?",
+        "a": "A linear data structure that is open on both ends, unlike stack (which is open on one end) and follows the FIFO principle.",
+        "ex": "example",
+        "category": "general"
+      },
+      {
+        "q": "What is a stack?",
+        "a": "It's a list of operations to be performed. Last operation in the list is the first one to be executes (LIFO). It can also denote a collection of software components designed to work together. ",
+        "ex": "example",
+        "category": "general"
+      },
+      {
+        "q": "What is namespace?",
+        "a": "It is a reference to an object. It has a hierarchical structure and defines a scope which enables the reuse of same name in multiple different structures.",
+        "ex": "File systems  Folder1/text.txt  and  Folder2/text.txt  would be a simple example of two namespaces that each have a file with the same name.",
+        "category": "general"
+      },
+      {
+        "q": "What is lazy evaluation?",
+        "a": "It's an optimization technique in functional programming. It means run code as you need it and don't run it twice for the same value.",
+        "ex": "example",
+        "category": "general"
+      },
+      {
+        "q": "What is a single-page app?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "general"
+      },
+      {
+        "q": "What are floats?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "general"
+      },
+      {
+        "q": "Explain compiling vs interpreting.",
+        "a": "Scripting languages require the latter and it's done at runtime by a software such as V8, line by line, while the former is for non-scripting, lower-level languages and done all at once.",
+        "ex": "example",
+        "category": "general"
+      },
+      {
+        "q": "What does it mean for a language to execute its own source code at runtime?.",
+        "a": "Means it doesn't need a separate software to do it, duh. And some other stuff.",
+        "ex": "example",
+        "category": "general"
+      },
+      {
+        "q": "What is runtime vs compile time?",
+        "a": "The former refers to when the program is running, while the latter is when the code is being converted to low-level code that the machine can understand.",
+        "ex": "example",
+        "category": "general"
+      },
+      {
+        "q": "Explain the difference between scripting and programming language.",
+        "a": "The latter is a more general term. The former can be referred by the latter, but not vice versa. The difference is in whether they are compiled or interpreted.",
+        "ex": "example",
+        "category": "general"
+      },
+      {
+        "q": "What are pure functions?",
+        "a": "Those that always return the same value, no console-logs, no mutable variables, no shared states.",
+        "ex": "function(a, b) { return a + b } is a simple pure function.",
+        "category": "general"
+      },
       {
         "q": "What is a data structure? What are some basic types of data structures?",
         "a": "A tool/system for handling data. It allows us to store, organize, add, remove and retrieve data with specific methods. Linked lists, arrays, dictionaries and trees are the basic types.  ",
@@ -17,7 +94,7 @@
         "q": "What are linked lists?",
         "a": "A type of data structure composed out of nodes. Each node contains data and a reference to the node in front of it or both in the front and behind it. This data structure is memory-efficient and it's easy to add and remove nodes, but finding data can take time because every node has to be checked, head to tail.",
         "ex": "example",
-        "category": "javascript"
+        "category": "data-structures"
       },
       {
         "q": "What are arrays?",
@@ -55,14 +132,12 @@
         "ex": "example",
         "category": "data-structures"
       },
-
       {
-        "q": "What is IDE?",
-        "a": "Integrated developer environment. It is a source-code (text) editor that facilitates writing code with integrated functionalities such as autocomplete, syntax highlighting, debugging, compiling, interpreting, build automation",
-        "ex": "VS code, Atom..",
-        "category": "general"
+        "q": "What does SEO-friendly mean?",
+        "a": "answer ",
+        "ex": "example",
+        "category": "web"
       },
-
       {
         "q": "What does HTTP(S) stand for?",
         "a": "Stands for hypertext transfer protocol that is sometimes secure. For security, it uses secure socket layer (SSL) encryption",
@@ -105,13 +180,6 @@
         "ex": "example",
         "category": "web"
       },
-
-      {
-        "q": "What is AJAX?",
-        "a": "Stands for asynchronous javascript and XML (or any other transferrable format, like JSON). It's nothing tangible, it describes a practice of file transfer using multiple technologies together.",
-        "ex": "example",
-        "category": "javascript"
-      },
       {
         "q": "What is XML?",
         "a": "Stands for extensible markup language. It's a format developed to enable quicker and simpler data transfer and use across platforms. It's supported by most programming languages and requires a special converter for that purpose (unlike JSON, that can be converted by writing a common JS function). It contains custom tags that are used for organizing data in a readable way. ",
@@ -131,35 +199,10 @@
         "category": "web"
       },
       {
-        "q": "What are html tags? Name as many as you can remember and describe what each of them does.",
-        "a": "They are building blocks of an html page. <head> containing <meta> and <link> that contain information about the website/app that is invisible to the user but relevant to browsers and search engines. Then <body> that contains all the elements of the webpage that user is supposed to see: <header>, <main>, <footer>, <nav>, <div>, <section>, <p>, <anchor>, <li>, <img>, <picture>, <video>, <form>, <table>, <summary>, <article>, <details>… They can be semantic and non-semantic, block and inline and some of them even have built-in functionality",
+        "q": "What does SVG stand for? What are the cases for the use of SVG in styling?",
+        "a": "Scalable vector graphics (a bit excessive with the S as vectors are implicitly scalable). They are practical as they provide consistent graphic quality and they are way lighter than other image files as they are basically code. When we implement them, we copy-paste code in our markup file. ",
         "ex": "example",
-        "category": "html"
-      },
-
-      {
-        "q": "What is the difference between a <span> and <p> element?",
-        "a": "The former is inline while the latter is block type element",
-        "ex": "example",
-        "category": "html"
-      },
-      {
-        "q": "What is metadata?",
-        "a": "It’s the behind-the-scenes data that contains information about the website that is read by the browser and search engines. It is relevant to how the website shows in search results. It is located in the <head> of the html file",
-        "ex": "example",
-        "category": "javascript"
-      },
-      {
-        "q": "How do you make a multilingual website?",
-        "a": "One way to do this is to pre-write a JSON file with the content in multiple languages where each language content would be added to the html dynamically using javascript function and event listener. Multi-language content could also be written statically in hidden elements that would be set to visible with JS event listeners.",
-        "ex": "example",
-        "category": "html"
-      },
-      {
-        "q": "You probably hear about HTML5 a lot. What's so special about it?",
-        "a": "answer",
-        "ex": "example",
-        "category": "html"
+        "category": "web"
       },
       {
         "q": "What does progressive rendering mean?",
@@ -167,12 +210,53 @@
         "ex": "Lazy loading.",
         "category": "web"
       },
-
       {
-        "q": "What are templating languages?",
-        "a": "They allow dynamic writing in html using express.js framework. They have a specific syntax",
-        "ex": "Jade, EJS..",
-        "category": "nodejs"
+        "q": "What is accessibility? What are ways to make the page's content accessible without compromising visual appeal of the page?",
+        "a": "answer",
+        "ex": "example",
+        "category": "web"
+      },
+      {
+        "q": "What are frameworks?",
+        "a": "Basically code libraries that are supposed to make writing software easier and faster.",
+        "ex": "Javascript frameworks: jQuery, React, Angular, Vue, Svelte.. CSS frameworks: Tailwind, Bootstrap, Bulma, Skeleton, Lotus..  ",
+        "category": "general"
+      },
+      {
+        "q": "What are html tags? Name as many as you can remember and describe what each of them does.",
+        "a": "They are building blocks of an html page. <head> containing <meta> and <link> that contain information about the website/app that is invisible to the user but relevant to browsers and search engines. Then <body> that contains all the elements of the webpage that user is supposed to see: <header>, <main>, <footer>, <nav>, <div>, <section>, <p>, <anchor>, <li>, <img>, <picture>, <video>, <form>, <table>, <summary>, <article>, <details>… They can be semantic and non-semantic, block and inline and some of them even have built-in functionality",
+        "ex": "example",
+        "category": "html"
+      },
+      {
+        "q": "What is the difference between a <span> and <p> element?",
+        "a": "The former is inline while the latter is block type element",
+        "ex": "example",
+        "category": "html"
+      },
+      {
+        "q": "How do you make a multilingual website?",
+        "a": "One way to do this is to pre-write a JSON file with the content in multiple languages where each language content would be added to the html dynamically using javascript function and event listener. Multi-language content could also be written statically in hidden elements that would be set to visible with JS event listeners. Also, it can also be done by hardcoding all multilingual content and then toggle visibility with language selection.",
+        "ex": "example",
+        "category": "html"
+      },
+      {
+        "q": "You probably hear about HTML5 a lot. What's so special about it?",
+        "a": "It's the most recent HTML standard that consists of: 1) the use of semantic as opposed to non-semantic tags; 2) Taking styles and scripts out of the markup i.e. reducing the overlap between HTML, CSS and JavaScript; 2) Various accessibility practices; 3) Responsive design practices; 4) Eliminating the need for plugins for supporting rich media experiences (video and audio). ",
+        "ex": "example",
+        "category": "html"
+      },
+      {
+        "q": "What is metadata?",
+        "a": "It’s the behind-the-scenes data that contains information about the website that is read by the browser and search engines. It is relevant to how the website shows in search results. It is located in the <head> of the html file",
+        "ex": "example",
+        "category": "html"
+      },
+      {
+        "q": "What are breadcrumbs?",
+        "a": "It's how we show the user their current location on website, typically with relation to its superlocations/supercategories.",
+        "ex": "..",
+        "category": "html"
       },
       {
         "q": "Can you name any html tags that have built-in special features?",
@@ -200,7 +284,7 @@
       },
       {
         "q": "What are data attributes? ",
-        "a": "They provide the browser with additional information about the data that it has to display - like how to present the data(style) or where to get it from (src)",
+        "a": "They provide the browser with additional information about the data that it has to display - like how to present the data(style) or where to get it from (src), what to display if the source is unavailable (alt), the type of content (type), relation to the rest of the page (rel) etc.",
         "ex": "example",
         "category": "html"
       },
@@ -233,12 +317,6 @@
         "a": "It's a CSS property used to create a responsive layout. ",
         "ex": "example",
         "category": "css"
-      },
-      {
-        "q": "What are floats?",
-        "a": "answer ",
-        "ex": "example",
-        "category": "general"
       },
       {
         "q": "Why would you reset CSS?",
@@ -349,30 +427,6 @@
         "category": "css"
       },
       {
-        "q": "What does SVG stand for? What are the cases for the use of SVG in styling?",
-        "a": "Scalable vector graphics (a bit excessive with the S as vectors are implicitly scalable). They are practical as they provide consistent graphic quality and they are way lighter than other image files as they are basically code. When we implement them, we copy-paste code in our markup file. ",
-        "ex": "example",
-        "category": "javascript"
-      },
-      {
-        "q": "What is accessibility? What are ways to make the page's content accessible without compromising visual appeal of the page?",
-        "a": "answer",
-        "ex": "example",
-        "category": "web"
-      },
-      {
-        "q": "What is a queue?",
-        "a": "A linear data structure that is open on both ends, unlike stack (which is open on one end) and follows the FIFO principle.",
-        "ex": "example",
-        "category": "general"
-      },
-      {
-        "q": "What is a stack?",
-        "a": "It's a list of operations to be performed. Last operation in the list is the first one to be executes (LIFO). It can also denote a collection of software components designed to work together. ",
-        "ex": "example",
-        "category": "general"
-      },
-      {
         "q": "What are object prototypes?",
         "a": "They are properties - objects - that refer to objects' 'ancestry'. Every object has a prototype, unless it's in the beginning of a prototype chain, in which case it returns null. It contains the properties that are not stated in the child-object. So when we tell JS to find a property in an object and it can't find the property in the object itself, it goes up the prototype chain to check for it. This is closely related to the concept of inheritance.",
         "ex": "example",
@@ -381,6 +435,12 @@
       {
         "q": "What is an object constructor?",
         "a": "It's a type of objects that is used to create instances of itself or other constructors.",
+        "ex": "example",
+        "category": "javascript"
+      },
+      {
+        "q": "What is AJAX?",
+        "a": "Stands for asynchronous javascript and XML (or any other transferrable format, like JSON). It's nothing tangible, it describes a practice of file transfer using multiple technologies together.",
         "ex": "example",
         "category": "javascript"
       },
@@ -451,12 +511,6 @@
         "category": "javascript"
       },
       {
-        "q": "What's the difference between feature detection/inference and using the UA string?",
-        "a": "answer ",
-        "ex": "example",
-        "category": "general"
-      },
-      {
         "q": "What is binding in JS? When and why is it used?",
         "a": "When a method of an object is stored in a new variable, it loses track of its original context, meaning that if it's called using the variable, it will return undefined. That's where the method in question jumps in and gives back the original context. The name of the object represents the context and is passed to the method as an argument.",
         "ex": "example",
@@ -522,12 +576,6 @@
         "a": "When we assign an object to an identifier, we create one of those. It's important so we don't have to waste our time rewriting the whole object every time we want to use it for something.",
         "ex": "Bread is water, flour, yeast and salt mixed together, kneaded, proofed, baked and sliced, but we don't say 'excuse me, where can I find flour and water with a bit of yeast and salt kneaded together..' you get the hint.",
         "category": "javascript"
-      },
-      {
-        "q": "What are frameworks?",
-        "a": "Basically code libraries that are supposed to make writing software easier and faster.",
-        "ex": "Javascript frameworks: jQuery, React, Angular, Vue, Svelte.. CSS frameworks: Tailwind, Bootstrap, Bulma, Skeleton, Lotus..  ",
-        "category": "general"
       },
       {
         "q": "Operators in javascript.",
@@ -599,7 +647,7 @@
         "q": "What are some libraries for javascript templating?",
         "a": "answer ",
         "ex": "example",
-        "category": "general"
+        "category": "javascript"
       },
       {
         "q": "Are there any disadvantages to using Ajax?",
@@ -618,12 +666,6 @@
         "a": "answer ",
         "ex": "example",
         "category": "javascript"
-      },
-      {
-        "q": "What does SEO-friendly mean?",
-        "a": "answer ",
-        "ex": "example",
-        "category": "web"
       },
       {
         "q": "What is a ternary expression?",
@@ -704,12 +746,6 @@
         "category": "javascript"
       },
       {
-        "q": "What is namespace?",
-        "a": "It is a reference to an object. It has a hierarchical structure and defines a scope which enables the reuse of same name in multiple different structures.",
-        "ex": "File systems  Folder1/text.txt  and  Folder2/text.txt  would be a simple example of two namespaces that each have a file with the same name.",
-        "category": "general"
-      },
-      {
         "q": "What is a shared state?",
         "a": "It's a value that other values in multiple different objects depend on",
         "ex": "example",
@@ -734,12 +770,6 @@
         "category": "javascript"
       },
       {
-        "q": "What are pure functions?",
-        "a": "Those that always return the same value, no console-logs, no mutable variables, no shared states.",
-        "ex": "function(a, b) { return a + b } is a simple pure function.",
-        "category": "general"
-      },
-      {
         "q": "What is strict mode?",
         "a": "In javascript, it disallows things that are allowed in 'normal' mode. It's more eager in catching errors and forbids new(-ish) JS features ensuring cross-platform support.",
         "ex": "example",
@@ -750,30 +780,6 @@
         "a": "The latter is the process of converting code written in programming language to code that a computer can understand. The former os converting a more recent version of a language to its less recent version so it's readable to platforms that are not compatible with new features of a language.",
         "ex": "example",
         "category": "javascript"
-      },
-      {
-        "q": "Explain compiling vs interpreting.",
-        "a": "Scripting languages require the latter and it's done at runtime by a software such as V8, line by line, while the former is for non-scripting, lower-level languages and done all at once.",
-        "ex": "example",
-        "category": "general"
-      },
-      {
-        "q": "What does it mean for a language to execute its own source code at runtime?.",
-        "a": "Means it doesn't need a separate software to do it, duh. And some other stuff.",
-        "ex": "example",
-        "category": "general"
-      },
-      {
-        "q": "What is runtime vs compile time?",
-        "a": "The former refers to when the program is running, while the latter is when the code is being converted to low-level code that the machine can understand.",
-        "ex": "example",
-        "category": "general"
-      },
-      {
-        "q": "Explain the difference between scripting and programming language.",
-        "a": "The latter is a more general term. The former can be referred by the latter, but not vice versa. The difference is in whether they are compiled or interpreted.",
-        "ex": "example",
-        "category": "general"
       },
       {
         "q": "Can you give an example where a scripting language automates tasks in a program?",
@@ -797,7 +803,7 @@
         "q": "What are polyfills?",
         "a": "Code that is implemented to make sure that apps/websites work well on different platforms. Without them, we would have to write different code for every browser so our app doesn’t break.",
         "ex": "Say that our website uses fetch, but we need to make it display properly in browsers that don’t have a built-in support for the fetch API. We either find or code a polyfill ourselves that we can reuse for other projects that require solving the same problem. ",
-        "category": "web"
+        "category": "javascript"
       },
       {
         "q": "What are some features in javascript that might require the use of polyfills?",
@@ -810,18 +816,6 @@
         "a": "answer ",
         "ex": "example",
         "category": "javascript"
-      },
-      {
-        "q": "What is a single-page app?",
-        "a": "answer ",
-        "ex": "example",
-        "category": "general"
-      },
-      {
-        "q": "What is lazy evaluation?",
-        "a": "It's an optimization technique in functional programming. It means run code as you need it and don't run it twice for the same value.",
-        "ex": "example",
-        "category": "general"
       },
       {
         "q": "What is the difference between the global object in the browser and the one in node.js?",
@@ -908,7 +902,7 @@
         "category": "nodejs"
       },
       {
-        "q": "What is a dynamic variable",
+        "q": "What is a dynamic variable?",
         "a": "A variable created during runtime.",
         "ex": "example",
         "category": "nodejs"
@@ -920,7 +914,7 @@
         "category": "nodejs"
       },
       {
-        "q": "What does MVC stand for?",
+        "q": "What does MVC stand for? What are the use cases for it?",
         "a": "Model view controller. It's a convention for structuring code into modules",
         "ex": "example",
         "category": "nodejs"
