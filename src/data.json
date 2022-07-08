@@ -19,18 +19,6 @@
         "category": "general"
       },
       {
-        "q": "What is a queue?",
-        "a": "A linear data structure that is open on both ends, unlike stack (which is open on one end) and follows the FIFO principle.",
-        "ex": "example",
-        "category": "general"
-      },
-      {
-        "q": "What is a stack?",
-        "a": "It's a list of operations to be performed. Last operation in the list is the first one to be executes (LIFO). It can also denote a collection of software components designed to work together. ",
-        "ex": "example",
-        "category": "general"
-      },
-      {
         "q": "What is namespace?",
         "a": "It is a reference to an object. It has a hierarchical structure and defines a scope which enables the reuse of same name in multiple different structures.",
         "ex": "File systems  Folder1/text.txt  and  Folder2/text.txt  would be a simple example of two namespaces that each have a file with the same name.",
@@ -85,6 +73,18 @@
         "category": "general"
       },
       {
+        "q": "What is a queue?",
+        "a": "A linear data structure that is open on both ends, unlike stack (which is open on one end) and follows the FIFO principle.",
+        "ex": "example",
+        "category": "data-structures"
+      },
+      {
+        "q": "What is a stack?",
+        "a": "It's a list of operations to be performed. Last operation in the list is the first one to be executes (LIFO). It can also denote a collection of software components designed to work together. ",
+        "ex": "example",
+        "category": "data-structures"
+      },
+      {
         "q": "What is a data structure? What are some basic types of data structures?",
         "a": "A tool/system for handling data. It allows us to store, organize, add, remove and retrieve data with specific methods. Linked lists, arrays, dictionaries and trees are the basic types.  ",
         "ex": "example",
@@ -122,7 +122,7 @@
       },
       {
         "q": "What are collisions in data structures and what ways are there to resolve them?",
-        "a": "They occur when multiple values are assigned to one array index. One way to deal with this is to get the data to occupy the first empty spot in the array checking left to right. That means that when we search for the said data, the search will start at the index to which the data was assigned first (but that was already occupied) and then proceed checking each next index until it finds the value. Another way of dealing with this is creating a linked list of items at each array index that is assigned more than one value. Additional function can be added to prevent cluttering (poor, uneven distribution of data throughout the array).",
+        "a": "They occur when multiple values are assigned to one array index. One way to deal with this is to get the data to occupy the first empty spot in the array checking left to right. That means that when we search for the said data, the search will start at the index to which the data was assigned first (but that was already occupied) and then proceed checking each next index until it finds the value. Another way of dealing with this is creating a linked list of items at each array index that is assigned more than one value. Additional function can be added to prevent cluttering (poor, uneven distribution of data throughout the array) which is called double-hashing.",
         "ex": "example",
         "category": "data-structures"
       },
@@ -211,8 +211,8 @@
         "category": "web"
       },
       {
-        "q": "What is accessibility? What are ways to make the page's content accessible without compromising visual appeal of the page?",
-        "a": "answer",
+        "q": "What is accessibility? What are ways to make the webpage content more accessible?",
+        "a": "It refers to content being accessible to individuals with physical limitations. Some people only use keyboards, so elements like links and buttons have to be keyboard-focusable. Some people are visually impaired, so the contrast has to be sufficient, signals should be in symbols, not colours so the colourblind individuals know what's going on. Also the content should be made accessible for screen-reading software (i.e. dynamically written content should be avoided).",
         "ex": "example",
         "category": "web"
       },
