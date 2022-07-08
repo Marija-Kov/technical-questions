@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,200;0,300;0,600;1,200;1,300;1,600&display=swap');
 $card-bkg-js: rgb(156, 224, 221);
 $card-bkg-css: rgb(224, 235, 195);
 $card-bkg-html: rgb(156, 224, 176);
 $card-bkg-data-structures: rgb(224, 156, 196);
 $card-text: rgb(128, 128, 128);
-$btn-font: monospace;
-$text-font: Arial, sans-serif;;
+$btn-font: 'Kantumruy Pro',
+sans-serif;
+$text-font: 'Kantumruy Pro',
+sans-serif;
 $btn-next-border: solid 0.1em rgb(176, 112, 228); 
 $btn-text-color: rgb(128, 128, 128);
 $dark-txt: rgb(36, 36, 36);
