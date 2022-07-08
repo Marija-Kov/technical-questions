@@ -134,7 +134,7 @@
       },
       {
         "q": "What does SEO-friendly mean?",
-        "a": "answer ",
+        "a": "It means that it's easy to crawl and analyze by search engines, therefore more discoverable by users. This is achieved by several things: 1) descriptive, well-formed URL; 2) unique content, titles and descriptions for all pages of the website; 3) meaningful structure (using semantic HTML); 4) fast loading (faster websites are given priority by search engines).",
         "ex": "example",
         "category": "web"
       },
@@ -230,7 +230,7 @@
       },
       {
         "q": "What is the difference between a <span> and <p> element?",
-        "a": "The former is inline while the latter is block type element",
+        "a": "The former is inline while the latter is a block element",
         "ex": "example",
         "category": "html"
       },
@@ -272,7 +272,7 @@
       },
       {
         "q": "When handling video files, what options/features does html offer?",
-        "a": "answer",
+        "a": "HTML allows embedded video content with <video> and <audio> tags with controls - play, pause, volume, autoplay, loop (which has ultimately annihilated the need for plugins like Flash and Java).",
         "ex": "example",
         "category": "html"
       },
@@ -464,13 +464,13 @@
       },
       {
         "q": "What is the difference between null, undefined and NaN?",
-        "a": "answer",
+        "a": "They are all primitive falsy values. The first is an empty, non-existent reference of the object type. The second usually refers to the value of a variable that has been declared but not assigned a value. The third denotes an unrepresentable numeric value that is, by the way, not even loosely equal to itself; it's returned by operations like: 0 * Infinity, Math.sqrt(-1), 'keech'/ 5.",
         "ex": "example",
         "category": "javascript"
       },
       {
         "q": "Which values are falsy in javascript? What does truthy and falsy mean?",
-        "a": "answer",
+        "a": "Null, undefined, NaN, 0.",
         "ex": "example",
         "category": "javascript"
       },
