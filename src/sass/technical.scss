@@ -32,9 +32,10 @@ body {
     gap: 5%;
     padding: 10% 5%;
     font-family: vars.$text-font;
-    color: vars.$card-text;
+    color: vars.$dark-txt;
     transition: 0.3s;
-    background: linear-gradient(340deg, rgba(61,150,185,1) 5%, rgba(0,251,255,1) 100%);
+    background: rgb(98, 197, 224);
+    background: linear-gradient(147deg, rgba(98, 197, 224, 1) 38%, rgba(153, 202, 255, 1) 97%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -44,21 +45,20 @@ body {
 .card {
 @include mixins.card-style;
 @include mixins.center-aligned;
+font-size: 1.2em;
 
 }
 
 button {
     background: transparent;
-    box-shadow: inset 7px 0px 10px 0px rgba(128, 128, 128, 0.3);
     border-radius: 1em;
     padding: 0.5em 2em;
     font-family: vars.$btn-font;
-    color: vars.$btn-text-color;
+    color: vars.$dark-txt;
+
     cursor: pointer;
     transition: 0.2s;
     &:hover {
-         box-shadow: inset 10px 0px 10px 5px rgba(255, 255, 255, 0.9), inset 0px -5px 8px 5px rgba(128, 128, 128, 0.2), 1px 0px 0px 0px rgba(128, 128, 128, 0.05);
-         color: rgb(156, 156, 156);
          transition: 0.2s;
     }
 }
@@ -66,13 +66,17 @@ button {
     display: flex;
     gap: 0.2em;
     flex-wrap: wrap;
+
     margin-top: 200px;
 }
 .category-selection > button{
   font-size: 80%;
   box-shadow: unset;
+  font-weight: 600;
+  color:rgb(83, 83, 83);
   padding: 0.2em 1em;
   border: solid 1px yellow;
+  border-radius: 2px;
   &:hover {
       background: yellow;
   }
@@ -82,13 +86,33 @@ button {
     visibility: hidden;
 }
 .show-answer{
-    font-size: 90%;
+    box-shadow: inset 7px 0px 10px 0px rgba(128, 128, 128, 0.3);
+    font-size: 70%;
+    padding: 0.25em 1em;
+    &:hover {
+        box-shadow: inset 10px 0px 10px 5px rgba(255, 255, 255, 0.9),
+        inset 0px -5px 8px 5px rgba(128, 128, 128, 0.2),
+        1px 0px 0px 0px rgba(128, 128, 128, 0.05);
+        color:rgb(150, 150, 150);
+
+    }
 }
 .next-random,
 .reshuffle {
-   // border: $btn-next-border;
     text-transform: uppercase;
     margin-bottom: 50px;
+    font-weight: 600;
+}
+.next-random {
+    background: rgb(248, 173, 186);
+    border: solid 1px rgb(253, 114, 137);
+    color:vars.$dark-txt;
+    box-shadow: none;
+        &:hover {
+            background: rgb(253, 114, 137);
+            color:rgb(228, 226, 226);
+            transition: 0.2s;
+        }
 }
 
 .reshuffle {
@@ -113,7 +137,7 @@ button {
 .question,
 .answer {
     margin: 10%;
-    font-size: 1em;
+    font-size: 1.1em;
     max-height: 30%;
     text-align: center;
     
@@ -122,7 +146,7 @@ button {
 .answer {
     height: 0;
     overflow-y: scroll;
-    font-size: 14px;
+    font-size: 0.8em;
     
 }
 
