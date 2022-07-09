@@ -861,8 +861,8 @@
       },
       {
         "q": "What is a port (number)?",
-        "a": "answer",
-        "ex": "example",
+        "a": "It's what we use to send specific data from a server to a specific destination on the network.",
+        "ex": "Say we want to set up a server on our computer to serve data to our website - we'll need to specify the port (number) through which our server will communicate with the client i.e. listen to the requests made on the client side.",
         "category": "nodejs"
       },
       {
@@ -873,13 +873,13 @@
       },
       {
         "q": "What are status codes for?",
-        "a": "They are numbers that inform us about the status of the request made to the server.",
+        "a": "They are numbers that inform us about the status of the request made to the server. There are several different types of responses each represented by a specific code range: 1** - informational, 2** - successful, 3** - redirection, 4** - client-side error, 5** - server-side error.",
         "ex": "example",
         "category": "nodejs"
       },
       {
         "q": "What do view engines do?",
-        "a": "It lets us serve static content by rendering html from our views, which are written in templating languages like EJS",
+        "a": "It lets us serve static content by rendering html from our views, which are written in templating languages like EJS, Jade etc.",
         "ex": "example",
         "category": "nodejs"
       },
@@ -933,7 +933,7 @@
       },
       {
         "q": "What are route parameters?",
-        "a": "They are variables, URL segments",
+        "a": "They are variables, URL segments that denote the location of the content that is being served.",
         "ex": "example",
         "category": "nodejs"
       }
