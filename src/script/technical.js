@@ -16,7 +16,7 @@ if (!localStorage.getItem("i")) {
 
 if (localStorage.length > 1) {
   // This condition makes sure that the session doesn't restart on refresh. It's '> 1' not '> 0' because there will always be at least one item ('i') in the localStorage.
-  showLast(); // This function can be found under '///////Helper functions' below.
+  showLast(); // This function can be found in helperFunctions.js
 }
 
 reshuffle.addEventListener("click", () => {
@@ -34,7 +34,7 @@ reshuffle.addEventListener("click", () => {
   }
 });
 
-nextQuestion.addEventListener("click", getRandomQuestion); // Pretty obvious what this does.
+nextQuestion.addEventListener("click", getRandomQuestion); // Pretty obvious what this does.. getRandomQuestion is in the module of the same name.
 showAnswer.addEventListener("click", () => {
   answer.setAttribute("style", "height: fit-content"); // Answer is revealed by setting height to the element.
 });
