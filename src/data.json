@@ -818,8 +818,8 @@
         "category": "javascript"
       },
       {
-        "q": "What is the difference between the global object in the browser and the one in node.js?",
-        "a": "answer",
+        "q": "What is the difference between the global object in the browser and the one in NodeJS? How significant is that difference?",
+        "a": "In the browser it's the window, while in NodeJS, it refers to a module. ",
         "ex": "example",
         "category": "nodejs"
       },
