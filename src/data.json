@@ -831,19 +831,19 @@
       },
       {
         "q": "What does module.exports do?",
-        "a": "It literally states what the said module exports to other modules.",
+        "a": "It literally states what the said - this - module exports to other modules.",
         "ex": "module.exports = Obj",
         "category": "nodejs"
       },
       {
         "q": "What are streams? What kinds of streams are there?",
-        "a": "They refer to data that is rendered and forwarded from server to client-side platform gradually, consistently, in chunks - as opposed to being rendered entirely server-side and sent all at once.",
+        "a": "They refer to data that is rendered and forwarded from server to client-side platform gradually, consistently, in chunks - as opposed to being rendered entirely server-side and sent all at once. They can be readable, writable, duplex (read + write) and transform streams (read + write + modify).",
         "ex": "example",
         "category": "nodejs"
       },
       {
         "q": "What are buffers?",
-        "a": "answer",
+        "a": "They are parts of the stream. They are blocks of memory that hold the data temporarily.",
         "ex": "example",
         "category": "nodejs"
       },
