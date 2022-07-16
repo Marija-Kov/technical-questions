@@ -139,6 +139,60 @@
         "category": "data-structures"
       },
       {
+        "q": "What is a heap?",
+        "a": "a",
+        "ex": "example",
+        "category": "data-structures"
+      },
+      {
+        "q": "What is a trie?",
+        "a": "a",
+        "ex": "example",
+        "category": "data-structures"
+      },
+      {
+        "q": "What is a binary search tree?",
+        "a": "a",
+        "ex": "example",
+        "category": "data-structures"
+      },
+      {
+        "q": "What is a disjoint set?",
+        "a": "a",
+        "ex": "example",
+        "category": "data-structures"
+      },
+      {
+        "q": "What is a bloom filter?",
+        "a": "a",
+        "ex": "example",
+        "category": "data-structures"
+      },
+      {
+        "q": "Bubble sort?",
+        "a": "a",
+        "ex": "example",
+        "category": "data-structures"
+      },
+      {
+        "q": "What is quicksort?",
+        "a": "a",
+        "ex": "example",
+        "category": "data-structures"
+      },
+      {
+        "q": "When might you use insertion sort?",
+        "a": "a",
+        "ex": "example",
+        "category": "data-structures"
+      },
+      {
+        "q": "When might you use merge sort?",
+        "a": "a",
+        "ex": "example",
+        "category": "data-structures"
+      },
+      {
         "q": "What does SEO-friendly mean?",
         "a": "It means that it's easy to crawl and analyze by search engines, therefore more discoverable by users. This is achieved by several things: 1) descriptive, well-formed URL; 2) unique content, titles and descriptions for all pages of the website; 3) meaningful structure (using semantic HTML); 4) fast loading (faster websites are given priority by search engines).",
         "ex": "example",
@@ -944,46 +998,106 @@
         "category": "nodejs"
       },
       {
-         "q": "What is package.json and what is it used for?",
-         "a": "a",
-         "ex": "example",
-         "category": "nodejs"
-       },
+        "q": "What is package.json and what is it used for?",
+        "a": "a",
+        "ex": "example",
+        "category": "nodejs"
+      },
       {
         "q": "What is libuv?",
         "a": "a",
         "ex": "example",
         "category": "nodejs"
       },
-  {
-    "q": "What is EventEmitter?",
-    "a": "a",
-    "ex": "example",
-    "category": "nodejs"
-  },
-    {
-      "q": "The difference between setImmediate() and setTimeout()?",
-      "a": "a",
-      "ex": "example",
-      "category": "nodejs"
-    },
-  {
-    "q": "How does event loop in NodeJS work?",
-    "a": "a",
-    "ex": "example",
-    "category": "nodejs"
-  },
-    {
-      "q": "What does process.nextTick() do?",
-      "a": "a",
-      "ex": "example",
-      "category": "nodejs"
-    },
-    {
-      "q": "The difference between NodeJS and AJAX?",
-      "a": "a",
-      "ex": "example",
-      "category": "nodejs"
-    }
+      {
+        "q": "What is EventEmitter?",
+        "a": "a",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "The difference between setImmediate() and setTimeout()?",
+        "a": "a",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "How does event loop in NodeJS work?",
+        "a": "a",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "What does process.nextTick() do?",
+        "a": "a",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "The difference between NodeJS and AJAX?",
+        "a": "a",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "What are the functionalities of NPM in NodeJS?",
+        "a": "a",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "What's special about chaining in NodeJS?",
+        "a": "a",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "Explain event-driven programming.",
+        "a": "a",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "What is tracing in NodeJS?",
+        "a": "a",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "What is special about callback hell in NodeJS?",
+        "a": "a",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "How would you update NPM in NodeJS?",
+        "a": "a",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "Why is NodeJS single-threaded?",
+        "a": "a",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "Name the types of API f()-s in NodeJS?",
+        "a": "a",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "Explain the role of REPL in NodeJS?",
+        "a": "a",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+        "q": "How would you debug an app in NodeJS?",
+        "a": "a",
+        "ex": "example",
+        "category": "nodejs"
+      }
     ]
 
