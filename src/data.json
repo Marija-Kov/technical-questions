@@ -73,6 +73,12 @@
         "category": "general"
       },
       {
+        "q": "What are frameworks?",
+        "a": "Basically code libraries that are supposed to make writing software easier and faster.",
+        "ex": "Javascript frameworks: jQuery, React, Angular, Vue, Svelte.. CSS frameworks: Tailwind, Bootstrap, Bulma, Skeleton, Lotus..  ",
+        "category": "general"
+      },
+      {
         "q": "What is a queue?",
         "a": "A linear data structure that is open on both ends, unlike stack (which is open on one end) and follows the FIFO principle.",
         "ex": "example",
@@ -163,6 +169,12 @@
         "category": "web"
       },
       {
+        "q": "What is bandwidth?",
+        "a": "The maximum potential of an electronic communications system to transfer data - the amount of data transferred per time unit. Larger files or file formats that are intrinsically larger than others (like jpg vs txt) will consume more bandwidth. The more of the available bandwidth is consumed on one end, the lower data transfer speed is on the other end. ",
+        "ex": "example",
+        "category": "web"
+      },
+      {
         "q": "What is local storage?",
         "a": "It enables the application to ‘remember’ the user’s actions so that when the page is refreshed or closed and reopened, the user doesn’t have to start the task all over. The data is stored on the user’s device (hard drive, more specifically a portion of the memory that the browser takes up on the hard drive) rather than the app’s database.",
         "ex": "example",
@@ -217,20 +229,8 @@
         "category": "web"
       },
       {
-        "q": "What are frameworks?",
-        "a": "Basically code libraries that are supposed to make writing software easier and faster.",
-        "ex": "Javascript frameworks: jQuery, React, Angular, Vue, Svelte.. CSS frameworks: Tailwind, Bootstrap, Bulma, Skeleton, Lotus..  ",
-        "category": "general"
-      },
-      {
         "q": "What are html tags? Name as many as you can remember and describe what each of them does.",
         "a": "They are building blocks of an html page. <head> containing <meta> and <link> that contain information about the website/app that is invisible to the user but relevant to browsers and search engines. Then <body> that contains all the elements of the webpage that user is supposed to see: <header>, <main>, <footer>, <nav>, <div>, <section>, <p>, <anchor>, <li>, <img>, <picture>, <video>, <form>, <table>, <summary>, <article>, <details>… They can be semantic and non-semantic, block and inline and some of them even have built-in functionality",
-        "ex": "example",
-        "category": "html"
-      },
-      {
-        "q": "What is the difference between a <span> and <p> element?",
-        "a": "The former is inline while the latter is a block element",
         "ex": "example",
         "category": "html"
       },
@@ -936,6 +936,54 @@
         "a": "They are variables, URL segments that denote the location of the content that is being served.",
         "ex": "example",
         "category": "nodejs"
-      }
+      },
+      {
+        "q": "What is the difference between asynchronous and non-blocking?",
+        "a": "a",
+        "ex": "example",
+        "category": "nodejs"
+      },
+      {
+         "q": "What is package.json and what is it used for?",
+         "a": "a",
+         "ex": "example",
+         "category": "nodejs"
+       },
+      {
+        "q": "What is libuv?",
+        "a": "a",
+        "ex": "example",
+        "category": "nodejs"
+      },
+  {
+    "q": "What is EventEmitter?",
+    "a": "a",
+    "ex": "example",
+    "category": "nodejs"
+  },
+    {
+      "q": "The difference between setImmediate() and setTimeout()?",
+      "a": "a",
+      "ex": "example",
+      "category": "nodejs"
+    },
+  {
+    "q": "How does event loop in NodeJS work?",
+    "a": "a",
+    "ex": "example",
+    "category": "nodejs"
+  },
+    {
+      "q": "What does process.nextTick() do?",
+      "a": "a",
+      "ex": "example",
+      "category": "nodejs"
+    },
+    {
+      "q": "The difference between NodeJS and AJAX?",
+      "a": "a",
+      "ex": "example",
+      "category": "nodejs"
+    }
     ]
 
